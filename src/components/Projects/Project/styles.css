@@ -1,0 +1,20 @@
+.Project-header {
+  padding: 1em;
+}
+
+.Project-body {
+  position: relative;
+  overflow: auto;
+
+  width: 100%;
+  height: 75vw;
+
+  font-size: 2vw;
+
+  background-color: #fafafa;
+}
+
+.Project-body > * {
+  width: 100%;
+  height: 100%;
+}

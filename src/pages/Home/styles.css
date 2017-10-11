@@ -1,0 +1,20 @@
+.Home {
+  position: relative;
+}
+
+.Home-header {
+  padding: 10vw;
+
+  text-align: center;
+  line-height: 1.5;
+
+  background-color: #fafafa;
+}
+
+.Home-title {
+  font-size: 8vw;
+}
+
+.Home-subtitle {
+  font-size: 4vw;
+}

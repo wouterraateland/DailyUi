@@ -1,0 +1,208 @@
+.Project-003 {
+  background-color: #b6d138;
+}
+
+.Project-003-container {
+  overflow: hidden;
+
+  width: 92.5vw;
+  height: 67.5vw;
+
+  border-radius: .25em;
+
+  background-image: radial-gradient(ellipse 75% 50% at 50% 100%, #f2f2f2, #fff);
+}
+
+.Project-003-main {
+  height: 60vw;
+}
+
+.Project-003-info {
+  position: relative;
+  height: 100%;
+
+  padding: 6% 0 6% 8% !important;
+}
+
+.Project-003-title {
+  margin-bottom: 0;
+
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2.7em;
+}
+
+.Project-003-subtitle {
+  margin-top: 0;
+
+  font-style: italic;
+}
+
+.Project-003-chef {
+  position: relative;
+  z-index: 1;
+
+  margin-top: 12vw;
+}
+
+.Project-003-chef::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+
+  width: 7vw;
+  height: 7vw;
+
+  border-radius: 100%;
+
+  background: #f2f2f2;
+}
+
+.Project-003-chef-image {
+  width: 15vw;
+  margin-top: -8vw;
+  margin-left: -1.5vw;
+
+  float: left;
+}
+
+.Project-003-chef-quote {
+  position: relative;
+  margin: 1em 0 .5em 15vw;
+
+  font-family: 'Source Serif Pro', serif;
+  font-size: 1.5em;
+
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+.Project-003-chef-quote::before {
+  content: open-quote;
+
+  position: absolute;
+  left: -.1em; top: -.2em;
+
+  z-index: -1;
+
+  font-size: 4em;
+  font-weight: bold;
+  color: #f2f2f2;
+}
+
+.Project-003-chef-name {
+  margin: 1em 0 1em 15vw;
+
+  font-style: italic;
+  color: #bfbfbf;
+}
+
+.Project-003-buy {
+  padding: 2vw;
+  margin-top: 5vw;
+
+  border-radius: .25em;
+
+  text-align: center;
+
+  background-color: #b6d138;
+  color: #fff;
+}
+
+.Project-003-buy-title {
+  margin: 0 0 1em;
+
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+}
+
+.Project-003-buy img {
+  display: inline-block;
+  height: 2em;
+}
+
+.Project-003-buy img:nth-child(2) {
+  margin: 0 1em;
+}
+
+.Project-003-illustration {
+  position: relative;
+  height: 100%;
+
+  perspective: 600;
+
+  font-size: .8vw;
+}
+
+.Project-003-book {
+  width: 35em;
+}
+
+.Project-003-book-front {
+  transform: rotateY(-30deg) translateZ(5em);
+  transform-style: preserve-3d;
+}
+
+.Project-003-book::before {
+  content: '';
+
+  position: absolute;
+  left: 0; top: 0;
+  right: 0; bottom: 0;
+
+  display: block;
+  width: 10em;
+  height: 43.5em;
+  margin: auto;
+
+  box-shadow: 0 2em 6em rgba(0, 0, 0, .5);
+
+  background-image: linear-gradient(90deg, #e1e2da, #b6b7af);
+  background-size: 1em;
+
+  transform: rotateY(60deg) translateZ(17.5em);
+}
+
+.Project-003-book::after {
+  content: 'Look inside';
+  position: absolute;
+  left: 0; top: 0;
+  right: 0; bottom: 0;
+
+
+  display: inline-block;
+  width: 6.6em;
+  height: 2em;
+  padding: .4em;
+  margin: auto;
+  border: .1em solid;
+  border-radius: .25em;
+
+  font-size: 3em;
+  text-transform: uppercase;
+
+  background-color: rgba(0, 0, 0, .5);
+  color: #fff;
+}
+
+.Project-003 > img,
+.Project-003-container > img {
+  position: absolute;
+  width: 20vw;
+}
+
+.Project-003 > img {
+  z-index: 2;
+}
+
+.Project-003 > img:nth-child(1) {
+  left: 84vw; top: -2vw;
+}
+
+.Project-003 > img:nth-child(2) {
+  left: 49vw; top: 47vw;
+}
+
+.Project-003-container > img:nth-child(1) {
+  left: -7vw; top: -4vw;
+}

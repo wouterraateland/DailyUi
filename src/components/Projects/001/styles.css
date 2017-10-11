@@ -1,0 +1,74 @@
+.Project-001 {
+
+}
+
+.Project-001::before {
+  content: '';
+
+  position: absolute;
+  left: 0; top: 0;
+  right: 0; bottom: 0;
+
+  background: url(../../../media/pizza_background.jpg) no-repeat center;
+  background-size: cover;
+
+  filter: blur(8px);
+}
+
+.Project-001-phone {
+  padding: 4vw 4vw 12vw;
+
+  text-align: center;
+
+  background: url(../../../media/pizza.png) no-repeat left 50% bottom -300%;
+  background-color: #fef5f1 !important;
+  background-size: 150%;
+}
+
+.Project-001-title {
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+
+.Project-001-input,
+.Project-001-select,
+.Project-001-button {
+  display: block;
+  width: 100%;
+
+  padding: 1em;
+
+  border-radius: 1.5em;
+}
+
+.Project-001-input,
+.Project-001-select {
+  padding-left: 3em;
+  margin-bottom: 1em;
+
+  background: #fff no-repeat left .875em top 50%;
+  background-size: 1.25em;
+}
+
+.Project-001-input[type="email"] {
+  background-image: url(../../../media/email.svg) !important;
+}
+
+.Project-001-input[type="password"] {
+  background-image: url(../../../media/password.svg) !important;
+}
+
+.Project-001-select {
+  background-image: url(../../../media/pizza.svg) !important;
+  color: #7f7f7f;
+}
+
+.Project-001-button {
+  margin-top: 2em;
+  border-radius: 1.5em;
+
+  text-transform: uppercase;
+
+  background-color: #d33e0f;
+  color: #fff;
+}
