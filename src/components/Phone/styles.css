@@ -1,14 +1,11 @@
 .Phone {
-  position: absolute;
-  left: 0; top: 0;
-  right: 0; bottom: 0;
-
+  overflow: hidden;
+  
   width: 35vw;
   height: 62.125vw;
   margin: auto;
 
   border-radius: .5em;
-  box-shadow: 0 2em 6em 0em rgba(0, 0, 0, .5);
 
   font-size: 2vw;
 

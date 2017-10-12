@@ -1,9 +1,10 @@
 {
-  "name": "DailyUi by Wouter Raateland",
+  "name": "dailyui",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "classnames": "^2.2.5",
+    "expr-eval": "^1.2.0",
     "history": "^4.7.2",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",

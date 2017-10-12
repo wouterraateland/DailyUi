@@ -4,6 +4,12 @@ import './styles.css'
 
 import asyncComponent from 'components/async'
 
+const memoized = {}
+const memoizeComponent = name =>
+  memoized[name]
+    ? memoized[name]
+    : memoized[name] = asyncComponent(() => import(`components/Projects/${name}`))
+
 const pad = size => number =>
   ('0'.repeat(size) + number).substr(-size)
 
@@ -20,7 +26,7 @@ const Project = ({ projectId, title, Component }) => (
 
 const mapStateToProps = (state, ownProps) => ({
   title: state.projects[ownProps.projectId],
-  Component: asyncComponent(() => import(`components/Projects/${pad(3)(ownProps.projectId + 1)}`))
+  Component: memoizeComponent(pad(3)(ownProps.projectId + 1))
 })
 
 export default connect(
