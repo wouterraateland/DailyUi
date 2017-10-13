@@ -8,7 +8,7 @@ import ProjectPage from 'pages/Project'
 const App = () => (
   <div className="App">
     <Route path="/" exact component={HomePage} />
-    <Route path="/:projectId" component={ProjectPage} />
+    <Route path="/project/:projectId" component={ProjectPage} />
   </div>
 )
 

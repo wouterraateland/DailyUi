@@ -13,10 +13,10 @@ const memoizeComponent = name =>
 const pad = size => number =>
   ('0'.repeat(size) + number).substr(-size)
 
-const Project = ({ projectId, title, Component }) => (
-  <div className="Project">
+const Project = ({ number, title, Component }) => (
+  <div className="Project" id={`project${number}`}>
     <div className="Project-header">
-      <h2>#{pad(3)(projectId + 1)} &mdash; {title}</h2>
+      <h2>#{number} &mdash; {title}</h2>
     </div>
     <div className="Project-body">
       <Component />
@@ -26,6 +26,7 @@ const Project = ({ projectId, title, Component }) => (
 
 const mapStateToProps = (state, ownProps) => ({
   title: state.projects[ownProps.projectId],
+  number: pad(3)(ownProps.projectId + 1),
   Component: memoizeComponent(pad(3)(ownProps.projectId + 1))
 })
 

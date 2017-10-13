@@ -19,7 +19,7 @@ const store = configureStore(initialState, history)
 
 render(
 	<Provider store={store}>
-    <ConnectedRouter history={history}>
+    <ConnectedRouter history={history} basename="/DailyUi">
       <div>
         <Route component={App} />
       </div>
