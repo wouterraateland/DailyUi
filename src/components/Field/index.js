@@ -1,16 +1,7 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-class Field extends Component {
-  componentDidMount() {
-    console.log('mounted')
-  }
-  render() {
-    const { type: Type, ...props } = this.props
-
-    return (
-      <Type {...props} />
-    )
-  }
-}
+const Field = ({ type: Type, ...props }) => (
+  <Type {...props} />
+)
 
 export default Field

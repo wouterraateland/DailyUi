@@ -1,5 +1,6 @@
 .Project-004 {
   background-color: #77D189;
+  color: #222547;
 }
 
 .Project-004-plot-area {
@@ -15,6 +16,41 @@
   height: 100%;
 }
 
-.Project-004-input {
-
+.Project-004-input-area {
+  font-family: monospace;
 }
+
+.Project-004-input-before {
+  display: inline-block;
+  padding: 1em 0 1em 1em;
+}
+
+.Project-004-input {
+  width: calc(100% - 3.8em);
+  padding: .5em;
+  margin: .5em;
+  border-radius: .25em;
+
+  background-color: #f2f2f2;
+}
+
+.Project-004-keyboard {
+  margin: 0 .3em;
+}
+
+.Project-004-keyboard div {
+  padding: .2em !important;
+}
+
+.Project-004-keyboard span {
+  display: block;
+  padding: .32em;
+
+  border-radius: .25em;
+
+  text-align: center;
+}
+
+.Project-004-keyboard .operation { background-color: #f2f2f2; }
+.Project-004-keyboard .number { background-color: #fff; }
+.Project-004-keyboard .x { background-color: #f7410f; color: #fff; }

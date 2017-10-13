@@ -6,43 +6,45 @@ import { updatePlot } from 'actions/004'
 
 import Phone from 'components/Phone'
 import Field from 'components/Field'
+import Plot from './plot'
 
-const scale = (domain, codomain) => ({x, y}) => ({
-  x: (x - domain[0]) / (domain[1] - domain[0]) * 100,
-  y: (codomain[1] - y) / (codomain[1] - codomain[0]) * 100
-})
-
-const generateSVG = (domain, codomain) => points =>
-  points
-    .map(scale(domain, codomain))
-    .reduce((acc, {x, y}) => acc + ` ${x},${y}`, '')
-
-const Project = ({ updatePlot, points, description }) => (
+const Project = ({ updatePlot, description }) => (
   <div className="Project-004">
     <Phone>
       <div className="Project-004-plot-area">
-        <svg
-          className="Project-004-plot abs-center"
-          viewBox="0 0 100 100">
-          <polyline
-            points={points}
-            stroke="#f7410f"
-            strokeWidth="1"
-            strokeLinecap="round"
-            fill="none" />
-        </svg>
+        <Plot />
       </div>
       <div className="Project-004-input-area">
-        <form>
-          y = <Field type="input" onChange={updatePlot} value={description} />
-        </form>
+        <span className="Project-004-input-before">y =</span>
+        <Field className="Project-004-input" type="input" onChange={updatePlot} value={description} />
+      </div>
+      <div className="Project-004-keyboard row">
+        <div className="col-3"><span className="operation">sin</span></div>
+        <div className="col-3"><span className="operation">cos</span></div>
+        <div className="col-3"><span className="operation">exp</span></div>
+        <div className="col-3"><span className="operation">sqrt</span></div>
+        <div className="col-3"><span className="number">7</span></div>
+        <div className="col-3"><span className="number">8</span></div>
+        <div className="col-3"><span className="number">9</span></div>
+        <div className="col-3"><span className="operation">^</span></div>
+        <div className="col-3"><span className="number">4</span></div>
+        <div className="col-3"><span className="number">5</span></div>
+        <div className="col-3"><span className="number">6</span></div>
+        <div className="col-3"><span className="operation">/</span></div>
+        <div className="col-3"><span className="number">1</span></div>
+        <div className="col-3"><span className="number">2</span></div>
+        <div className="col-3"><span className="number">3</span></div>
+        <div className="col-3"><span className="operation">*</span></div>
+        <div className="col-3"><span className="x">x</span></div>
+        <div className="col-3"><span className="number">0</span></div>
+        <div className="col-3"><span className="operation">+</span></div>
+        <div className="col-3"><span className="operation">-</span></div>
       </div>
     </Phone>
   </div>
 )
 
 const mapStateToProps = (state, ownProps) => ({
-  points: generateSVG(state.plot.domain, state.plot.codomain)(state.plot.points),
   description: state.plot.description
 })
 

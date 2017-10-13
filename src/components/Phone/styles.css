@@ -1,6 +1,6 @@
 .Phone {
   overflow: hidden;
-  
+
   width: 35vw;
   height: 62.125vw;
   margin: auto;
@@ -10,4 +10,10 @@
   font-size: 2vw;
 
   background-color: #fff;
+}
+
+.Phone-keyboard {
+  position: absolute;
+  left: 0;
+  right: 0; bottom: 0;
 }

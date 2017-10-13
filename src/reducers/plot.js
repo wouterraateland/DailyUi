@@ -45,8 +45,17 @@ const plotReducer = (state=initialState, action) => {
 
         if (points.length) {
           res.points = points
-          res.domain = [Math.min(...points.map(({x}) => x)), Math.max(...points.map(({x}) => x))]
-          res.codomain = [Math.min(...points.map(({y}) => y)), Math.max(...points.map(({y}) => y))]
+
+          const yValues = points
+            .map(({y}) => y)
+            .filter(y => !isNaN(y) && y !== Infinity && y !== -Infinity)
+
+          //res.domain = [Math.min(...points.map(({x}) => x)), Math.max(...points.map(({x}) => x))]
+          res.codomain = [Math.min(...yValues), Math.max(...yValues)]
+          if (res.codomain[1] === res.codomain[0]) {
+            res.codomain[1] += 1
+            res.codomain[0] -= 1
+          }
         }
       }
 
