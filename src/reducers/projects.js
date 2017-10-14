@@ -3,6 +3,8 @@ const initialState = [
   'Credit Card Checkout',
   'Above the fold',
   'Graph calculator',
+  'Rossignol Time 2 Shred',
+  'Golf profile',
 ]
 
 const projectsReducer = (state=initialState, action) => {
