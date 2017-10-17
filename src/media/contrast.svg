@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Svg Vector Icons : http://www.onlinewebfonts.com/icon -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 64 64"
+   enable-background="new 0 0 1000 1000"
+   xml:space="preserve"
+   id="svg4141"
+   inkscape:version="0.91+devel+osxmenu r12911"
+   sodipodi:docname="bw.svg"
+   width="64"
+   height="64"><defs
+     id="defs4153" /><sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview4151"
+     showgrid="true"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:zoom="9.171875"
+     inkscape:cx="32"
+     inkscape:cy="32"
+     inkscape:current-layer="g4145"><inkscape:grid
+       type="xygrid"
+       id="grid4155" /></sodipodi:namedview><metadata
+     id="metadata4143"> Svg Vector Icons : http://www.onlinewebfonts.com/icon <rdf:RDF><cc:Work
+     rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+       rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><g
+     id="g4145"
+     transform="translate(0,-936)"><path
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 32 0 C 14.338733 0 0 14.33873 0 32 C 0 49.66127 14.338733 64 32 64 C 49.661267 64 64 49.66127 64 32 C 64 14.33873 49.661267 0 32 0 z M 33.943359 2.0683594 C 49.615421 3.0693845 62 16.073238 62 32 C 62 47.926762 49.615421 60.930616 33.943359 61.931641 C 32.865649 61.963878 32 61.085146 32 60 L 32 4 C 32 2.914854 32.865649 2.0361218 33.943359 2.0683594 z "
+       transform="translate(0,936)"
+       id="rect4154" /></g></svg>
