@@ -6,7 +6,7 @@ const initialState = [
   'Rossignol Time 2 Shred',
   'Golf profile',
   'Photo setting',
-  ''
+  'Bicycle not found',
 ]
 
 const projectsReducer = (state=initialState, action) => {
