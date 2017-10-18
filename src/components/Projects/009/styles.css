@@ -1,0 +1,78 @@
+.Project-009 {
+  background-color: #cc0000;
+  color: #332900;
+}
+
+.Project-009-container {
+  width: 70.5vw;
+  height: 35vw;
+
+  white-space: nowrap;
+
+  user-select: none;
+}
+
+.Project-009-key {
+  position: relative;
+
+  float: left;
+
+  border: .5vw solid #000;
+  border-radius: 0 0 1vw 1vw;
+
+  text-align: center;
+  vertical-align: bottom;
+  font-size: 1.5em;
+
+  transition: height .2s;
+}
+
+.Project-009-key.white {
+  height: 100%;
+  width: 10.5vw;
+  padding: 40% 0 0;
+  margin-left: -.5vw;
+
+  background-color: #fffdf5;
+}
+
+.Project-009-key.black {
+  z-index: 1;
+
+  width: 6vw;
+  height: 70%;
+  padding: 28% 0 0;
+  margin: 0 -3vw 15%;
+
+  background-color: #332900;
+  color: #fffdf5;
+}
+
+.Project-009-key.white:hover {
+  height: 105%;
+}
+
+.Project-009-key.black:hover {
+  height: 75%;
+}
+
+.Project-009-key .note {
+  position: absolute;
+  left: 50%; top: 0;
+
+  width: 3vw;
+  height: 3vw;
+  margin: -1.5vw;
+  border-radius: 100%;
+
+  background: hsla(180, 100%, 40%, 1);
+
+  animation: note 1s linear forwards;
+}
+
+@keyframes note {
+  to {
+    transform: translateY(-20vw);
+    opacity: 0;
+  }
+}

@@ -3,6 +3,7 @@ import './styles.css'
 
 import swapfiets from 'media/swapfiets.png'
 import wheel from 'media/wheel.svg'
+
 const Project = () => (
   <div className="Project-008">
     <div className="Project-008-container abs-center shadow">

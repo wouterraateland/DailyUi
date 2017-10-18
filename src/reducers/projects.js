@@ -7,6 +7,8 @@ const initialState = [
   'Golf profile',
   'Photo setting',
   'Bicycle not found',
+  'Classic music player',
+  '',
 ]
 
 const projectsReducer = (state=initialState, action) => {
