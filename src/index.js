@@ -13,13 +13,13 @@ import App from 'components/App'
 import './reset.css'
 import './index.css'
 
-const history = createHistory()
+const history = createHistory({ basename: '/DailyUi' })
 const initialState = {}
 const store = configureStore(initialState, history)
 
 render(
 	<Provider store={store}>
-    <ConnectedRouter history={history} basename="/DailyUi">
+    <ConnectedRouter history={history}>
       <div>
         <Route component={App} />
       </div>
