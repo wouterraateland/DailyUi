@@ -1,20 +1,63 @@
 .Home {
   position: relative;
+  font-size:
 }
 
 .Home-header {
+  position: relative;
   padding: 10vw;
 
-  text-align: center;
-  line-height: 1.5;
+  text-align: left;
 
-  background-color: #fafafa;
+  background-color: #a22744;
+  color: #fff;
 }
 
 .Home-title {
-  font-size: 8vw;
+  margin: 0;
+  font-size: 4em;
 }
 
 .Home-subtitle {
-  font-size: 4vw;
+  margin-top: 0;
+  font-size: 2em;
+
+  color: #f5d6dd;
+}
+
+.Home-description {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.Home-description::before {
+  content: '';
+
+  display: block;
+  width: 10vw;
+  height: .5vw;
+  margin-bottom: 1.5em;
+
+  background-color: #f5d6dd;
+}
+
+.Home-cta {
+  position: absolute;
+  left: 50%;
+  bottom: 2.5em;
+
+  width: 2em;
+  height: 2em;
+  margin: -1em;
+  border: .1em solid #f5d6dd;
+  border-radius: 100%;
+
+  text-align: center;
+  line-height: 1.8em;
+
+  animation: bounce 1.5s infinite alternate ease-in-out;
+}
+
+@keyframes bounce {
+  to { transform: translateY(1em); }
 }
