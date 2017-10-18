@@ -6,7 +6,7 @@ import Project from 'components/Projects/Project'
 
 const ProjectPage = ({ projectId }) => (
   <div className="Project-page">
-    <Project projectId={projectId}  />
+    <Project projectId={projectId} />
   </div>
 )
 
