@@ -14,15 +14,17 @@ const tryRequireThumb = name => {
 const pad = size => number =>
   ('0'.repeat(size) + number).substr(-size)
 
-const ProjectThumb = ({ number, title, image }) => (
-  <Link to={`/project/${number}`} className="ProjectThumb" id={`project${number}`}>
-    <div className="ProjectThumb-header">
-      <span className="ProjectThumb-number">#{number}</span>
-      <h2 className="ProjectThumb-title">{title}</h2>
-    </div>
-    <img className="ProjectThumb-image" src={image} alt={title} />
-  </Link>
-)
+const ProjectThumb = ({ number, title, image }) => title
+  ? (
+      <Link to={`/project/${number}`} className="ProjectThumb" id={`project${number}`}>
+        <div className="ProjectThumb-header">
+          <span className="ProjectThumb-number">#{number}</span>
+          <h2 className="ProjectThumb-title">{title}</h2>
+        </div>
+        <img className="ProjectThumb-image" src={image} alt={title} />
+      </Link>
+    )
+  : null
 
 const mapStateToProps = (state, ownProps) => ({
   title: state.projects[ownProps.projectId],
