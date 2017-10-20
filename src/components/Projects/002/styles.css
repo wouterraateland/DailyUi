@@ -15,8 +15,8 @@
   left: 0; top: 0;
   right: 0; bottom: 0;
 
-  width: 60vw;
-  height: 40vw;
+  width: 60vmin;
+  height: 40vmin;
   margin: auto;
 }
 

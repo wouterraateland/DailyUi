@@ -5,8 +5,8 @@
 .Project-008-container {
   overflow: hidden;
 
-  width: 92.5vw;
-  height: 67.5vw;
+  width: 92.5vmin;
+  height: 67.5vmin;
 
   border-radius: 2em;
 
@@ -21,18 +21,18 @@
 
 .Project-008-logo {
   position: absolute;
-  left: 4vw; top: 4vw;
+  left: 4vmin; top: 4vmin;
 
-  height: 4vw;
+  height: 4vmin;
 }
 
 .Project-008-menu {
   position: absolute;
-  top: 4vw;
-  right: 4vw;
+  top: 4vmin;
+  right: 4vmin;
 
-  width: 4vw;
-  height: 4vw;
+  width: 4vmin;
+  height: 4vmin;
 
   color: #00b8fb;
 }
@@ -44,21 +44,21 @@
   left: 0; top: 0;
   right: 0; bottom: 0;
 
-  height: .3vw;
+  height: .3vmin;
   margin: auto;
 
-  border-radius: .3vw;
+  border-radius: .3vmin;
 
-  box-shadow: 0 1vw, 0 -1vw;
+  box-shadow: 0 1vmin, 0 -1vmin;
 
   background-color: currentColor;
 }
 
 .Project-008-title {
   height: 1em;
-  margin: 15.25vw 0 0;
+  margin: 15.25vmin 0 0;
 
-  font-size: 25vw;
+  font-size: 25vmin;
   font-family: 'Source Sans Pro', sans-serif;
   color: #00b8fb;
 }

@@ -1,12 +1,10 @@
 .Icon {
   overflow: hidden;
 
-  width: 35vw;
-  height: 35vw;
+  width: 35vmin;
+  height: 35vmin;
 
-  border-radius: 5vw;
-
-  font-size: 2vw;
+  border-radius: 5vmin;
 
   background: #fff no-repeat center;
   background-size: cover;

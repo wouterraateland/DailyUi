@@ -4,13 +4,13 @@
 
 .Project-007-container {
   position: absolute;
-  right: calc(50vw - 10vw);
+  right: calc(50vmin - 10vmin);
   top: 0; bottom: 0;
 
   overflow: hidden;
 
-  width: 75vw;
-  height: 50vw;
+  width: 75vmin;
+  height: 50vmin;
   margin: auto;
 
   border-radius: .25em;
@@ -31,7 +31,7 @@
   height: 3em;
   margin: auto;
 
-  font-size: 4vw;
+  font-size: 4vmin;
 
   transition-property: font-size, right, top, width, height;
   transition-duration: .4s;
@@ -113,8 +113,8 @@
 
   opacity: 0;
 
-  width: 32vw;
-  height: 32vw;
+  width: 32vmin;
+  height: 32vmin;
 
   border-bottom-left-radius: 100%;
 
@@ -161,7 +161,7 @@
 }
 
 .Project-007-settings.active .Project-007-settings-toggle {
-  font-size: 1vw;
+  font-size: 1vmin;
 }
 
 .Project-007-settings.active .Project-007-settings-body {

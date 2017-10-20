@@ -3,11 +3,12 @@
 
 .ProjectPage-container {
   width: 100vmin;
+  padding: 5vmin 0;
   margin: auto;
 }
 
 .ProjectPage-header {
-  padding: 5vw 10vw;
+  padding: 5vmin 10vmin;
 
   background-color: #a22744;
   color: #fff;
@@ -50,6 +51,7 @@
   overflow: auto;
 
   height: 75vmin;
+  border-radius: 2vmin;
 
   font-size: 2vmin;
 
@@ -62,5 +64,5 @@
 }
 
 .ProjectPage-footer {
-  padding: 10vw;
+  padding: 0 10vmin;
 }

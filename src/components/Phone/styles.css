@@ -1,12 +1,10 @@
 .Phone {
   overflow: hidden;
 
-  width: 35vw;
-  height: 62.125vw;
+  width: 35vmin;
+  height: 62.125vmin;
 
   border-radius: .5em;
-
-  font-size: 2vw;
 
   background-color: #fff;
 }

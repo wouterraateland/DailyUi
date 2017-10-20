@@ -5,8 +5,8 @@
 .Project-003-container {
   overflow: hidden;
 
-  width: 92.5vw;
-  height: 67.5vw;
+  width: 92.5vmin;
+  height: 67.5vmin;
 
   border-radius: .25em;
 
@@ -14,7 +14,7 @@
 }
 
 .Project-003-main {
-  height: 60vw;
+  height: 60vmin;
 }
 
 .Project-003-info {
@@ -41,7 +41,7 @@
   position: relative;
   z-index: 1;
 
-  margin-top: 12vw;
+  margin-top: 12vmin;
 }
 
 .Project-003-chef::before {
@@ -51,8 +51,8 @@
   top: 0;
   z-index: -1;
 
-  width: 7vw;
-  height: 7vw;
+  width: 7vmin;
+  height: 7vmin;
 
   border-radius: 100%;
 
@@ -60,16 +60,16 @@
 }
 
 .Project-003-chef-image {
-  width: 15vw;
-  margin-top: -8vw;
-  margin-left: -1.5vw;
+  width: 15vmin;
+  margin-top: -8vmin;
+  margin-left: -1.5vmin;
 
   float: left;
 }
 
 .Project-003-chef-quote {
   position: relative;
-  margin: 1em 0 .5em 15vw;
+  margin: 1em 0 .5em 15vmin;
 
   font-family: 'Source Serif Pro', serif;
   font-size: 1.5em;
@@ -91,15 +91,15 @@
 }
 
 .Project-003-chef-name {
-  margin: 1em 0 1em 15vw;
+  margin: 1em 0 1em 15vmin;
 
   font-style: italic;
   color: #bfbfbf;
 }
 
 .Project-003-buy {
-  padding: 2vw;
-  margin-top: 5vw;
+  padding: 2vmin;
+  margin-top: 5vmin;
 
   border-radius: .25em;
 
@@ -131,7 +131,7 @@
 
   perspective: 600;
 
-  font-size: .8vw;
+  font-size: .8vmin;
 }
 
 .Project-003-book {
@@ -188,7 +188,7 @@
 .Project-003 > img,
 .Project-003-container > img {
   position: absolute;
-  width: 20vw;
+  width: 20vmin;
 }
 
 .Project-003 > img {
@@ -196,13 +196,13 @@
 }
 
 .Project-003 > img:nth-child(1) {
-  left: 84vw; top: -2vw;
+  left: 84vmin; top: -2vmin;
 }
 
 .Project-003 > img:nth-child(2) {
-  left: 49vw; top: 47vw;
+  left: 49vmin; top: 47vmin;
 }
 
 .Project-003-container > img:nth-child(1) {
-  left: -7vw; top: -4vw;
+  left: -7vmin; top: -4vmin;
 }
