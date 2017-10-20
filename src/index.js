@@ -20,9 +20,7 @@ const store = configureStore(initialState, history)
 render(
 	<Provider store={store}>
     <ConnectedRouter history={history}>
-      <div>
-        <Route component={App} />
-      </div>
+      <Route component={App} />
     </ConnectedRouter>
 	</Provider>,
 	document.getElementById('root')

@@ -1,0 +1,66 @@
+.ProjectPage {
+}
+
+.ProjectPage-container {
+  width: 100vmin;
+  margin: auto;
+}
+
+.ProjectPage-header {
+  padding: 5vw 10vw;
+
+  background-color: #a22744;
+  color: #fff;
+}
+
+.ProjectPage-title {
+}
+
+.ProjectPage-back {
+  position: relative;
+
+  display: block;
+  width: 6.5em;
+  height: 5.375em;
+  margin: 2.3em 0;
+  border-radius: .25em;
+
+  font-size: 1vw;
+}
+
+.ProjectPage-back::after {
+  content: '';
+
+  position: absolute;
+  left: .5em; top: .5em;
+
+  width: 1.5em;
+  height: 1.125em;
+  border-radius: .25em;
+
+  box-shadow:            2em 0,       4em 0,
+              0 1.625em, 2em 1.625em, 4em 1.625em,
+                         2em 3.25em,  4em 3.25em;
+
+  background-color: currentColor;
+}
+
+.ProjectPage-body {
+  position: relative;
+  overflow: auto;
+
+  height: 75vmin;
+
+  font-size: 2vmin;
+
+  background-color: #fafafa;
+}
+
+.ProjectPage-body > * {
+  width: 100%;
+  height: 100%;
+}
+
+.ProjectPage-footer {
+  padding: 10vw;
+}
