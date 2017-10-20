@@ -4,7 +4,9 @@
   display: block;
   width: 100%;
   padding: 50%;
-  margin-bottom: 50%;
+  margin-bottom: 4em;
+
+  font-size: 1.5em;
 }
 
 .ProjectThumb-header {
@@ -28,21 +30,22 @@
 
   width: 100%;
   max-width: none;
-  border-radius: .25em;
+  border: .5vw solid;
+  border-radius: 1vw;
 
-  box-shadow: 0 0 0 .15em;
+  /*box-shadow: 0 0 0 .2vw;*/
 
   background-color: #f5d6dd;
 }
 
 @media all and (min-width: 481px) {
-  .ProjectThumb-title {
-    font-size: 1.333em;
+  .ProjectThumb {
+    font-size: 1em;
   }
 }
 
 @media all and (min-width: 721px) {
-  .ProjectThumb-title {
-    font-size: 1em;
+  .ProjectThumb {
+    font-size: .75em;
   }
 }
