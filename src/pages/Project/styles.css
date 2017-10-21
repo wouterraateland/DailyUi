@@ -47,6 +47,7 @@
 }
 
 .ProjectPage-body {
+  cursor: url(../../media/cursor.svg) 12 12, auto;
   position: relative;
   overflow: auto;
 
