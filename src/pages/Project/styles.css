@@ -52,7 +52,6 @@
   overflow: auto;
 
   height: 75vmin;
-  border-radius: 2vmin;
 
   font-size: 2vmin;
 
@@ -66,4 +65,10 @@
 
 .ProjectPage-footer {
   padding: 0 10vmin;
+}
+
+@media all and (orientation: landscape) {
+  .ProjectPage-body {
+    border-radius: 2vmin;
+  }
 }

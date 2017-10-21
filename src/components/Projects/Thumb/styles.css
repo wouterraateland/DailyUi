@@ -33,7 +33,7 @@
   border: .5vw solid;
   border-radius: 1vw;
 
-  background-color: #f5d6dd;
+  background-color: #000;
 }
 
 @media all and (min-width: 481px) {

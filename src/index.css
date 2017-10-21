@@ -11,7 +11,8 @@ p a { text-decoration: underline; }
 
 input,
 button,
-select {
+select,
+textarea {
 	appearance: none;
 
 	border: none;
