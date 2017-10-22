@@ -10,7 +10,7 @@ const Project = () => (
   <div className="Project-011">
     <Phone className="Project-011-container">
       <div className="Project-011-header">
-        <img src={alcohol} />
+        <img src={alcohol} alt="Heineken bottle and can" />
       </div>
       <div className="Project-011-body">
         <h1 className="Project-011-title">Great, you are of legal drinking age</h1>
@@ -20,7 +20,7 @@ const Project = () => (
     </Phone>
     <Phone className="Project-011-container">
       <div className="Project-011-header">
-        <img src={alcoholFree} />
+        <img src={alcoholFree} alt="Heineken 0.0 bottle and can" />
       </div>
       <div className="Project-011-body">
         <h1 className="Project-011-title">Sorry, you are not of legal drinking age</h1>
