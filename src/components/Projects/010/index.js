@@ -1,6 +1,5 @@
 import React from 'react'
 import './styles.css'
-import classNames from 'classnames'
 
 import Phone from 'components/Phone'
 
@@ -22,7 +21,7 @@ const Project = () => (
         </label>
 
         <button className="Project-010-share-button">
-          <img className="Project-010-plane" src={plane} />
+          <img className="Project-010-plane" src={plane} alt="Paper plane" />
         </button>
       </form>
     </Phone>

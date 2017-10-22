@@ -1,0 +1,68 @@
+.Project-011 {
+  background: url(http://jonvilma.com/images/beer-12.jpg) no-repeat top 6% left 50% / 150%;
+}
+
+.Project-011-container {
+  text-align: center;
+
+  box-shadow:  .5em  .5em .5em rgba(0, 0, 0, .25),
+              1em   1em   .5em rgba(0, 0, 0, .2),
+              1.5em 1.5em .5em rgba(0, 0, 0, .15),
+              2em   2em   .5em rgba(0, 0, 0, .1),
+              2.5em 2.5em .5em rgba(0, 0, 0, .05);
+}
+
+.Project-011-container:nth-child(1) {
+  left: auto;
+  right: 52.5%;
+}
+
+.Project-011-container:nth-child(2) {
+  left: 52.5%;
+  right: auto;
+}
+
+.Project-011-header,
+.Project-011-body {
+  padding: 2vmin;
+}
+
+.Project-011-header {
+  margin-bottom: 3.5vmin;
+
+  background: radial-gradient(ellipse at 50% 100%, #74a136, #025f02);
+}
+
+.Project-011-header img {
+  margin-bottom: -3.5vmin;
+  height: 31vmin;
+
+  font-size: .5em;
+
+  filter: drop-shadow(1em 1em .5em rgba(0, 0, 0, .25))
+          drop-shadow(2em 2em .5em rgba(0, 0, 0, .2))
+          drop-shadow(3em 3em .5em rgba(0, 0, 0, .15))
+          drop-shadow(4em 4em .5em rgba(0, 0, 0, .1))
+          drop-shadow(5em 5em .5em rgba(0, 0, 0, .05));
+}
+
+.Project-011-title {
+  margin: 0;
+  font-size: 1.5em;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.Project-011-container button {
+  margin-top: 2em;
+
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.Project-011-container:nth-child(1) button {
+  color: #41713a;
+}
+
+.Project-011-container:nth-child(2) button {
+  color: #d0030d;
+}
