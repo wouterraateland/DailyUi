@@ -10,6 +10,7 @@ const initialState = [
   'Classic music player',
   'Share your message',
   'Heineken age checker',
+  'Napapijri shop',
 ]
 
 const projectsReducer = (state=initialState, action) => {

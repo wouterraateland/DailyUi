@@ -63,6 +63,12 @@
   height: 100%;
 }
 
+.ProjectPage-body label,
+.ProjectPage-body input,
+.ProjectPage-body select {
+  cursor: url(../../media/cursor.svg) 12 12, auto;
+}
+
 .ProjectPage-footer {
   padding: 0 10vmin;
 }
