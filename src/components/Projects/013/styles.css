@@ -1,5 +1,6 @@
 .Project-013 {
-  background-color: #88cef1;
+  background: linear-gradient(rgba(100, 149, 237, .98), rgba(136, 206, 241, .98)),
+              url(../../../media/chat_background.jpg) no-repeat center / cover;
 }
 
 .Project-013-container {
