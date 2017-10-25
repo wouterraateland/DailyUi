@@ -15,7 +15,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91+devel+osxmenu r12911"
-   sodipodi:docname="email.svg">
+   sodipodi:docname="email_dark.svg">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -44,7 +44,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -53,18 +53,10 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,-280.06665)">
-    <rect
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.0583334;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect4183"
-       width="15.875"
-       height="11.641666"
-       x="0.5291667"
-       y="282.71249" />
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.0583334;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 0.52916668,284.3 8.4666669,289.59167 16.404167,284.3"
-       id="path4185"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccc" />
+       style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 8 8 C 4.6837785 8 1.852724 9.9988461 0.63671875 12.861328 L 1.5878906 13.457031 L 32 32.464844 L 62.40625 13.457031 L 63.363281 12.861328 C 62.147277 9.9988461 59.31622 8 56 8 L 8 8 z M 0 19.535156 L 0 48 C -1.1842379e-15 52.431987 3.5679998 56 8 56 L 56 56 C 60.431999 56 64 52.431987 64 48 L 64 19.535156 L 33.587891 38.546875 A 3.0002999 3.0002999 0 0 1 30.414062 38.546875 L 0 19.535156 z "
+       transform="matrix(0.26458334,0,0,0.26458334,0,280.06665)"
+       id="rect4183" />
   </g>
 </svg>

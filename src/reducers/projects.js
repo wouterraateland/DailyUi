@@ -11,6 +11,7 @@ const initialState = [
   'Share your message',
   'Heineken age checker',
   'Napapijri shop',
+  'Direct messaging',
 ]
 
 const projectsReducer = (state=initialState, action) => {
