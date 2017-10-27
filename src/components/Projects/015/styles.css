@@ -1,7 +1,31 @@
 .Project-015 {
-
+  background-color: #d951c5;
 }
 
-.Project-015-container {
-  
+.Project-015-baby {
+  background-color: #f8e09d;
+}
+
+.Project-015-button {
+  position: relative;
+  width: 20vmin;
+  height: 15vmin;
+  border-radius: 100%;
+
+  background-color: #f00;
+  color: #fff;
+}
+
+.Project-015-button::after {
+  content: '';
+
+  position: absolute;
+  left: 0; top: 50%;
+  right: 0;
+
+  height: 15vmin;
+
+  border-radius: 0 0 100% 100%;
+
+  background-color: #c00;
 }
