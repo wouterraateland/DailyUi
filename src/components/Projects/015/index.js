@@ -3,10 +3,14 @@ import './styles.css'
 
 const Project = () => (
   <div className="Project-015">
-    <div className="Project-015-baby">
-
-    </div>
-    <button className="Project-015-button">STOP</button>
+    <label>
+      <input className="Project-015-input" type="checkbox" />
+      <div className="Project-015-switch abs-center">
+        <div className="Project-015-cord"></div>
+        <div className="Project-015-dot"></div>
+        <div className="Project-015-hat"></div>
+      </div>
+    </label>
   </div>
 )
 

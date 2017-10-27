@@ -13,7 +13,7 @@ const initialState = [
   'Napapijri shop',
   'Direct messaging',
   'Hourglass timer',
-  'Some things can\'t be switched off',
+  'Lamp switch',
 ]
 
 const projectsReducer = (state=initialState, action) => {
