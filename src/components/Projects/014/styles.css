@@ -1,0 +1,96 @@
+.Project-014 {
+  overflow: hidden;
+
+  background-color: #5ed19f;
+  cursor: none;
+}
+
+.Project-014-container {
+  width: 30vmin;
+  height: 60vmin;
+
+  box-shadow: -2vmin -2vmin rgba(0, 0, 0, .1);
+
+  background-color: #fff;
+  color: #5ed19f;
+
+  transition-property: transform, box-shadow;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(0.75, 2, 0.75, 0.5);
+
+  transform: rotate(180deg);
+}
+
+.Project-014-sand {
+  position: absolute;
+  left: 0;
+  bottom: 0; right: 0;
+
+  height: 100%;
+
+  font-size: 8em;
+
+  background-color: #fde8aa;
+  color: #fff;
+
+  transition-property: height, font-size, color, background-color;
+  transition-duration: .5s;
+  transition-timing-function: linear;
+}
+
+.Project-014-number {
+  text-align: center;
+  font-weight: bold;
+
+  height: 1em;
+
+  transition: transform .5s cubic-bezier(0.75, 2, 0.75, 0.5);
+
+  transform: rotate(-180deg);
+}
+
+.Project-014-timeover {
+  left: 25%; top: 25%;
+  right: 25%; bottom: 25%;
+  
+  height: 1em;
+  opacity: 0;
+
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 3em;
+
+  transition-property: transform, opacity;
+  transition-duration: .2s;
+  transition-timing-function: ease-in;
+
+  transform: scale(2);
+}
+
+.Project-014-timeover.finished {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.Project-014:hover .Project-014-container {
+  box-shadow: 2vmin 2vmin rgba(0, 0, 0, .1);
+
+  transform: rotate(0);
+}
+
+.Project-014:hover .Project-014-sand {
+  height: 0;
+
+  font-size: 0;
+
+  background-color: #f53d3d;
+  color: transparent;
+
+  transition-duration: 4s;
+  transition-delay: .5s;
+}
+
+.Project-014:hover .Project-014-number {
+  transform: rotate(0);
+}

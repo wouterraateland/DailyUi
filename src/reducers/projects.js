@@ -12,6 +12,7 @@ const initialState = [
   'Heineken age checker',
   'Napapijri shop',
   'Direct messaging',
+  'Countdown timer',
 ]
 
 const projectsReducer = (state=initialState, action) => {
