@@ -14,6 +14,7 @@ const initialState = [
   'Direct messaging',
   'Hourglass timer',
   'Lamp switch',
+  'Popup present',
 ]
 
 const projectsReducer = (state=initialState, action) => {

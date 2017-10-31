@@ -1,0 +1,175 @@
+.Project-016 {
+  background-image: linear-gradient(
+    hsl(163, 52%, 43%),
+    hsl(170, 52%, 36%) 70%,
+    hsl(171, 52%, 35%) 70%,
+    hsl(173, 52%, 33%));
+}
+
+.Project-016-container {
+  width: 50vmin;
+  height: 50vmin;
+}
+
+.Project-016-popup {
+  top: auto;
+
+  width: 50vmin;
+  height: 50vmin;
+
+  opacity: 0;
+
+  background: transparent;
+
+  transform: scale(.5);
+  transform-origin: center bottom;
+}
+
+.Project-016-title {
+  margin: 0 0 1.25em;
+
+  text-align: center;
+  font-size: 5vmin;
+  font-family: 'Source Sans Pro', sans-serif;
+
+  color: transparent;
+
+  transition: color .25s .5s ease-out;
+}
+
+.Project-016-illustration {
+  position: relative;
+  z-index: 1;
+
+  width: 16vmin;
+  height: 16vmin;
+  padding: 2vmin;
+  margin: auto;
+}
+
+.Project-016-illustration::before,
+.Project-016-illustration::after {
+  content: '';
+
+  position: absolute;
+  left: 0; top: 0;
+  right: 0; bottom: 0;
+  z-index: -1;
+
+  border-radius: 25%;
+
+  background-color: rgba(255, 255, 255, .5);
+}
+
+.Project-016-illustration::before { animation: spin1 4.4s linear infinite; }
+.Project-016-illustration::after  { animation: spin2 5.3s linear infinite; }
+
+.Project-016-illustration img {
+  width: 100%;
+}
+
+.Project-016-present {
+  top: auto;
+  width: 20vmin;
+  height: 15vmin;
+  border: #d72828 solid;
+  border-width: 0 8vmin;
+  border-radius: 0 0 .5vmin .5vmin;
+
+  background-color: #ff8a00;
+
+  animation: present 2s linear infinite;
+}
+
+.Project-016-present::after {
+  content: '';
+
+  position: absolute;
+  left: -8vmin; top: 0;
+  right: -8vmin; bottom: 0;
+
+  background-color: rgba(0, 0, 0, .1);
+
+  transform: skewX(20deg) scale(1, -1);
+  transform-origin: bottom;
+
+  animation: present-shadow 2s linear infinite;
+}
+
+.Project-016-present-top {
+  position: absolute;
+  left: -9vmin; top: -3vmin;
+  right: -1vmin;
+
+  width: 22vmin;
+  height: 5vmin;
+  border: #ff3939 solid;
+  border-width: 0 9vmin;
+  border-radius: .5vmin;
+
+  box-shadow: 0 2vmin 0 -1vmin rgba(0, 0, 0, .1);
+
+  background-color: #ffa63c;
+}
+
+.Project-016-present-top::after {
+  content: '';
+
+  position: absolute;
+  left: -4vmin;
+  right: -4vmin; bottom: 100%;
+
+  height: 6vmin;
+
+  background: url(../../../media/present_knit.svg) no-repeat center / cover;
+}
+
+:checked ~ .Project-016-popup {
+  opacity: 1;
+  transform: scale(1);
+
+  transition-property: transform, opacity;
+  transition-duration: .25s;
+  transition-delay: .25s;
+  transition-timing-function: ease-out;
+}
+
+:checked ~ .Project-016-popup .Project-016-title {
+  color: #fff;
+}
+
+:checked ~ .Project-016-present,
+:checked ~ .Project-016-present::after {
+  animation: none;
+}
+
+:checked ~ .Project-016-present .Project-016-present-top {
+  transition: transform 1s ease-out;
+  transform: translate(70vmin, -70vmin) rotate(720deg);
+}
+
+@keyframes spin1 {
+  0%   { transform: scale(0.9) rotate(30deg); }
+  50%  { transform: scale(1.1) rotate(210deg); }
+  100% { transform: scale(0.9) rotate(390deg); }
+}
+
+@keyframes spin2 {
+  0%   { transform: scale(1.1) rotate(0deg); }
+  50%  { transform: scale(0.9) rotate(180deg); }
+  100% { transform: scale(1.1) rotate(360deg); }
+}
+
+@keyframes present {
+  80%  { transform: rotate(0deg); transform-origin: left bottom; }
+  85%  { transform: rotate(-5deg); transform-origin: left bottom; }
+  95%  { transform: rotate(5deg); transform-origin: right bottom; }
+  100% { transform: rotate(0deg); transform-origin: right bottom; }
+}
+
+@keyframes present-shadow {
+  80%  { transform: skewX(20deg) scale(1, -1) rotate(0deg); transform-origin: left bottom; }
+  85%  { transform: skewX(20deg) scale(1, -1) rotate(-10deg); transform-origin: left bottom; }
+  95%  { transform: skewX(20deg) scale(1, -1) rotate(10deg); transform-origin: right bottom; }
+  100% { transform: skewX(20deg) scale(1, -1) rotate(0deg); transform-origin: right bottom; }
+}
