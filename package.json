@@ -2,7 +2,7 @@
   "name": "dailyui",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://wouterraateland.github.io/DailyUi",
+  "homepage": "https://wouterraateland.github.io/dailyui",
   "dependencies": {
     "classnames": "^2.2.5",
     "expr-eval": "^1.2.0",
