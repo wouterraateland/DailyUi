@@ -15,6 +15,7 @@ const initialState = [
   'Hourglass timer',
   'Lamp switch',
   'Popup present',
+  'Dribbble invite receipt'
 ]
 
 const projectsReducer = (state=initialState, action) => {
