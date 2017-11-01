@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat:400,700');
+
+.Project-018,
+.Project-018-title,
+.Project-018-explanation {
+  font-family: 'Caveat', cursive;
+}
+
+.Project-018 {
+  padding: 10vmin;
+
+  text-align: center;
+
+  background:
+    radial-gradient(circle 10vmin at 50% 0, #fff176 50%, transparent 0) 0 0,
+    radial-gradient(circle 10vmin at 50% 50%, #ffeb3b 50%, transparent 0) 50% 0,
+    linear-gradient(#fff176, #fff176) 0 0;
+  background-size: 10vmin 10vmin;
+}
+
+.Project-018-title {
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+.Project-018-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  height: 5vmin;
+  margin-bottom: 15vmin;
+  border: .5vmin solid transparent;
+  border-top-width: 0;
+  border-bottom-color: currentColor;
+  border-bottom-left-radius:  50% 100%;
+  border-bottom-right-radius: 50% 100%;
+}
+
+.Project-018-sock {
+  position: relative;
+
+  width: 8vmin;
+  height: 8vmin;
+
+  transform-origin: 60% top;
+}
+
+.Project-018-sock-clip {
+  position: absolute;
+  left: 60%; top: -1vmin;
+  z-index: 1;
+
+  width: .5vmin;
+  height: 2vmin;
+  border-radius: 50% 50% 100% 100%;
+
+  background-color: #000;
+}
+
+.Project-018-sock::before,
+.Project-018-sock::after {
+  content: '';
+
+  position: absolute;
+  left: 0; top: 0;
+  right: 0; bottom: 0;
+}
+
+.Project-018-sock::before {
+  mask: url(../../../media/sock_mask.svg) no-repeat center / contain;
+}
+
+.Project-018-sock::after {
+  background: url(../../../media/sock_overlay.svg) no-repeat center / contain;
+}
+
+.Project-018-sock.missing::after {
+  background-image: url(../../../media/sock_missing_overlay.svg);
+}
+
+.Project-018-sock:nth-child(1) { margin-top: 3.5vmin; }
+.Project-018-sock:nth-child(2) { margin-top: 4.5vmin; }
+.Project-018-sock:nth-child(3) { margin-top: 5.0vmin; }
+.Project-018-sock:nth-child(4) { margin-top: 4.5vmin; }
+.Project-018-sock:nth-child(5) { margin-top: 3.5vmin; }
+
+.sock1::before {
+  background-color: #6d695c;
+  background-image:
+    repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1%, transparent 1%, transparent 50%),
+    repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1%, transparent 1%, transparent 50%),
+    linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
+    linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
+  background-size: 3.5vmin 6vmin;
+}
+
+.sock2::before {
+  background:
+    linear-gradient(135deg, #eceddc 25%, transparent 25%) -1vmin 0,
+    linear-gradient(225deg, #eceddc 25%, transparent 25%) -1vmin 0,
+    linear-gradient(315deg, #eceddc 25%, transparent 25%),
+    linear-gradient(45deg, #eceddc 25%, transparent 25%);
+  background-size: 2vmin 2vmin;
+  background-color: #ec173a;
+}
+
+.sock3::before {
+  background-color: #2196f3;
+  background-image:
+    radial-gradient(#fff 15%, transparent 16%),
+    radial-gradient(#fff 15%, transparent 16%);
+
+  background-size: 2vmin 2vmin;
+  background-position: 0 0, 1vmin 1vmin;
+}
+
+.sock4::before {
+  background:
+    radial-gradient(circle closest-side at 60% 43%, #b03 26%, rgba(187,0,51,0) 27%),
+    radial-gradient(circle closest-side at 40% 43%, #b03 26%, rgba(187,0,51,0) 27%),
+    radial-gradient(circle closest-side at 40% 22%, #d35 45%, rgba(221,51,85,0) 46%),
+    radial-gradient(circle closest-side at 60% 22%, #d35 45%, rgba(221,51,85,0) 46%),
+    radial-gradient(circle closest-side at 50% 35%, #d35 30%, rgba(221,51,85,0) 31%),
+
+    radial-gradient(circle closest-side at 60% 43%, #b03 26%, rgba(187,0,51,0) 27%) 2vmin 2vmin,
+    radial-gradient(circle closest-side at 40% 43%, #b03 26%, rgba(187,0,51,0) 27%) 2vmin 2vmin,
+    radial-gradient(circle closest-side at 40% 22%, #d35 45%, rgba(221,51,85,0) 46%) 2vmin 2vmin,
+    radial-gradient(circle closest-side at 60% 22%, #d35 45%, rgba(221,51,85,0) 46%) 2vmin 2vmin,
+    radial-gradient(circle closest-side at 50% 35%, #d35 30%, rgba(221,51,85,0) 31%) 2vmin 2vmin;
+
+  background-color: #b03;
+
+  background-size: 4vmin 4vmin;
+}
+
+.sock5::before {
+  background-color: #eee;
+  background-image:
+    linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black),
+    linear-gradient(-45deg, black 25%, transparent 25%, transparent 75%, black 75%, black);
+
+  background-size: 2vmin 2vmin;
+}
+
+.sock6::before {
+  background:
+    radial-gradient(circle at 50% 100%, transparent 20%, rgba(255,255,255,.7) 21%, rgba(255,255,255,.7) 34%, transparent 35%, transparent),
+    radial-gradient(circle at 50% 0%, transparent 20%, rgba(255,255,255,.7) 21%, rgba(255,255,255,.7) 34%, transparent 35%, transparent) -1vmin 0;
+
+  background-color: #4caf50;
+  background-size: 2vmin 1.5vmin;
+}
+
+.sock7::before {
+  background:
+    radial-gradient(circle 1.5vmin at 50% 0, #fff 50%, transparent 0) 0 0,
+    radial-gradient(circle 1.5vmin at 50% 50%, #48b 50%, transparent 0) .75vmin 0,
+    linear-gradient(#fff, #fff) 0 0;
+  background-size: 1.5vmin 1.5vmin;
+}
