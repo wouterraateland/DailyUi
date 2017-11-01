@@ -2,7 +2,6 @@
   overflow: hidden;
 
   background-color: #5ed19f;
-  cursor: none;
 }
 
 .Project-014-container {
@@ -52,7 +51,7 @@
 .Project-014-timeover {
   left: 25%; top: 25%;
   right: 25%; bottom: 25%;
-  
+
   height: 1em;
   opacity: 0;
 
