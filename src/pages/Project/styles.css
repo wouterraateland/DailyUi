@@ -1,12 +1,6 @@
 .ProjectPage {
 }
 
-.ProjectPage-container {
-  width: 100vmin;
-  padding: 5vmin 0;
-  margin: auto;
-}
-
 .ProjectPage-header {
   padding: 5vmin 10vmin;
 
@@ -15,6 +9,8 @@
 }
 
 .ProjectPage-title {
+  font-size: 5vmin;
+  margin: 0;
 }
 
 .ProjectPage-back {
@@ -24,9 +20,10 @@
   width: 6.5em;
   height: 5.375em;
   margin: 2.3em 0;
+  margin: calc(-.375em / 2) 0;
   border-radius: .25em;
 
-  font-size: 1vw;
+  font-size: 1vmin;
 }
 
 .ProjectPage-back::after {
@@ -44,6 +41,12 @@
                          2em 3.25em,  4em 3.25em;
 
   background-color: currentColor;
+}
+
+.ProjectPage-container {
+  width: 100vmin;
+  padding: 0 0 5vmin;
+  margin: auto;
 }
 
 .ProjectPage-body {
@@ -74,6 +77,10 @@
 }
 
 @media all and (orientation: landscape) {
+  .ProjectPage-container {
+    padding: 5vmin 0;
+  }
+
   .ProjectPage-body {
     border-radius: 2vmin;
   }
