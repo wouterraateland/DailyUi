@@ -18,6 +18,7 @@ const initialState = [
   'Dribbble invite receipt',
   'Sock analytics',
   'Formula 1 leaderboard',
+  'Hiking location tracker',
 ]
 
 const projectsReducer = (state=initialState, action) => {
