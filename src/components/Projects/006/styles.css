@@ -51,7 +51,7 @@
 
 .Project-006-title {
   position: absolute;
-  left: 2vmin; bottom: -.1em;
+  left: 2vmin; bottom: -.15em;
 
   margin: 0;
 
@@ -88,7 +88,7 @@
 
 .Project-006-stat-title {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: .75em;
+  font-size: .7em;
 
   color: #888;
 }
