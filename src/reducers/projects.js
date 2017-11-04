@@ -1,13 +1,13 @@
 const initialState = [
   'Sign up for pizza',
-  'Credit Card Checkout',
+  'Credit card checkout',
   'Above the fold',
   'Graph calculator',
   'Rossignol Time 2 Shred',
   'Golf profile',
   'Photo setting',
   'Bicycle not found',
-  'Classic music player',
+  'Classic Music Player',
   'Share your message',
   'Heineken age checker',
   'Napapijri shop',
@@ -17,8 +17,9 @@ const initialState = [
   'Popup present',
   'Dribbble invite receipt',
   'Sock analytics',
-  'Formula 1 leaderboard',
+  'Formula one leaderboard',
   'Hiking location tracker',
+  'Home monitoring dashboard',
 ]
 
 const projectsReducer = (state=initialState, action) => {

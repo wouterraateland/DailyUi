@@ -98,6 +98,10 @@ img, svg {
 	border: 0;
 }
 
+svg {
+	fill: currentColor;
+}
+
 svg:not(:root) {
 	overflow: hidden;
 }
