@@ -141,6 +141,7 @@
 .Project-022-result-item {
   position: relative;
 
+  display: block;
   padding: 1vmin 0;
 
   animation: fadeIn .4s cubic-bezier(0, 0, .5, 1);
