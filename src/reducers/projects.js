@@ -20,6 +20,7 @@ const initialState = [
   'Formula one leaderboard',
   'Hiking location tracker',
   'Home monitoring dashboard',
+  'Search for spices',
 ]
 
 const projectsReducer = (state=initialState, action) => {

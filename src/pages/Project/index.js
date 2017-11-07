@@ -22,7 +22,7 @@ const pad = size => number =>
 const getProjectNumber = props =>
   pad(3)(getProjectId(props) + 1)
 
-const ProjectPage = ({ projectId, number, title, Component }) => (
+const ProjectPage = ({ projectId, number, title, Component, ...rest }) => (
   <div className="ProjectPage">
     <div className="ProjectPage-header">
       <Link className="ProjectPage-back alignright" to="/"></Link>
@@ -30,7 +30,7 @@ const ProjectPage = ({ projectId, number, title, Component }) => (
     </div>
     <div className="ProjectPage-container">
       <div className="ProjectPage-body">
-        <Component />
+        <Component {...rest} />
       </div>
     </div>
     <div className="ProjectPage-footer">
