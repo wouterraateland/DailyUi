@@ -1,0 +1,101 @@
+.Project-024 {
+  background:
+    url(media/klm.png) no-repeat left 50% top 10% / 10%,
+    url(media/background.svg) no-repeat center / cover;
+
+  background-color: #00a1e4;
+}
+
+.Project-024-container {
+  top: 8vmin;
+  overflow: hidden;
+
+  width: 40vmin;
+  height: 48vmin;
+  border-radius: .5vmin;
+
+  box-shadow: 0 2vmin 6vmin -2vmin rgba(0, 0, 0, .5);
+
+  background-color: #fff;
+}
+
+.Project-024-header {
+  position: relative;
+  height: 25vmin;
+
+  text-align: center;
+
+  background: url(media/amsterdam.jpg) no-repeat left 75% top 50% / cover;
+  color: #fff;
+}
+
+.Project-024-header::before {
+  content: '';
+
+  position: absolute;
+  left: 0; top: 0;
+  right: 0; bottom: 0;
+
+  background: url(media/beijing.jpg) no-repeat left 25% top 50% / cover;
+
+  mask: url(media/header_mask.svg) no-repeat center / cover;
+}
+
+.Project-024-place {
+  height: 2.7em;
+
+  text-shadow: 0 0 1em rgba(0, 0, 0, .8);
+}
+
+.Project-024-place.from { right: 50%;}
+.Project-024-place.to { left: 50%; }
+
+.Project-024-from-to {
+  height: 1em;
+
+  font-size: 2em;
+  text-align: center;
+
+  text-shadow: 0 0 1em rgba(0, 0, 0, .8);
+}
+
+.Project-024-place-short {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+.Project-024-place-long {}
+
+.Project-024-body {
+  position: relative;
+  padding: 1vmin;
+}
+
+.Project-024-body::before {
+  content: '';
+
+  position: absolute;
+  top: -3vmin;
+  right: 2vmin;
+
+  width: 6vmin;
+  height: 6vmin;
+
+  border-radius: 100%;
+
+  box-shadow: 0 1vmin 3vmin -1vmin rgba(0, 0, 0, .5);
+
+  background: #00a1e4 url(media/qr.svg) no-repeat center / 120%;
+}
+
+.Project-024-stat {
+  padding: 1vmin;
+}
+
+.Project-024-stat-title {
+  opacity: .5;
+}
+
+.Project-024-stat-value {
+  font-size: 1.5em;
+  font-weight: bold;
+}

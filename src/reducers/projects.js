@@ -22,6 +22,7 @@ const initialState = [
   'Home monitoring dashboard',
   'Search for spices',
   'Nightsky onboarding',
+  'Boarding pass',
 ]
 
 const projectsReducer = (state=initialState, action) => {
