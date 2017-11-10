@@ -13,7 +13,7 @@ import App from 'components/App'
 import './reset.css'
 import './index.css'
 
-const history = createHistory({ basename: '/dailyui' })
+const history = createHistory()
 const initialState = {}
 const store = configureStore(initialState, history)
 
