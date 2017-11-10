@@ -1,24 +1,29 @@
 {
   "name": "dailyui",
   "version": "0.1.0",
-  "private": true,
-  "homepage": "https://wouterraateland.github.io/dailyui",
+  "private": false,
+  "homepage": "https://dailyui.wouterraateland.nl",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wouterraateland/dailyui"
+  },
+  "license": "Apache-2.0",
   "dependencies": {
     "classnames": "^2.2.5",
     "expr-eval": "^1.2.0",
     "gh-pages": "^1.0.0",
     "history": "^4.7.2",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
+    "react": "^16.1.0",
+    "react-dom": "^16.1.0",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
-    "react-router-redux": "^5.0.0-alpha.6",
+    "react-router-redux": "^5.0.0-alpha.8",
     "react-scripts": "1.0.14",
     "redux": "^3.7.2",
     "redux-logger": "^3.0.6",
     "redux-saga": "^0.15.6",
     "reselect": "^3.0.1",
-    "tone": "^0.12.6"
+    "tone": "^0.12.10"
   },
   "scripts": {
     "predeploy": "npm run build",
