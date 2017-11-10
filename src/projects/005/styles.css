@@ -5,7 +5,7 @@
                 rgba(234, 146, 147, .6),
                 rgba(242, 110, 112, .7),
                 rgba(245,  63,  78, .8)),
-              url(../../media/ski.jpg) no-repeat center;
+              url(media/ski.jpg) no-repeat center;
   background-size: cover, cover;
 }
 

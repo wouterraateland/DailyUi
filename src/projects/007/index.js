@@ -1,11 +1,9 @@
-
-
 import React from 'react'
 import { connect } from 'react-redux'
 import classNames from 'classnames'
 import './styles.css'
 
-import photo from 'media/car_on_beach.jpg'
+import photo from './media/car_on_beach.jpg'
 
 const Project = ({ active, filter, filters, onToggleClick, onFilterClick }) => (
   <div className="Project-007">
@@ -60,7 +58,6 @@ const mapDispatchToProps = (dispatch, ownProps) => ({
   onFilterClick: filter => () => dispatch({ type: 'TOGGLE_FILTER', filter }),
   onToggleClick: () => dispatch({ type: 'TOGGLE_SETTINGS' })
 })
-
 
 export default connect(
   mapStateToProps,

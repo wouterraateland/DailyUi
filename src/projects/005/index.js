@@ -2,7 +2,8 @@ import React from 'react'
 import './styles.css'
 
 import Icon from 'components/Icon'
-import icon from 'media/time2shred.svg'
+
+import icon from './media/time2shred.svg'
 
 const Project = () => (
   <div className="Project-005">

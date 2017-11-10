@@ -1,7 +1,7 @@
 .Project-012 {
   font-size: .9em;
 
-  background: url(../../media/mountain_background.jpg) no-repeat center / cover;
+  background: url(media/mountain_background.jpg) no-repeat center / cover;
 }
 
 .Project-012-container {
@@ -96,11 +96,11 @@
 }
 
 .Project-012-illustration-thumb:nth-child(1) {
-  background-image: url(../../media/napapijri_skidoo.png);
+  background-image: url(media/napapijri_skidoo.png);
 }
 
 .Project-012-illustration-thumb:nth-child(2) {
-  background-image: url(../../media/napapijri_skidoo_side.png);
+  background-image: url(media/napapijri_skidoo_side.png);
 }
 
 .Project-012-info {

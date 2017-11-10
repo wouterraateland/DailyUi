@@ -3,7 +3,7 @@ import './styles.css'
 
 import Phone from 'components/Phone'
 
-import plane from 'media/plane.svg'
+import plane from './media/plane.svg'
 
 const Project = () => (
   <div className="Project-010">

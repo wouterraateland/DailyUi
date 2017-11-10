@@ -1,8 +1,8 @@
 import React from 'react'
 import './styles.css'
 
-import swapfiets from 'media/swapfiets.png'
-import wheel from 'media/wheel.svg'
+import swapfiets from './media/swapfiets.png'
+import wheel from './media/wheel.svg'
 
 const Project = () => (
   <div className="Project-008">

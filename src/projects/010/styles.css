@@ -6,7 +6,7 @@
   font-family: 'Shrikhand', cursive;
 
   background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)),
-              url(../../media/plane_background.svg) no-repeat bottom / cover;
+              url(media/plane_background.svg) no-repeat bottom / cover;
   color: #363547;
 }
 
@@ -29,7 +29,6 @@
 
 .Project-010 input,
 .Project-010 textarea {
-  cursor: url(../../media/cursor.svg) 12 12, auto;
   padding: 1em 0;
   color: #363547;
 }
@@ -48,7 +47,7 @@
 .Project-010-container {
   padding: 1em;
 
-  background: url(../../media/plane_background.svg) no-repeat center / cover;
+  background: url(media/plane_background.svg) no-repeat center / cover;
 }
 
 .Project-010-title {

@@ -3,16 +3,11 @@ import './styles.css'
 
 import Phone from 'components/Phone'
 
-import woods from 'media/woods.jpg'
-
 const Project = () => (
   <div className="Project-006">
     <div className="Project-006-pole"></div>
     <Phone className="Project-006-container">
-      <div
-        className="Project-006-header"
-        style={{backgroundImage: `url(${woods})`}}>
-
+      <div className="Project-006-header">
         <h1 className="Project-006-title pro">Tiger woods</h1>
       </div>
       <div className="Project-006-body">

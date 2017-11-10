@@ -121,7 +121,7 @@
 
   height: 6vmin;
 
-  background: url(../../media/present_knit.svg) no-repeat center / cover;
+  background: url(media/present_knit.svg) no-repeat center / cover;
 }
 
 :checked ~ .Project-016-popup {

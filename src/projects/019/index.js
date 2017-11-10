@@ -1,7 +1,7 @@
 import React from 'react'
 import './styles.css'
 
-import track from 'media/monaco_track.svg'
+import track from './media/monaco_track.svg'
 
 const Project = () => (
   <div className="Project-019">

@@ -3,7 +3,7 @@ import './styles.css'
 
 import Phone from 'components/Phone'
 
-import map from 'media/mountain_map.png'
+import map from './media/mountain_map.png'
 
 const Project = () => (
   <div className="Project-020">

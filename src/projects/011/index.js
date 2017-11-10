@@ -3,8 +3,8 @@ import './styles.css'
 
 import Phone from 'components/Phone'
 
-import alcoholFree from 'media/heineken_alcohol_free.png'
-import alcohol from 'media/heineken.png'
+import alcoholFree from './media/heineken_alcohol_free.png'
+import alcohol from './media/heineken.png'
 
 const Project = () => (
   <div className="Project-011">

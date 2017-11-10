@@ -5,7 +5,7 @@ Background color: #ffffff
 */
 
 .Project-021 {
-  background: url(../../media/home_background.jpg) no-repeat center / 120vmin;
+  background: url(media/home_background.jpg) no-repeat center / 120vmin;
   color: #033f89;
 }
 
@@ -33,7 +33,7 @@ Background color: #ffffff
 
   background:
     linear-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, .4)),
-    url(../../media/home_background.jpg) no-repeat center / 120vmin;
+    url(media/home_background.jpg) no-repeat center / 120vmin;
 }
 
 .Project-021-nav {

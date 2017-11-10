@@ -1,8 +1,8 @@
 import React from 'react'
 import './styles.css'
 
-import dribbbleBall from 'media/dribbble_ball.png'
-import dribbbleLogo from 'media/dribbble_logo.png'
+import dribbbleBall from 'media/logos/dribbble_ball.png'
+import dribbbleLogo from 'media/logos/dribbble.png'
 
 import tim from 'media/avatars/tim.png'
 import wouter from 'media/avatars/wouter.jpg'

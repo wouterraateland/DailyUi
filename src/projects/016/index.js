@@ -1,7 +1,7 @@
 import React from 'react'
 import './styles.css'
 
-import teddy from 'media/teddy.svg'
+import teddy from './media/teddy.svg'
 
 const Project = () => (
   <div className="Project-016">

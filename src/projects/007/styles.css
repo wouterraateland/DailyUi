@@ -70,7 +70,7 @@
   width: .333em;
   height: .333em;
 
-  background: url(../../media/cog_small.svg) no-repeat center / cover;
+  background: url(media/cog_small.svg) no-repeat center / cover;
 }
 
 .Project-007-cog .wheel {
@@ -91,7 +91,7 @@
   width: 1em;
   height: 1em;
 
-  background-image: url(../../media/cog.svg);
+  background-image: url(media/cog.svg);
 
   animation-duration: 9s;
 }
@@ -147,9 +147,9 @@
   transform-origin: 2em 2em;
 }
 
-.Project-007-setting:nth-child(1) { background-image: url(../../media/contrast.svg); transform: rotate(-10deg) translateX(-11em); transition-delay: .5s; }
-.Project-007-setting:nth-child(2) { background-image: url(../../media/brightness.svg); transform: rotate(-45deg) translateX(-11em); transition-delay: .6s; }
-.Project-007-setting:nth-child(3) { background-image: url(../../media/sepia.svg); transform: rotate(-80deg) translateX(-11em); transition-delay: .7s; }
+.Project-007-setting:nth-child(1) { background-image: url(media/contrast.svg); transform: rotate(-10deg) translateX(-11em); transition-delay: .5s; }
+.Project-007-setting:nth-child(2) { background-image: url(media/brightness.svg); transform: rotate(-45deg) translateX(-11em); transition-delay: .6s; }
+.Project-007-setting:nth-child(3) { background-image: url(media/sepia.svg); transform: rotate(-80deg) translateX(-11em); transition-delay: .7s; }
 
 .Project-007-setting-name {
   position: absolute;

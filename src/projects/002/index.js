@@ -1,8 +1,8 @@
 import React from 'react'
 import './styles.css'
 
-import bolt from 'media/bolt.svg'
-import boat from 'media/boat.png'
+import bolt from './media/bolt.svg'
+import boat from './media/boat.png'
 
 const Project = () => (
   <div className="Project-002">

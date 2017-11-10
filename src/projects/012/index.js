@@ -2,8 +2,8 @@ import React from 'react'
 import { connect } from 'react-redux'
 import './styles.css'
 
-import logo from 'media/napapijri_logo.png'
-import skidoo from 'media/napapijri_skidoo.png'
+import logo from 'media/logos/napapijri.png'
+import skidoo from './media/napapijri_skidoo.png'
 
 const Project = ({ colors, sizes }) => (
   <div className="Project-012">

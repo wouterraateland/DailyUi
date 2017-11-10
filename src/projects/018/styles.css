@@ -68,15 +68,15 @@
 }
 
 .Project-018-sock::before {
-  mask: url(../../media/sock_mask.svg) no-repeat center / contain;
+  mask: url(media/sock_mask.svg) no-repeat center / contain;
 }
 
 .Project-018-sock::after {
-  background: url(../../media/sock_overlay.svg) no-repeat center / contain;
+  background: url(media/sock_overlay.svg) no-repeat center / contain;
 }
 
 .Project-018-sock.missing::after {
-  background-image: url(../../media/sock_missing_overlay.svg);
+  background-image: url(media/sock_missing_overlay.svg);
 }
 
 .Project-018-sock:nth-child(1) { margin-top: 3.5vmin; }

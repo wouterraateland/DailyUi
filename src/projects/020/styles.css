@@ -1,6 +1,6 @@
 .Project-020 {
   background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)),
-              url(../../media/mountain_map.png) no-repeat top / cover;
+              url(media/mountain_map.png) no-repeat top / cover;
 }
 
 .Project-020-container {
@@ -16,7 +16,7 @@
 
   padding: 1em 0 1em 5vmin;
 
-  background: url(../../media/arrow_left.svg) no-repeat left 2vmin top 50% / 1em;
+  background: url(media/arrow_left.svg) no-repeat left 2vmin top 50% / 1em;
 
   animation: appearLeft .4s 1.8s cubic-bezier(0, 0, .5, 1) forwards;
 }
@@ -35,7 +35,7 @@
 .Project-020-svg {
   position: absolute;
   top: -10%;
-  
+
   max-width: 104%;
   margin: 0 -4%;
 }

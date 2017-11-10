@@ -9,7 +9,7 @@
   width: 10vmin;
   height: 10vmin;
 
-  background: url(../../media/email_white.svg) no-repeat center / cover;
+  background: url(media/email.svg) no-repeat center / cover;
 
   transition-property: transform, opacity;
   transition-duration: .5s;
@@ -55,7 +55,7 @@
   height: 60vmin;
 
   background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 50%),
-              url(../../media/confetti.svg) no-repeat top / 100%,
+              url(media/confetti.svg) no-repeat top / 100%,
               linear-gradient(#fff, #fff);
 
   transform: translateY(110%);
@@ -72,7 +72,7 @@
 
   border: 2.5vmin solid transparent;
   border-bottom-width: 0;
-  border-image: url(../../media/receipt_border.svg) 12 round;
+  border-image: url(media/receipt_border.svg) 12 round;
 }
 
 .Project-017-header {
@@ -107,7 +107,7 @@
   border: .1vmin solid rgba(0, 0, 0, .1);
   border-width: .1vmin 0 .1vmin 0;
 
-  background: url(../../media/dribbble_path.svg) no-repeat left 50% top -2.5vmin / 40vmin;
+  background: url(media/dribbble_path.svg) no-repeat left 50% top -2.5vmin / 40vmin;
 }
 
 .Project-017-invited {

@@ -1,6 +1,6 @@
 .Project-013 {
   background: linear-gradient(rgba(100, 149, 237, .98), rgba(136, 206, 241, .98)),
-              url(../../media/chat_background.jpg) no-repeat center / cover;
+              url(media/chat_background.jpg) no-repeat center / cover;
 }
 
 .Project-013-container {
@@ -60,9 +60,9 @@
 
   box-shadow: 0 .2em .6em -.2em rgba(0, 0, 0, .2);
 
-  background: url(../../media/email_dark.svg) no-repeat left 3.25em bottom .25em / 1em,
-              url(../../media/phone.svg)      no-repeat left 4.75em bottom .25em / 1em,
-              url(../../media/camera.svg)     no-repeat left 6.25em bottom .25em / 1em;
+  background: url(media/email.svg)  no-repeat left 3.25em bottom .25em / 1em,
+              url(media/phone.svg)  no-repeat left 4.75em bottom .25em / 1em,
+              url(media/camera.svg) no-repeat left 6.25em bottom .25em / 1em;
   background-color: #fff;
 
   transition: all .2s ease-out, transform .4s cubic-bezier(0.75, 2, 0.75, 0.5);
@@ -168,11 +168,11 @@
   height: 1em;
   margin: .5em;
 
-  background: url(../../media/emoji.svg) no-repeat center / contain;
+  background: url(media/emoji.svg) no-repeat center / contain;
 }
 
 .Project-013-text {
-  width: calc(100% - 2em);
+  width: calc(100% - 2.5em);
   height: 2em;
   padding: .5em .5em .5em 0;
 }
@@ -188,7 +188,7 @@
 
   box-shadow: 0 .2em .6em -.2em rgba(0, 0, 0, .2);
 
-  background: #6495ed url(../../media/plane.svg) no-repeat left 45% top 50% / 50%;
+  background: #6495ed url(media/plane.svg) no-repeat left 45% top 50% / 50%;
 }
 
 @keyframes message_appear {

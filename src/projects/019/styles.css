@@ -123,8 +123,8 @@
   margin: .25em 0 0;
 }
 
-.Project-019-racer:nth-of-type(1) { background-image: url(../../media/racers/lewis.png); }
-.Project-019-racer:nth-of-type(2) { background-image: url(../../media/racers/sebastian.png); }
-.Project-019-racer:nth-of-type(3) { background-image: url(../../media/racers/valtteri.png); }
-.Project-019-racer:nth-of-type(4) { background-image: url(../../media/racers/daniel.png); }
-.Project-019-racer:nth-of-type(5) { background-image: url(../../media/racers/kimi.png); }
+.Project-019-racer:nth-of-type(1) { background-image: url(media/racers/lewis.png); }
+.Project-019-racer:nth-of-type(2) { background-image: url(media/racers/sebastian.png); }
+.Project-019-racer:nth-of-type(3) { background-image: url(media/racers/valtteri.png); }
+.Project-019-racer:nth-of-type(4) { background-image: url(media/racers/daniel.png); }
+.Project-019-racer:nth-of-type(5) { background-image: url(media/racers/kimi.png); }

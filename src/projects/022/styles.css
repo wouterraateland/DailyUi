@@ -1,7 +1,7 @@
 .Project-022 {
   background:
-    url(../../media/herbs/tarragon.webp) no-repeat right -10% bottom -15% / 40%,
-    url(../../media/herbs/sage.webp) no-repeat left -20% bottom 30% / 40%,
+    url(media/herbs/tarragon.webp) no-repeat right -10% bottom -15% / 40%,
+    url(media/herbs/sage.webp) no-repeat left -20% bottom 30% / 40%,
     radial-gradient(ellipse 140% 50% at 70% 90%, #f0ebbc, #faf9ef);
 }
 
@@ -227,7 +227,7 @@
 
   padding-left: 3vmin;
 
-  background: url(../../media/arrow_left.svg) no-repeat left 0 top 50% / 1em;
+  background: url(media/arrow_left.svg) no-repeat left 0 top 50% / 1em;
 }
 
 .Project-022-herb,
