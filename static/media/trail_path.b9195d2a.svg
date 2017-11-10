@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="1920" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient id="a">
+      <stop offset="0" stop-color="#f7003d"/>
+      <stop offset="1" stop-color="#fff" stop-opacity=".502"/>
+    </linearGradient>
+    <marker id="c" orient="auto" overflow="visible">
+      <path fill="#fff" fill-rule="evenodd" stroke="#fff" stroke-width=".533" d="M1.96 0c0 1.104-.896 2-2 2s-2-.896-2-2 .896-2 2-2 2 .896 2 2z"/>
+    </marker>
+    <linearGradient id="b" x1="23.546" x2="105.581" y1="-32.958" y2="-376.631" xlink:href="#a" gradientUnits="userSpaceOnUse" gradientTransform="matrix(3.84685 0 0 3.83696 225.41 1066.054)"/>
+  </defs>
+  <path fill="none" stroke="url(#b)" stroke-width="12" d="M690.843-518.24l-96.807 167.838-85.12 67.007-43.696 86.734-44.145 6.02-37.805 45.28-71.37 101.7 3.398 101.696-44.182 91.526 44.182 84.747-10.196 64.407-3.4 74.577 30.59 20.34 13.593 77.966v44.07l23.79 16.95 20.392 44.07-115.553 115.256-54.377 47.458 16.993 77.968 54.377 67.798 20.392 57.628" stroke-linejoin="round" marker-end="url(#c)" transform="translate(82.65 375.798)"/>
+</svg>
