@@ -49,29 +49,6 @@
   margin: auto;
 }
 
-.ProjectPage-body {
-  cursor: url(../../media/cursor.svg) 12 12, auto;
-  position: relative;
-  overflow: hidden;
-
-  height: 75vmin;
-
-  font-size: 2vmin;
-
-  background-color: #fafafa;
-}
-
-.ProjectPage-body > * {
-  width: 100%;
-  height: 100%;
-}
-
-.ProjectPage-body label,
-.ProjectPage-body input,
-.ProjectPage-body select {
-  cursor: url(../../media/cursor.svg) 12 12, auto;
-}
-
 .ProjectPage-footer {
   padding: 0 10vmin;
 }
@@ -79,9 +56,5 @@
 @media all and (orientation: landscape) {
   .ProjectPage-container {
     padding: 5vmin 0;
-  }
-
-  .ProjectPage-body {
-    border-radius: 2vmin;
   }
 }

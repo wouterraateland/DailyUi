@@ -1,7 +1,7 @@
 import React from 'react'
 import './styles.css'
 
-import Projects from 'components/Projects'
+import ProjectList from 'components/ProjectList'
 
 const Home = () => (
   <div className="Home">
@@ -11,7 +11,7 @@ const Home = () => (
       <p className="Home-description">In 100 days, I will design 100 user interfaces. Some static, some interactive. Some simple some complex.</p>
       <div className="Home-cta">&darr;</div>
     </div>
-    <Projects />
+    <ProjectList />
   </div>
 )
 

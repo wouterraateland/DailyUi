@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Shrikhand');
+
+.Project-010 {
+  padding: 10%;
+
+  font-family: 'Shrikhand', cursive;
+
+  background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)),
+              url(../../media/plane_background.svg) no-repeat bottom / cover;
+  color: #363547;
+}
+
+.Project-010 ::-webkit-input-placeholder {
+  color: #73aab3;
+}
+
+.Project-010 ::selection {
+  background-color: #fde55e;
+}
+
+.Project-010 label {
+  display: block;
+  width: 100%;
+  padding: 1em 0;
+  vertical-align: top;
+
+  color: #fff;
+}
+
+.Project-010 input,
+.Project-010 textarea {
+  cursor: url(../../media/cursor.svg) 12 12, auto;
+  padding: 1em 0;
+  color: #363547;
+}
+
+.Project-010-to {
+  width: calc(100% - 3em);
+  height: 3em;
+  margin: -1em 0 -1em 1em;
+}
+
+.Project-010-message {
+  width: 100%;
+  resize: none;
+}
+
+.Project-010-container {
+  padding: 1em;
+
+  background: url(../../media/plane_background.svg) no-repeat center / cover;
+}
+
+.Project-010-title {
+  font-family: 'Shrikhand', cursive;
+  font-size: 1.5em;
+}
+
+.Project-010-share-button {
+  cursor: inherit;
+
+  position: absolute;
+  left: 1em;
+  bottom: 1em;
+
+  display: block;
+  width: 4em;
+  height: 4em;
+
+  border-radius: 100%;
+
+  background-color: #fde55e;
+}
+
+.Project-010-plane {
+  position: absolute;
+  left: 1.875em; top: 1.5em;
+
+  width: 2em;
+  height: 2em;
+
+  filter: drop-shadow(0 .2em 0 rgba(0, 0, 0, .2));
+
+  offset-path: path("M.073 8.466C64.405-74.674 158.62-124.932 288.136-115.44 135.588-59.21-52.644-18.41-108.188-10.73-86.874-2.006-31.066 7.215.072 8.466z");
+
+  animation: fly 3s ease-out infinite paused;
+}
+
+.Project-010-share-button:focus .Project-010-plane {
+  animation-play-state: running;
+}
+
+@keyframes fly {
+  0% { transform: rotate(50deg); }
+  1% { transform: rotate(20deg); }
+  30% { offset-distance: 38%; transform: rotate(20deg) scale(.5); }
+  31% { transform: rotate(-60deg) scale(.5, -.5); }
+  70% { offset-distance: 86%; transform: rotate(-60deg) scale(1, -1); }
+  71% { transform: rotate(20deg) scale(1); }
+  99% { offset-distance: 100%; }
+  100% { transform: rotate(50deg); }
+}

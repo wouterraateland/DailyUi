@@ -1,0 +1,130 @@
+.Project-019 {
+  background-image: linear-gradient(-30deg, #323232, #543232);
+}
+
+.Project-019-container {
+  width: 80vmin;
+  height: 60vmin;
+}
+
+.Project-019-track-container {
+  position: absolute;
+  left: 0; top: 0;
+  right: 50%; bottom: 0;
+
+  padding: 2vmin;
+}
+
+.Project-019-track {
+  filter: drop-shadow(0 0 1vmin #4fc3f7);
+}
+
+.Project-019-car {
+  position: absolute;
+
+  width: 1.5vmin;
+  height: 1.5vmin;
+  margin: -.75vmin;
+
+  border-radius: 100%;
+
+  box-shadow: 0 0 1vmin #81d4fa;
+
+  background-color: #81d4fa;
+}
+
+.Project-019-car:nth-of-type(1) { left: 13.7vmin; top: 9.5vmin; }
+.Project-019-car:nth-of-type(2) { left: 18vmin; top: 18vmin; }
+.Project-019-car:nth-of-type(3) { left: 12vmin; top: 38vmin; }
+.Project-019-car:nth-of-type(4) { left: 10vmin; top: 41vmin; }
+.Project-019-car:nth-of-type(5) { left: 21vmin; top: 53vmin; }
+
+.Project-019-leaderboard-container {
+  position: absolute;
+  left: 50%; top: 0;
+  right: 0; bottom: 0;
+  z-index: 1;
+
+  border-radius: .5vmin;
+
+  background-image: linear-gradient(-30deg, #01579b, #0288d1);
+  color: #fff;
+}
+
+.Project-019-leaderboard {
+  overflow: hidden;
+
+  padding: 0;
+  margin: 0;
+  list-style-position: inside;
+
+  counter-reset: racers;
+}
+
+.Project-019-leaderboard-title {
+  position: absolute;
+
+  padding: 2vmin;
+  margin: 0;
+
+  font-size: 3vmin;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.Project-019-racer {
+  position: relative;
+
+  display: block;
+  padding: 2vmin;
+
+  font-size: 2vmin;
+
+  counter-increment: racers;
+
+  background: no-repeat right 15% top 1vmin / 12vmin;
+}
+
+.Project-019-racer::before {
+  content: counter(racers);
+
+  height: 4em;
+  margin-right: 2vmin;
+  float: left;
+
+  font-weight: bold;
+}
+
+.Project-019-racer::after {
+  content: '';
+
+  position: absolute;
+  left: 0; top: 0;
+  right: 0; bottom: 0;
+
+  background-image: radial-gradient(ellipse 60% 3vmin at 50% 100%, rgba(225, 245, 254, .3), transparent);
+}
+
+.Project-019-racer:first-of-type {
+  padding-top: 9.5vmin;
+
+  background-position: right 2vmin bottom;
+  background-size: 20vmin;
+}
+
+.Project-019-racer:nth-child(2n) {
+  background-color: rgba(255, 255, 255, .1);
+}
+
+.Project-019-racer-name {
+  margin: 0;
+}
+
+.Project-019-racer-time {
+  margin: .25em 0 0;
+}
+
+.Project-019-racer:nth-of-type(1) { background-image: url(../../media/racers/lewis.png); }
+.Project-019-racer:nth-of-type(2) { background-image: url(../../media/racers/sebastian.png); }
+.Project-019-racer:nth-of-type(3) { background-image: url(../../media/racers/valtteri.png); }
+.Project-019-racer:nth-of-type(4) { background-image: url(../../media/racers/daniel.png); }
+.Project-019-racer:nth-of-type(5) { background-image: url(../../media/racers/kimi.png); }
