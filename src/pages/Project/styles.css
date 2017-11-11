@@ -4,7 +4,7 @@
 .ProjectPage-header {
   padding: 5vmin;
 
-  background-color: #a22744;
+  background-color: #323232;
   color: #fff;
 }
 
@@ -50,7 +50,7 @@
 }
 
 .ProjectPage-footer {
-  padding: 0 10vmin;
+  padding: 5vmin;
 }
 
 @media all and (orientation: landscape) {

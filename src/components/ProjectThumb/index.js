@@ -9,11 +9,14 @@ import {
   getProjectThumb,
 } from 'selectors/projects'
 
-const ProjectThumb = ({ number, title, image }) => title
+const ProjectThumb = ({ text, number, title, image }) => title
   ? (
       <Link to={`/project/${number}`} className="ProjectThumb" id={`project${number}`}>
         <div className="ProjectThumb-header">
-          <span className="ProjectThumb-number">#{number}</span>
+          <span className="ProjectThumb-number">{text
+            ? text
+            : `#${number}`}
+          </span>
           <h2 className="ProjectThumb-title">{title}</h2>
         </div>
         <img className="ProjectThumb-image" src={image} alt={title} />

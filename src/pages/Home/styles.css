@@ -1,44 +1,56 @@
 .Home {
   position: relative;
-  font-size:
 }
 
 .Home-header {
   position: relative;
-  padding: 10vw;
 
-  text-align: left;
+  padding: 10vw 5vw;
 
-  background-color: #a22744;
+  background-color: #323232;
   color: #fff;
+}
+
+.Home-header-meta {
+  float: left;
+  width: 60vw;
+  padding-right: 5vw;
+}
+
+.Home-header-thumb {
+  float: right;
+  margin-top: -7.25vw;
+  width: 30vw;
 }
 
 .Home-title {
   margin: 0;
-  font-size: 4em;
+  font-size: 3em;
 }
 
 .Home-subtitle {
   margin-top: 0;
-  font-size: 2em;
+  font-size: 1.5em;
 
-  color: #f5d6dd;
+  opacity: .75;
 }
 
 .Home-description {
   margin: 0;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .Home-description::before {
   content: '';
+
+  opacity: .75;
 
   display: block;
   width: 10vw;
   height: .5vw;
   margin-bottom: 1.5em;
 
-  background-color: #f5d6dd;
+  background-color: currentColor;
 }
 
 .Home-cta {
@@ -49,11 +61,11 @@
   width: 2em;
   height: 2em;
   margin: -1em;
-  border: .25em solid #f5d6dd;
+  border: .25em solid rgba(255, 255, 255, .75);
   border-radius: 100%;
 
   text-align: center;
-  line-height: 1.5em;
+  line-height: 1.7em;
   font-weight: bold;
 
   animation: bounce 1.5s infinite alternate ease-in-out;

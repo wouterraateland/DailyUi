@@ -1,3 +1,28 @@
 .ProjectList {
-  padding: 10vw;
+  padding: 5vw;
+}
+
+.ProjectList-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.ProjectList-item {
+  margin-bottom: 2vw;
+
+  font-size: 1.5em;
+}
+
+@media all and (min-width: 481px) {
+  .ProjectList-item {
+    font-size: 1em;
+  }
+}
+
+@media all and (min-width: 721px) {
+  .ProjectList-item {
+    font-size: .75em;
+  }
 }

@@ -1,22 +1,13 @@
 .ProjectThumb {
-  position: relative;
-
   display: block;
-  width: 100%;
-  padding: 50%;
-  margin-bottom: 4em;
-
-  font-size: 1.5em;
 }
 
 .ProjectThumb-header {
-  position: absolute;
-  left: 0;
-  bottom: 75%; right: 0;
+
 }
 
 .ProjectThumb-number {
-  color: #f5d6dd;
+  opacity: .75;
 }
 
 .ProjectThumb-title {
@@ -24,26 +15,9 @@
 }
 
 .ProjectThumb-image {
-  position: absolute;
-  left: 0; top: 25%;
-  right: 0; bottom: 0;
-
   width: 100%;
   max-width: none;
-  border: .5vw solid;
-  border-radius: 1vw;
+  border: .25em solid;
 
-  background-color: #000;
-}
-
-@media all and (min-width: 481px) {
-  .ProjectThumb {
-    font-size: 1em;
-  }
-}
-
-@media all and (min-width: 721px) {
-  .ProjectThumb {
-    font-size: .75em;
-  }
+  background-color: currentColor;
 }

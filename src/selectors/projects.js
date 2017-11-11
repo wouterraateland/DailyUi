@@ -9,6 +9,8 @@ export const selectState = (state, props) => state.projects
 export const selectProjectNumberByURL = (state, props) => props.match.params.projectId
 export const selectProjectId = (state, props) => props.projectId
 
+export const getLatestProjectId = state => state.projects.length - 1
+
 export const getProjects = createSelector(
   selectState,
   projects => projects
