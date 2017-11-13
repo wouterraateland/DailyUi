@@ -1,5 +1,5 @@
 .ProjectList {
-  padding: 5vw;
+  padding: 5vw 2.5vw;
 }
 
 .ProjectList-container {
@@ -10,7 +10,8 @@
 }
 
 .ProjectList-item {
-  margin-bottom: 2vw;
+  padding: 0 2.5vw !important;
+  margin-bottom: 2em;
 
   font-size: 1.5em;
 }

@@ -6,6 +6,7 @@ import './styles.css'
 import { Link } from 'react-router-dom'
 import Project from 'components/Project'
 import ProjectThumb from 'components/ProjectThumb'
+import Footer from 'components/Footer'
 
 // Data
 import {
@@ -15,7 +16,7 @@ import {
 } from 'selectors/projects'
 
 const ProjectPage = ({ projectId, number, title, ...rest }) => (
-  <div className="ProjectPage">
+  <div className="ProjectPage page">
     <div className="ProjectPage-header">
       <Link className="ProjectPage-back alignright" to="/"></Link>
       <h1 className="ProjectPage-title">#{number} &mdash; {title}</h1>
@@ -23,16 +24,17 @@ const ProjectPage = ({ projectId, number, title, ...rest }) => (
     <div className="ProjectPage-container">
       <Project projectId={projectId} {...rest} />
     </div>
-    <div className="ProjectPage-footer">
+    <div className="ProjectPage-nav">
       <div className="row">
-        <div className="col-6">
+        <div className="ProjectPage-nav-link col-6">
           <ProjectThumb projectId={projectId - 1}/>
         </div>
-        <div className="col-6">
+        <div className="ProjectPage-nav-link col-6">
           <ProjectThumb projectId={projectId + 1}/>
         </div>
       </div>
     </div>
+    <Footer />
   </div>
 )
 

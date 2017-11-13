@@ -1,8 +1,7 @@
-.Home {
-  position: relative;
+.HomePage {
 }
 
-.Home-header {
+.HomePage-header {
   position: relative;
 
   padding: 10vw 5vw;
@@ -11,66 +10,82 @@
   color: #fff;
 }
 
-.Home-header-meta {
+.HomePage-header-meta {
   float: left;
   width: 60vw;
   padding-right: 5vw;
 }
 
-.Home-header-thumb {
+.HomePage-header-thumb {
   float: right;
   margin-top: -7.25vw;
   width: 30vw;
 }
 
-.Home-title {
+.HomePage-title {
   margin: 0;
   font-size: 3em;
 }
 
-.Home-subtitle {
-  margin-top: 0;
+.HomePage-subtitle {
+  margin-bottom: 1.5em;
   font-size: 1.5em;
+  font-weight: bold;
 
   opacity: .75;
 }
 
-.Home-description {
+.HomePage-description {
   margin: 0;
   font-size: 1em;
 }
 
-.Home-description::before {
+.HomePage-button {
+  display: inline-block;
+  padding: .5em;
+  margin: 1em 1em 0 0;
+  border: .25em solid rgba(255, 255, 255, .75);
+
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.HomePage-button img {
+  height: 1.5em;
+  margin: -.25em .5em -.25em 0;
+  fill: currentColor;
+}
+
+.HomePage-description::before {
   content: '';
 
   opacity: .75;
 
   display: block;
   width: 10vw;
-  height: .5vw;
+  height: .25em;
   margin-bottom: 1.5em;
 
   background-color: currentColor;
 }
 
-.Home-cta {
+.HomePage-cta {
   position: absolute;
   left: 50%;
-  bottom: 2.5em;
+  bottom: 3em;
 
-  width: 2em;
-  height: 2em;
-  margin: -1em;
-  border: .25em solid rgba(255, 255, 255, .75);
-  border-radius: 100%;
+  width: 1em;
+  height: 1em;
+  margin: -.5em;
 
-  text-align: center;
-  line-height: 1.7em;
-  font-weight: bold;
+  border-right: .25em solid;
+  border-bottom: .25em solid;
+
+  transform: rotate(45deg);
 
   animation: bounce 1.5s infinite alternate ease-in-out;
 }
 
 @keyframes bounce {
-  to { transform: translateY(1em); }
+  to { transform: translateY(1em) rotate(45deg); }
 }

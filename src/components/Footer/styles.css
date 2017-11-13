@@ -1,0 +1,18 @@
+.Footer {
+  position: absolute;
+  left: 5vw;
+  bottom: 0; right: 5vw;
+
+  padding: 5vw 0;
+  border-top: .25em solid rgba(0, 0, 0, .75);
+}
+
+.Footer-button {
+  display: inline-block;
+  height: 1.5em;
+  margin: -.25em 0 -.25em .5em;
+}
+
+.Footer a {
+  font-weight: bold;
+}

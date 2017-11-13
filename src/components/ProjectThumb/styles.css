@@ -3,14 +3,16 @@
 }
 
 .ProjectThumb-header {
-
+  position: relative;
 }
 
 .ProjectThumb-number {
   opacity: .75;
+  font-weight: bold;
 }
 
 .ProjectThumb-title {
+  position: relative;
   margin-top: 0;
 }
 

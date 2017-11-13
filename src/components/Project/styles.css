@@ -20,9 +20,3 @@
 .Project select {
   cursor: url(../../media/cursor.svg) 12 12, auto;
 }
-
-@media all and (orientation: landscape) {
-  .Project {
-    border-radius: 2vmin;
-  }
-}

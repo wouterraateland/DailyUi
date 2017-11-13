@@ -21,7 +21,6 @@
   height: 5.375em;
   margin: 2.3em 0;
   margin: calc(-.375em / 2) 0;
-  border-radius: .25em;
 
   font-size: 1vmin;
 }
@@ -34,7 +33,6 @@
 
   width: 1.5em;
   height: 1.125em;
-  border-radius: .25em;
 
   box-shadow:            2em 0,       4em 0,
               0 1.625em, 2em 1.625em, 4em 1.625em,
@@ -49,8 +47,12 @@
   margin: auto;
 }
 
-.ProjectPage-footer {
-  padding: 5vmin;
+.ProjectPage-nav {
+  padding: 0 2.5vw 5vw;
+}
+
+.ProjectPage-nav-link {
+  padding: 0 2.5vw !important;
 }
 
 @media all and (orientation: landscape) {
