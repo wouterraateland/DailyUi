@@ -1,0 +1,206 @@
+.Project-025 {
+  background-image: radial-gradient(ellipse 150% 50% at 50% 100%, #492951, #a24096);
+}
+
+.Project-025-container {
+  overflow: hidden;
+
+  width: 80vmin;
+  height: 45vmin;
+
+  background-color: #fff;
+}
+
+.Project-025-hamburger {
+  position: absolute;
+  left: 2vmin; top: 3vmin;
+  z-index: 1;
+  overflow: hidden;
+
+  width: 4vmin;
+  height: 4vmin;
+}
+
+.Project-025-hamburger::after {
+  content: '';
+
+  position: absolute;
+  left: 0; top: 0;
+  right: .4vmin; bottom: 0;
+
+  width: 3.6vmin;
+  height: .2vmin;
+  margin: auto;
+
+  box-shadow: 0 -.8vmin, .4vmin -.8vmin,
+              -1.2vmin .8vmin;
+
+  background-color: currentColor;
+}
+
+.Project-025-meta {
+  position: absolute;
+  right: 2vmin; top: 2vmin;
+  z-index: 1;
+}
+
+.Project-025-avatar {
+  width: 6vmin;
+  border-radius: 100%;
+}
+
+.Project-025-datetime {
+  position: absolute;
+  top: 0vmin;
+  right: 8vmin;
+
+  white-space: nowrap;
+  text-align: right;
+}
+
+.Project-025-time {
+  font-size: 2em;
+}
+
+.Project-025-time::after {
+  content: 'PM';
+
+  font-size: .5em;
+}
+
+.Project-025-date {
+  opacity: .5;
+}
+
+.Project-025-main {
+  padding: 8vmin 8vmin 6vmin;
+}
+
+.Project-025-main::after {
+  content: '';
+
+  position: absolute;
+  top: 0;
+  right: 0; bottom: 0;
+
+  width: 16vmin;
+
+  background-image: linear-gradient(90deg, transparent, rgba(255, 255, 255, .9), #fff);
+}
+
+.Project-025-nav {
+  height: 8vmin;
+  padding: 2vmin 0;
+  white-space: nowrap;
+}
+
+.Project-025-nav-item {
+  opacity: .5;
+
+  display: inline-block;
+  height: 4vmin;
+  margin-right: 4vmin;
+
+  line-height: 4vmin;
+  font-size: 1.5em;
+  vertical-align: 0;
+}
+
+.Project-025-nav-item.selected {
+  opacity: 1;
+  font-size: 2em;
+}
+
+.Project-025-movies {
+  white-space: nowrap;
+}
+
+.Project-025-movie {
+  display: inline-block;
+  width: 14vmin;
+  height: 21vmin;
+  margin-right: 2vmin;
+
+  white-space: nowrap;
+  overflow: hidden;
+
+  transition: width .4s cubic-bezier(0, 0, .5, 1);
+}
+
+.Project-025-movie-cover {
+  display: inline-block;
+  width: 14vmin;
+  height: 100%;
+
+  background: no-repeat center / cover;
+}
+
+.Project-025-movie-info {
+  opacity: 0;
+
+  display: inline-block;
+  width: 24vmin;
+  height: 100%;
+  padding: 2vmin 4vmin 2vmin 0;
+
+  font-size: .7em;
+
+  white-space: normal;
+
+  transition-property: opacity, padding;
+  transition-duration: .4s;
+  transition-delay: .4s;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+}
+
+.Project-025-movie-title {
+  margin: 0;
+  font-size: 1.75em;
+}
+
+.Project-025-movie-meta {
+  opacity: .5;
+}
+
+.Project-025-movie-description {
+  margin: .5em 0;
+}
+
+.Project-025-movie-director {
+  opacity: .5;
+}
+
+.Project-025-movie.selected {
+  width: 38vmin;
+}
+
+.Project-025-movie.selected .Project-025-movie-info {
+  opacity: 1;
+  padding: 2vmin;
+}
+
+.Project-025-action {
+  position: absolute;
+  right: 2vmin; bottom: 3vmin;
+
+  white-space: nowrap;
+}
+
+.Project-025-action-button {
+  float: left;
+  width: 3vmin;
+  height: 3vmin;
+  margin: -.5vmin 1vmin -.5vmin 0;
+  border-radius: 100%;
+
+  font-size: .5em;
+  text-align: center;
+  line-height: 3vmin;
+
+  background-color: #323232;
+  color: #fff;
+}
+
+.Project-025-action-description {
+  float: left;
+}

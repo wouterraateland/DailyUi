@@ -23,6 +23,9 @@ const initialState = [
   'Search for spices',
   'Nightsky onboarding',
   'Boarding pass',
+  'TV app',
+  'Subscribe for goodness',
+  'Paint tool dropdown',
 ]
 
 const projectsReducer = (state=initialState, action) => {
