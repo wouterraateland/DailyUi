@@ -1,7 +1,214 @@
-.Project-xxx {
-
+.Project-026 {
+  background-color: #00bcd4;
+  color: #fff;
 }
 
-.Project-xxx-container {
+.Project-026 ::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, .2);
+}
 
+.Project-026-container {
+  width: 80vmin;
+  height: 12vmin;
+
+  text-align: center;
+  font-size: 2em;
+}
+
+.Project-026-title {
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+
+.Project-026-input-container {
+  position: relative;
+  overflow: hidden;
+
+  width: 20em;
+  height: 3em;
+  margin: auto;
+  border-radius: 1.5em;
+
+  background-color: #fff;
+  color: #000;
+
+  transition: width .4s .2s cubic-bezier(0, 0, .5, 1);
+}
+
+.Project-026-email {
+  position: absolute;
+  left: 0; top: 0;
+  z-index: 1;
+
+  width: 3em;
+  height: 3em;
+  border-radius: 1.5em;
+
+  background-color: #fff;
+  color: #ff5722;
+
+  transition-property: width, background-color, color;
+  transition-duration: .4s;
+  transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+}
+
+.Project-026-email-icon {
+  position: absolute;
+  top: .75em;
+  right: .75em;
+  opacity: 0;
+
+  width: 1.5em;
+  height: 1.5em;
+
+  fill: none;
+  stroke: currentColor;
+
+  transition: opacity .4s;
+}
+
+.Project-026-input {
+  opacity: 0;
+
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 1em 3.5em;
+
+  transition: opacity .4s;
+}
+
+.Project-026-send {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+
+  width: 3em;
+  height: 3em;
+
+  color: rgba(0, 0, 0, .2);
+
+  transition: color .2s, opacity .4s;
+}
+
+.Project-026-input:valid + .Project-026-send {
+  pointer-events: auto;
+  color: #ff5722;
+}
+
+.Project-026-send::before,
+.Project-026-send::after {
+  content: '';
+  position: absolute;
+  left: 0; top: 0;
+  right: 0; bottom: 0;
+
+  margin: auto;
+}
+
+.Project-026-send::before {
+  width: .75em;
+  height: .125em;
+
+  background-color: currentColor;
+}
+
+.Project-026-send::after {
+  width: .75em;
+  height: .75em;
+
+  border-right: .1em solid;
+  border-top: .1em solid;
+
+  transform: rotate(45deg);
+}
+
+.Project-026-loader {
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0;
+
+  transition: opacity .4s .6s;
+}
+
+.Project-026-loader-dot {
+  display: inline-block;
+  width: .5em;
+  height: .5em;
+  margin: 1.25em .125em;
+  border-radius: 100%;
+
+  background-color: currentColor;
+
+  animation: dotBounce 1s ease-out infinite;
+}
+
+.Project-026-loader-dot:nth-child(1) { animation-delay: .1s; }
+.Project-026-loader-dot:nth-child(2) { animation-delay: .2s; }
+.Project-026-loader-dot:nth-child(3) { animation-delay: .3s; }
+
+.Project-026-success {
+  pointer-events: none;
+
+  position: absolute;
+  left: 0; top: 0;
+  z-index: 1;
+  opacity: 0;
+
+  width: 100%;
+  padding: 1em;
+  border-radius: 1.5em;
+
+  white-space: nowrap;
+
+  background-color: #ff5722;
+  color: #fff;
+
+  transition: opacity .4s .4s ease-out;
+}
+
+.Project-026-success::before {
+  content: '✔';
+
+  display: inline-block;
+  width: 1em;
+  margin-right: 1em;
+}
+
+.inputting .Project-026-email-icon,
+.inputting .Project-026-input,
+.inputting .Project-026-send {
+  opacity: 1;
+}
+
+.sending .Project-026-input-container {
+  width: 3em;
+}
+
+.sending .Project-026-email {
+  width: 100%;
+}
+
+.sending .Project-026-loader {
+  opacity: 1;
+}
+
+.sent .Project-026-input-container {
+  width: 12em;
+}
+
+.sent .Project-026-loader {
+  transition-delay: 0s !important;
+}
+
+.sent .Project-026-success {
+  opacity: 1;
+}
+
+@keyframes dotBounce {
+  25% { transform: translateY(0); }
+  50% { transform: translateY(-1em); }
+  75% { transform: translateY(0); }
 }
