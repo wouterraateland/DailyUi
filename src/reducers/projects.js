@@ -26,6 +26,7 @@ const initialState = [
   'TV app',
   'Subscribe for goodness',
   'Paint tool dropdown',
+  'Contact us',
 ]
 
 const projectsReducer = (state=initialState, action) => {

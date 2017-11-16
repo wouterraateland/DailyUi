@@ -1,0 +1,174 @@
+.Project-028 {
+  background-image: linear-gradient(90deg, #4cd9f6, #9ae5f4);
+}
+
+.Project-028-container {
+  width: 80vmin;
+  height: 60vmin;
+
+  box-shadow: 0 2vmin 6vmin -2vmin rgba(0, 0, 0, .2);
+
+  background-color: #fff;
+  color: #323232;
+}
+
+.Project-028-header {
+  height: 10vmin;
+  padding: 2vmin 4vmin;
+
+  font-size: 3vmin;
+  line-height: 6vmin;
+
+  background-image: linear-gradient(90deg, #1088ff, #4cd9f6);
+  color: #fff;
+}
+
+.Project-028-header img {
+  margin-right: 2vmin;
+}
+
+.Project-028-body {
+  padding: 2vmin 4vmin;
+}
+
+.Project-028-title {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.Project-028-description {
+  width: 50%;
+  font-family: 'Source Serif Pro', serif;
+  font-size: .9em;
+}
+
+.Project-028-description strong {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.Project-028-form {
+  margin: 4vmin -1vmin;
+}
+
+.Project-028-form [class*='col-'] {
+  padding: 0 1vmin !important;
+}
+
+.Project-028-form label {
+  display: block;
+}
+
+.Project-028-form input,
+.Project-028-form textarea {
+  display: block;
+  width: 100%;
+  padding: .9vmin;
+  border: .1vmin solid #1088ff;
+}
+
+.Project-028-form textarea {
+  resize: none;
+  height: 10.5vmin;
+}
+
+.Project-028-step {
+  margin-bottom: 2vmin;
+}
+
+.Project-028-step-title {
+  margin: 0 0 .5em;
+
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1em;
+}
+
+.Project-028-date-input {
+  border: .1vmin solid #1088ff;
+}
+
+.Project-028-date-input-header {
+  padding: .7vmin;
+}
+
+.Project-028-date-input-header::before,
+.Project-028-date-input-header::after {
+  width: 3vmin;
+  text-align: center;
+}
+
+.Project-028-date-input-header::before {
+  content: '→';
+  float: right;
+}
+
+.Project-028-date-input-header::after {
+  content: '←';
+  float: right;
+}
+
+.Project-028-date-input-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: .7vmin;
+
+  text-align: center;
+}
+
+.Project-028-date {
+  width: 3vmin;
+  height: 3vmin;
+  border-radius: 100%;
+
+  line-height: 3vmin;
+}
+
+.Project-028-date.selected {
+  background-color: #1088ff;
+  color: #fff;
+}
+
+.Project-028-time-choice {
+  padding: 1vmin;
+  margin-bottom: -.15vmin;
+  border: .1vmin solid #1088ff;
+}
+
+.Project-028-time-choice::before {
+  content: '';
+
+  display: inline-block;
+  width: 2vmin;
+  height: 2vmin;
+  margin: 0 1.5vmin 0 .5vmin;
+  border: .1vmin solid #1088ff;
+  border-radius: 100%;
+
+  text-align: center;
+  text-indent: -.1em;
+  vertical-align: top;
+  line-height: 3vmin;
+}
+
+.Project-028-time-choice:nth-child(3)::before {
+  content: '✔';
+
+  width: 3vmin;
+  height: 3vmin;
+  margin: -.5vmin 1vmin -.5vmin 0vmin;
+
+  background-color: #1088ff;
+  color: #fff;
+}
+
+.Project-028-submit {
+  display: block;
+  width: 100%;
+  padding: 1vmin;
+  margin-top: 4vmin;
+  border-radius: 0;
+
+  font-weight: bold;
+
+  background-image: linear-gradient(90deg, #1088ff, #4cd9f6);
+  color: #fff;
+}
