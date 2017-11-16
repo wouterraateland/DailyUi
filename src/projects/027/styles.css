@@ -1,7 +1,98 @@
 .Project-027 {
-
+  font-size: 2vmin;
+  background-color: #e8e6e3;
 }
 
-.Project-027-container {
+.Project-027-tool-picker {
+  overflow: hidden;
 
+  width: 10em;
+  height: 10em;
+  border-radius: 2em;
+
+  box-shadow: 0 2em 6em -2em rgba(0, 0, 0, .5);
+
+  background-color: #fdfcfc;
+
+  transition-property: height, transform;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(0, 0, .5, 1);
+}
+
+.Project-027-tools {
+  transition: margin .5s cubic-bezier(0, 0, .5, 1);
+}
+
+.Project-027-tool {
+  position: relative;
+  width: 10em;
+  height: 10em;
+  padding: 2em;
+
+  opacity: 0;
+
+  transition: opacity .5s;
+}
+
+.Project-027-tool:nth-child(1) { color: #f00; }
+.Project-027-tool:nth-child(2) { color: #cf0; }
+.Project-027-tool:nth-child(3) { color: #20f; }
+.Project-027-tool:nth-child(4) { color: #777; }
+
+.Project-027-tool::before,
+.Project-027-tool::after {
+  content: '';
+
+  position: absolute;
+  left: 0; top: 0;
+  right: 0; bottom: 0;
+
+  margin: auto;
+
+  border-radius: 100%;
+
+  background: currentColor;
+
+  animation: paintFade .5s forwards;
+}
+
+.Project-027-tool::before { transform: rotate(20deg) scale(.6, .55); }
+.Project-027-tool::after { transform: rotate(-30deg) scale(.5, .7); }
+
+.Project-027-tool.current::before,
+.Project-027-tool.current::after {
+  animation: paintSpread 2s cubic-bezier(.05, 1, .05, 1) forwards;
+}
+
+.Project-027-tool-illustration {
+  position: relative;
+  z-index: 1;
+}
+
+.Project-027-tool-picker.open {
+  height: 40em;
+  transform: scale(.75);
+}
+
+.Project-027-tool-picker.open .Project-027-tools {
+  margin-top: 0 !important;
+}
+
+.Project-027-tool-picker.open .Project-027-tool {
+  transition-delay: .4s;
+}
+
+.Project-027-tool-picker.open .Project-027-tool,
+.Project-027-tool.current {
+  opacity: 1;
+}
+
+@keyframes paintSpread {
+  from { opacity: .8; width: 0; height: 0; }
+  to { opacity: .3; width: 10em; height: 10em; }
+}
+
+@keyframes paintFade {
+  from { opacity: .8; width: 10em; height: 10em; }
+  to { opacity: 0; }
 }

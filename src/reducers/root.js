@@ -8,6 +8,7 @@ import project007Reducer from 'reducers/007'
 import project013Reducer from 'reducers/013'
 import project022Reducer from 'reducers/022'
 import project026Reducer from 'reducers/026'
+import project027Reducer from 'reducers/027'
 
 const rootReducer = combineReducers({
   window: windowReducer,
@@ -18,6 +19,7 @@ const rootReducer = combineReducers({
   '013': project013Reducer,
   '022': project022Reducer,
   '026': project026Reducer,
+  '027': project027Reducer,
 })
 
 export default rootReducer
