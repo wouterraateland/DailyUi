@@ -31,7 +31,7 @@ const Project = () => (
               <div className="Project-028-date-input-header">November</div>
               <div className="Project-028-date-input-body row">
                 {Array(35).fill(0).map((_, i) => (
-                  <div className={classNames('Project-028-date', {selected: i == 25})}>
+                  <div className={classNames('Project-028-date', {selected: i === 25})}>
                     {(i > 1 && i < 33) ? ((i + 31 - 2) % 31) + 1 : null}
                   </div>
                 ))}

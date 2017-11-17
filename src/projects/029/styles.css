@@ -1,0 +1,88 @@
+.Project-029 {
+
+}
+
+.Project-029::before {
+  content: '';
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  width: 125vmin;
+  height: 125vmin;
+
+  transform: translate(-50%, -50%) rotate(-60deg);
+
+  background: #2196f3 url(media/map.svg) no-repeat right 42% top 19% / 200%;
+}
+
+.Project-029-container {
+  background-color: #545454 !important;
+}
+
+.Project-029-map {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  width: 115vmin;
+  max-width: none;
+  max-height: none;
+
+  transform: translate(-59%, -37.7%) rotate(-60deg);
+
+  transition: width 2s cubic-bezier(.3, 1, .3, 1);
+}
+
+.Project-029-map .selected {
+  stroke: #2196f3;
+}
+
+.Project-029-back {
+  position: absolute;
+  left: 2vmin; top: 2vmin;
+
+  width: 3vmin;
+  height: 3vmin;
+
+  background: url(media/arrow_left.svg) no-repeat center / cover;
+}
+
+.Project-029-you {
+  position: absolute;
+  left: 50%; top: 50%;
+
+  width: 3vmin;
+  height: 3vmin;
+  border: 1vmin solid #ff5722;
+  border-radius: 100% 100% 100% 0;
+
+  transform: translate(-50%, -100%) rotate(-45deg);
+
+  background: #fff;
+}
+
+.Project-029-info {
+  position: absolute;
+  left: 0;
+  bottom: 0; right: 0;
+
+  padding: 1em;
+
+  box-shadow: 0 0 1vmin;
+  background: #fff;
+}
+
+.Project-029-subway {
+  padding: .25em .5em;
+  margin-right: 1em;
+  border-radius: .125em;
+
+  background: #2196f3;
+  color: #fff;
+}
+
+.Project-029-destination {
+  font-weight: bold;
+}

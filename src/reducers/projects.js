@@ -27,6 +27,7 @@ const initialState = [
   'Subscribe for goodness',
   'Paint tool dropdown',
   'Contact us',
+  'Rotterdam Subway map',
 ]
 
 const projectsReducer = (state=initialState, action) => {

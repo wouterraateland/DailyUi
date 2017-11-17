@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <marker id="stationMarker" orient="auto" overflow="visible">
+      <circle cx="0" cy="0" r="1.5" fill="#fff" />
+    </marker>
+  </defs>
+  <g
+    fill="none"
+    stroke="rgba(255, 255, 255, .75)"
+    stroke-width="4"
+    marker-start="url(#stationMarker)"
+    marker-end="url(#stationMarker)">
+    <path d="M352 296h288v-112h-32" />
+    <path d="M352 312h304v-128h80" />
+    <path d="M248 560l88-88v-144h368" />
+    <path d="M480 264v208H352l-96 96" />
+    <path d="M352 72h112l32 32v352" />
+  </g>
+</svg>
