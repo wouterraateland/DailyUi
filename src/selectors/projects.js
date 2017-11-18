@@ -43,13 +43,7 @@ export const getProjectTitle = createSelector(
 
 export const getProjectThumb = createSelector(
   getProjectNumber,
-  n => {
-    try {
-      return require(`media/thumbs/DailyUi-${n}.jpg`)
-    } catch (e) {
-      return null
-    }
-  }
+  n => `${process.env.PUBLIC_URL}/thumbs/DailyUi-${n}.jpg`
 )
 
 export const getProjectComponent = createSelector(

@@ -2,6 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import './styles.css'
 
+import Helmet from 'react-helmet'
 import ProjectList from 'components/ProjectList'
 import ProjectThumb from 'components/ProjectThumb'
 import Footer from 'components/Footer'
@@ -13,6 +14,17 @@ import { getLatestProjectId } from 'selectors/projects'
 
 const Home = ({ latest }) => (
   <div className="HomePage page">
+    <Helmet>
+      <meta property="og:image" content={`${process.env.PUBLIC_URL}/og-image.jpg`} />
+      <meta property="og:image:height" content="419" />
+      <meta property="og:image:width" content="800" />
+      <meta property="og:title" content="DailyUi by Wouter Raateland" />
+      <meta property="og:description" content="Hi! I'm Wouter Raateland and I do the DailyUi challenge. In 100 days, I will design and create 100 user interfaces." />
+      <meta property="og:url" content="https://dailyui.wouterraateland.nl/" />
+
+      <title>DaiyUi - Wouter Raateland</title>
+      <meta name="description" content="DailyUi challenge by Wouter Raateland. In 100 days, I will design and create 100 user interfaces." />
+    </Helmet>
     <div className="HomePage-header row">
       <div className="HomePage-header-meta">
         <h1 className="HomePage-title">#DailyUi challenge</h1>
