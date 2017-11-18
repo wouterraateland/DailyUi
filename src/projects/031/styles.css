@@ -1,0 +1,120 @@
+.Project-031 {
+  background:
+    url(media/background.svg) no-repeat center / cover,
+    #000 linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .2));
+}
+
+.Project-031-container {
+  overflow: hidden;
+
+  width: 56vmin;
+  height: 30vmin;
+  padding: 2vmin;
+  border-radius: 1vmin;
+
+  background: #fff;
+}
+
+.Project-031-image-container {
+  position: relative;
+}
+
+.Project-031-image {
+  pointer-events: none;
+
+  position: absolute;
+  z-index: 1;
+  overflow: hidden;
+  opacity: 0;
+
+  width: 16vmin;
+  height: 12vmin;
+  border-radius: 1vmin;
+
+  box-shadow: 0 1vmin 3vmin -1vmin rgba(0, 0, 0, .2);
+
+  background: #fff no-repeat center / cover;
+
+  transition-property: left, top;
+  transition-duration: .5s;
+  transition-timing-function: ease-in-out;
+
+  animation: imageFadeIn .5s ease-in-out forwards;
+}
+
+.Project-031-image:nth-child(1) { animation-delay: .4s; }
+.Project-031-image:nth-child(2) { animation-delay: .5s; }
+.Project-031-image:nth-child(3) { animation-delay: .6s; }
+.Project-031-image:nth-child(4) { animation-delay: .7s; }
+.Project-031-image:nth-child(5) { animation-delay: .8s; }
+.Project-031-image:nth-child(6) { animation-delay: .9s; }
+
+.Project-031-image.uploaded::before {
+  content: '';
+
+  position: absolute;
+  left: 0; top: 0;
+  right: 0; bottom: 0;
+  opacity: .75;
+
+  background-color: #fff;
+
+  animation: imageOverlayFadeOut 3s .4s ease-out forwards;
+}
+
+.Project-031-image.uploaded::after {
+  content: '\2714';
+
+  position: absolute;
+  left: 0; top: 0;
+  bottom: 0;
+  overflow: hidden;
+
+  width: 0;
+
+  text-align: center;
+  line-height: 12vmin;
+  font-size: 2em;
+
+  background-color: hsla(222, 97%, 60%, .5);
+
+  animation: imageUpload 3s .4s ease-out forwards;
+}
+
+.Project-031-placeholder {
+  pointer-events: none;
+
+  position: absolute;
+  left: 3vmin; top: 3vmin;
+
+  opacity: 0;
+
+  width: 14vmin;
+  height: 10vmin;
+  border: .5vmin dashed #3572fc;
+  border-radius: 1vmin;
+
+  transition: opacity .5s;
+}
+
+.dragging .Project-031-placeholder {
+  opacity: 1;
+}
+
+@keyframes imageFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes imageOverlayFadeOut {
+  90% { opacity: .75; }
+  100% { opacity: 0; }
+}
+
+@keyframes imageUpload {
+  0%   { width: 0;    color: transparent; }
+  70%  { width: 100%; color: transparent; }
+  75%  { width: 100%; color: #fff; }
+  90%  { width: 100%; color: #fff; opacity: 1; }
+  100% { width: 100%; color: #fff; opacity: 0; }
+}
