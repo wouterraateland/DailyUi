@@ -25,7 +25,7 @@ const Tree = ({ side, size, branches, level, maxLevel }) => (
           className="Project-030-leaf"
           style={{
             backgroundColor: `hsl(${random(50, 68)}, ${random(55, 65)}%, ${random(50, 64)}%)`,
-            transform: `scale(${level < maxLevel ? 1 : 0}) rotate(-45deg) skewX(-15deg) skewY(-15deg)`,
+            transform: `scale(${level < maxLevel ? 1 : 0}) rotate(-45deg) skewY(-15deg)`,
           }}
         />}
   </div>

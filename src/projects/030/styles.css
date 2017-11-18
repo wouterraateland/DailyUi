@@ -52,8 +52,10 @@
 
   width: 2vmin;
   height: 2vmin;
-  margin: -2vmin -1vmin;
+  margin: -2vmin -.7vmin;
   border-radius: 100% 0 100% 100%;
+
+  transform-origin: 30% 70%;
 
   opacity: .9;
 }
