@@ -1,0 +1,127 @@
+.Project-030 {
+  background-color: #ede6dc;
+  background-image: radial-gradient(ellipse 100% 30.2% at 50% 100%, rgba(0, 0, 0, .2) 99.5%, transparent 100%);
+}
+
+.Project-030-tree-container {
+  top: auto;
+  bottom: 30%;
+
+  width: 50vmin;
+  height: 10vmin;
+
+  color: rgba(0, 0, 0, .2);
+
+  transform-origin: 50% 100%;
+
+  transition: transform .4s cubic-bezier(.75, 3, .75, .5);
+}
+
+.Project-030-tree,
+.Project-030-leaf {
+  transition: transform .7s linear;
+  will-change: transform;
+}
+
+.Project-030-tree {
+  position: absolute;
+  bottom: calc(100% - .7em);
+
+  width: 1em;
+  height: 4em;
+  margin: auto;
+  border-radius: .5em .5em 0 0;
+
+  background: #814a32 linear-gradient(90deg, transparent, currentColor);
+}
+
+.Project-030-tree.level2 { transition-delay: 0.5s; }
+.Project-030-tree.level3 { transition-delay: 1.0s; }
+.Project-030-tree.level4 { transition-delay: 1.5s; }
+.Project-030-tree.level5 { transition-delay: 0.5s; }
+.Project-030-tree.level6 { transition-delay: 1.0s; }
+.Project-030-leaf        { transition-delay: 1.5s; }
+
+.Project-030-tree.root { left: 0; right: 0; }
+.Project-030-tree.left { left: 0; transform-origin: bottom left; }
+.Project-030-tree.right { right: 0; transform-origin: bottom right; }
+
+.Project-030-leaf {
+  position: absolute;
+  left: .5em; top: .5em;
+
+  width: 2vmin;
+  height: 2vmin;
+  margin: -2vmin -1vmin;
+  border-radius: 100% 0 100% 100%;
+
+  opacity: .9;
+}
+
+.Project-030-pot {
+  position: absolute;
+  left: 0;
+  right: 0; bottom: 0;
+  z-index: 1;
+
+  width: 10vmin;
+  height: 10vmin;
+  margin: auto;
+  border-radius: 1vmin;
+  border-bottom-left-radius: 30% 100%;
+  border-bottom-right-radius: 30% 100%;
+
+  box-shadow: inset -2vmin -1vmin 5vmin;
+
+  background-color: #62a0bd;
+}
+
+.Project-030-pot::before,
+.Project-030-pot::after {
+  content: '';
+
+  position: absolute;
+  bottom: 100%;
+  width: 1vmin;
+  height: 4vmin;
+}
+
+.Project-030-pot::before {
+  right: calc(50% + .8vmin);
+  background-image: radial-gradient(ellipse 80% 100% at 0 0, transparent 95%, #814a32 100%);
+}
+
+.Project-030-pot::after {
+  left: calc(50% + .8vmin);
+  background-image: radial-gradient(ellipse 80% 100% at 100% 0, transparent 95%, #643c2c 100%);
+}
+
+.Project-030-pricing {
+  top: auto;
+  bottom: 10vmin;
+
+  width: 36vmin;
+  height: 6vmin;
+
+  text-align: center;
+}
+
+.Project-030-pricing-option {
+  display: inline-block;
+  width: 10vmin;
+  margin: 1vmin;
+  border-radius: 1vmin;
+
+  line-height: 6vmin;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  background-color: #ede6dc;
+  transition-property: background-color, color;
+  transition-duration: .4s;
+}
+
+.Project-030-pricing-option.selected {
+  background-color: #000;
+  color: #fff;
+}

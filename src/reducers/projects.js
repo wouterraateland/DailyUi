@@ -28,6 +28,7 @@ const initialState = [
   'Paint tool dropdown',
   'Contact us',
   'Rotterdam Subway map',
+  'Tree pricing',
 ]
 
 const projectsReducer = (state=initialState, action) => {
