@@ -19,6 +19,20 @@ import {
 const ProjectPage = ({ projectId, number, title, ...rest }) => (
   <div className="ProjectPage page">
     <Helmet>
+      <title>DailyUi #{number} — {title}</title>
+      <meta name="description" content={`Day ${number}/100 of the DailyUi challenge by Wouter Raateland.`} />
+
+      <meta itemprop="name" content={`DailyUi #${number} — ${title}`} />
+      <meta itemprop="description" content={`${title} — Day ${number}/100 of the DailyUi challenge by Wouter Raateland.`} />
+      <meta itemprop="image" content={`${process.env.PUBLIC_URL}/thumbs/DailyUi-${number}.jpg`} />
+
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:site" content="@wouterraateland" />
+      <meta name="twitter:title" content={`DailyUi #${number} — ${title}`} />
+      <meta name="twitter:description" content={`${title} — Day ${number}/100 of the DailyUi challenge by Wouter Raateland.`} />
+      <meta name="twitter:creator" content="@wouterraateland" />
+      <meta name="twitter:image" content={`${process.env.PUBLIC_URL}/thumbs/DailyUi-${number}.jpg`} />
+
       <meta property="og:type" content="website" />
       <meta property="og:image" content={`${process.env.PUBLIC_URL}/thumbs/DailyUi-${number}.jpg`} />
       <meta property="og:image:height" content="600" />
@@ -27,9 +41,7 @@ const ProjectPage = ({ projectId, number, title, ...rest }) => (
       <meta property="og:title" content={`DailyUi #${number} — ${title}`} />
       <meta property="og:description" content={`Day ${number}/100 of the DailyUi challenge by Wouter Raateland.`} />
       <meta property="og:url" content={`https://dailyui.wouterraateland.nl/project/${number}`} />
-
-      <title>DailyUi #{number} — {title}</title>
-      <meta name="description" content={`Day ${number}/100 of the DailyUi challenge by Wouter Raateland.`} />
+      <meta property="og:site_name" content="Wouter Raateland - DailyUi" />
     </Helmet>
     <div className="ProjectPage-header">
       <Link className="ProjectPage-back alignright" to="/"></Link>

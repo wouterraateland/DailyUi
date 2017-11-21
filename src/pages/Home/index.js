@@ -15,6 +15,20 @@ import { getLatestProjectId } from 'selectors/projects'
 const Home = ({ latest }) => (
   <div className="HomePage page">
     <Helmet>
+      <title>Wouter Raateland - DailyUi</title>
+      <meta name="description" content="DailyUi challenge by Wouter Raateland. In 100 days, I will design and create 100 user interfaces." />
+
+      <meta itemprop="name" content="DailyUi by Wouter Raateland" />
+      <meta itemprop="description" content="DailyUi challenge by Wouter Raateland. In 100 days, I will design and create 100 user interfaces." />
+      <meta itemprop="image" content={`${process.env.PUBLIC_URL}/og-image.jpg`} />
+
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:site" content="@wouterraateland" />
+      <meta name="twitter:title" content="Wouter Raateland - DailyUi" />
+      <meta name="twitter:description" content="DailyUi challenge by Wouter Raateland." />
+      <meta name="twitter:creator" content="@wouterraateland" />
+      <meta name="twitter:image" content={`${process.env.PUBLIC_URL}/og-image.jpg`} />
+
       <meta property="og:type" content="website" />
       <meta property="og:image" content={`${process.env.PUBLIC_URL}/og-image.jpg`} />
       <meta property="og:image:alt" content="Overview of designs created during the DailyUi Challenge." />
@@ -23,9 +37,7 @@ const Home = ({ latest }) => (
       <meta property="og:title" content="DailyUi by Wouter Raateland" />
       <meta property="og:description" content="Hi! I'm Wouter Raateland and I do the DailyUi challenge. In 100 days, I will design and create 100 user interfaces." />
       <meta property="og:url" content="https://dailyui.wouterraateland.nl/" />
-
-      <title>DaiyUi - Wouter Raateland</title>
-      <meta name="description" content="DailyUi challenge by Wouter Raateland. In 100 days, I will design and create 100 user interfaces." />
+      <meta property="og:site_name" content="Wouter Raateland - DailyUi" />
     </Helmet>
     <div className="HomePage-header row">
       <div className="HomePage-header-meta">
