@@ -8,7 +8,15 @@
     ],
     "rewrites": [
       {
-        "source": "**",
+        "source": "/",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/project/*",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/about",
         "destination": "/index.html"
       }
     ]

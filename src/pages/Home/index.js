@@ -15,7 +15,9 @@ import { getLatestProjectId } from 'selectors/projects'
 const Home = ({ latest }) => (
   <div className="HomePage page">
     <Helmet>
+      <meta property="og:type" content="website" />
       <meta property="og:image" content={`${process.env.PUBLIC_URL}/og-image.jpg`} />
+      <meta property="og:image:alt" content="Overview of designs created during the DailyUi Challenge." />
       <meta property="og:image:height" content="419" />
       <meta property="og:image:width" content="800" />
       <meta property="og:title" content="DailyUi by Wouter Raateland" />

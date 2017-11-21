@@ -19,9 +19,11 @@ import {
 const ProjectPage = ({ projectId, number, title, ...rest }) => (
   <div className="ProjectPage page">
     <Helmet>
+      <meta property="og:type" content="website" />
       <meta property="og:image" content={`${process.env.PUBLIC_URL}/thumbs/DailyUi-${number}.jpg`} />
       <meta property="og:image:height" content="600" />
       <meta property="og:image:width" content="800" />
+      <meta property="og:image:alt" content={`DailyUi #${number} — ${title}`} />
       <meta property="og:title" content={`DailyUi #${number} — ${title}`} />
       <meta property="og:description" content={`Day ${number}/100 of the DailyUi challenge by Wouter Raateland.`} />
       <meta property="og:url" content={`https://dailyui.wouterraateland.nl/project/${number}`} />

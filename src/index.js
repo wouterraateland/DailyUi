@@ -1,5 +1,5 @@
 import React from 'react'
-import { render } from 'react-dom'
+import { hydrate, render } from 'react-dom'
 import { Provider } from 'react-redux'
 
 import createHistory from 'history/createBrowserHistory'
@@ -18,13 +18,19 @@ const history = createHistory()
 const initialState = {}
 const store = configureStore(initialState, history)
 
-render(
+const Root = (
 	<Provider store={store}>
     <ConnectedRouter history={history}>
       <Route component={withTracker(App)} />
     </ConnectedRouter>
-	</Provider>,
-	document.getElementById('root')
+	</Provider>
 )
+const root = document.getElementById('root')
+
+if (root.hasChildNodes()) {
+	hydrate(Root, root)
+} else {
+	render(Root, root)
+}
 
 registerServiceWorker()
