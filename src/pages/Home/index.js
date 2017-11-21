@@ -29,7 +29,7 @@ const Home = ({ latest }) => (
       <meta name="twitter:creator" content="@wouterraateland" />
       <meta name="twitter:image" content={`${process.env.PUBLIC_URL}/og-image.jpg`} />
 
-      <meta property="og:type" content="website" />
+      <meta property="og:type" content="blog" />
       <meta property="og:image" content={`${process.env.PUBLIC_URL}/og-image.jpg`} />
       <meta property="og:image:alt" content="Overview of designs created during the DailyUi Challenge." />
       <meta property="og:image:height" content="419" />
@@ -38,6 +38,7 @@ const Home = ({ latest }) => (
       <meta property="og:description" content="Hi! I'm Wouter Raateland and I do the DailyUi challenge. In 100 days, I will design and create 100 user interfaces." />
       <meta property="og:url" content="https://dailyui.wouterraateland.nl/" />
       <meta property="og:site_name" content="Wouter Raateland - DailyUi" />
+      <meta property="article:author" content="Wouter Raateland" />
     </Helmet>
     <div className="HomePage-header row">
       <div className="HomePage-header-meta">

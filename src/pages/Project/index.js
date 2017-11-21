@@ -33,7 +33,7 @@ const ProjectPage = ({ projectId, number, title, ...rest }) => (
       <meta name="twitter:creator" content="@wouterraateland" />
       <meta name="twitter:image" content={`${process.env.PUBLIC_URL}/thumbs/DailyUi-${number}.jpg`} />
 
-      <meta property="og:type" content="website" />
+      <meta property="og:type" content="article" />
       <meta property="og:image" content={`${process.env.PUBLIC_URL}/thumbs/DailyUi-${number}.jpg`} />
       <meta property="og:image:height" content="600" />
       <meta property="og:image:width" content="800" />
@@ -42,6 +42,7 @@ const ProjectPage = ({ projectId, number, title, ...rest }) => (
       <meta property="og:description" content={`Day ${number}/100 of the DailyUi challenge by Wouter Raateland.`} />
       <meta property="og:url" content={`https://dailyui.wouterraateland.nl/project/${number}`} />
       <meta property="og:site_name" content="Wouter Raateland - DailyUi" />
+      <meta property="article:author" content="Wouter Raateland" />
     </Helmet>
     <div className="ProjectPage-header">
       <Link className="ProjectPage-back alignright" to="/"></Link>
