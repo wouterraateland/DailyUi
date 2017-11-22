@@ -15,7 +15,9 @@ import './reset.css'
 import './index.css'
 
 const history = createHistory()
-const initialState = {}
+const initialState = {
+	router: { location: history.location }
+}
 const store = configureStore(initialState, history)
 
 const Root = (

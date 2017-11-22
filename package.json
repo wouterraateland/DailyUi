@@ -30,6 +30,7 @@
   },
   "scripts": {
     "deploy": "npm run build && firebase deploy",
+    "serve": "firebase serve",
     "start": "react-scripts start",
     "build": "react-scripts build && react-snap",
     "test": "react-scripts test --env=jsdom",
