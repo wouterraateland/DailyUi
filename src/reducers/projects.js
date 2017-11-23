@@ -31,6 +31,7 @@ const initialState = [
   'Tree pricing',
   'Picture upload',
   'Chair crowdfunding',
+  'Martini custom served',
 ]
 
 const projectsReducer = (state=initialState, action) => {

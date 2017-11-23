@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i');
+
+.Project-033 {
+  font-family: 'Playfair Display', serif;
+
+  background-color: #aa997d;
+}
+
+.Project-033-container {
+  overflow: hidden;
+
+  width: 40vmin;
+  height: 60vmin;
+  border: .2vmin solid;
+
+  box-shadow: 2vmin 2vmin rgba(0, 0, 0, .05);
+
+  background-color: #fff;
+}
+
+.Project-033-header {
+  height: 10vmin;
+  padding: 3vmin;
+  text-align: center;
+}
+
+.Project-033-back {
+  float: left;
+  font-size: 4vmin;
+}
+
+.Project-033-title {
+  margin: 0;
+
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 4vmin;
+}
+
+.Project-033-like {
+  position: relative;
+  z-index: 1;
+
+  float: right;
+  font-size: 3vmin;
+  line-height: 4.5vmin;
+  text-align: right;
+
+  color: #fff;
+}
+
+.Project-033-like::before {
+  content: '';
+
+  position: absolute;
+  left: -1vmin; top: -3vmin;
+  right: -1vmin; bottom: -.5vmin;
+  z-index: -1;
+
+  border: .2vmin solid #000;
+  border-top: none;
+
+  background-color: #d9cfb7;
+}
+
+.Project-033-like::after {
+  content: '☆';
+
+  margin-left: -1em;
+
+  color: #000;
+}
+
+.Project-033-illustration {
+  position: absolute;
+  left: -5vmin;
+  bottom: 8.1vmin;
+
+  width: 20vmin;
+  margin: auto;
+}
+
+.Project-033-form {
+  padding: 0 2vmin 2vmin 17vmin;
+
+  counter-reset: step;
+}
+
+.Project-033-input-group {
+  position: relative;
+  z-index: 1;
+
+  padding-top: 1vmin;
+  margin-top: 2vmin;
+
+  counter-increment: step;
+}
+
+.Project-033-input-group::before {
+  content: counter(step);
+
+  position: absolute;
+  left: -1vmin; top: -2vmin;
+  z-index: -1;
+
+  font-size: 6vmin;
+
+  color: #d9cfb7;
+}
+
+.Project-033-label {
+  font-size: 3vmin;
+  margin: 1vmin 0;
+}
+
+.Project-033-spirit-input {
+  margin-right: -2vmin;
+  margin-bottom: 1vmin;
+}
+
+.Project-033-spirit {
+  position: relative;
+
+  float: left;
+  margin: 1vmin 2vmin 2vmin 0;
+}
+
+.Project-033-spirit.selected::after {
+  content: '';
+
+  position: absolute;
+  left: 0;
+  right: 0; bottom: -1vmin;
+
+  border-bottom: .2vmin solid;
+}
+
+.Project-033-dirty-input {
+  position: relative;
+  height: .2vmin;
+  margin: 2vmin 0;
+  border-bottom: .2vmin solid;
+}
+
+.Project-033-dirty-input::after {
+  content: '';
+
+  position: absolute;
+  left: 80%; top: .1vmin;
+
+  width: 2vmin;
+  height: 2vmin;
+  margin: -1vmin;
+  border: .2vmin solid;
+
+  background-color: #d9cfb7;
+
+  transform: rotate(45deg);
+}
+
+.Project-033-garnish-input {
+  margin: 2vmin 0;
+}
+
+.Project-033-garnish {
+  float: left;
+  width: 6vmin; height: 6vmin;
+  padding: 1vmin;
+  margin-right: 2vmin;
+
+  transform: rotate(45deg);
+}
+
+.Project-033-garnish img {
+  transform: rotate(-30deg);
+}
+
+.Project-033-garnish.selected {
+  border: .2vmin solid;
+
+  background-color: #d9cfb7;
+}
+
+.Project-033-footer {
+  position: absolute;
+  left: 0;
+  right: 0; bottom: 0;
+
+  padding: 2vmin;
+  border-top: .2vmin solid;
+
+  background-color: #d9cfb7;
+}
+
+.Project-033-price {
+  position: absolute;
+  left: 2vmin; top: 2vmin;
+
+  width: 13vmin;
+
+  text-align: center;
+  font-size: 4vmin;
+  line-height: 3vmin;
+}
+
+.Project-033-shake-button {
+  padding: .5em;
+  margin-left: 15vmin;
+  border: .2vmin solid;
+
+  text-align: center;
+
+  background: #fff;
+}
