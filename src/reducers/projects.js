@@ -29,7 +29,8 @@ const initialState = [
   'Contact us',
   'Rotterdam Subway map',
   'Tree pricing',
-  'Picture upload'
+  'Picture upload',
+  'Chair crowdfunding',
 ]
 
 const projectsReducer = (state=initialState, action) => {
