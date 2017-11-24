@@ -1,0 +1,138 @@
+.Project-035 {
+  background-color: #a1d5ed;
+}
+
+.Project-035-container {
+}
+
+.Project-035-back::before {
+  content: '‹ ';
+
+  font-size: 2em;
+  line-height: 0;
+  vertical-align: -.1em;
+}
+
+.Project-035-nav {
+  height: 6vmin;
+}
+
+.Project-035-avatar {
+  float: left;
+  margin-right: 1vmin;
+  border-radius: 100%;
+}
+
+.Project-035-author {
+  padding: .5vmin 0;
+}
+
+.Project-035-meta {
+  font-size: .75em;
+  line-height: 2.5vmin;
+  margin-right: 1vmin;
+
+  opacity: .5;
+}
+
+.Project-035-follow {
+  padding: .25em .5em;
+  border: .1vmin solid;
+  border-radius: .5vmin;
+
+  font-size: .75em;
+
+  color: #03a9f4;
+}
+
+.Project-035-header {
+  max-width: none;
+  width: calc(100% + 2vmin);
+  margin: 0 -1vmin;
+}
+
+.Project-035-body {
+  font-size: .7em;
+}
+
+.Project-035-actions {
+  position: absolute;
+  right: 1.5vmin; bottom: 1.5vmin;
+
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.Project-035-action {
+  position: relative;
+  width: 3vmin;
+  height: 3vmin;
+  margin-top: 1vmin;
+  border-radius: 100%;
+
+  text-align: center;
+  line-height: 3vmin;
+  font-size: 3vmin;
+
+  background-color: #03a9f4;
+  color: #fff;
+}
+
+.Project-035-action:first-child {
+  width: 4vmin;
+  height: 4vmin;
+  margin: 1vmin -.5vmin -.5vmin;
+
+  line-height: 4vmin;
+}
+
+.Project-035-action.like::after { content: '♡'; line-height: 4.5vmin; }
+
+.Project-035-action.share::before {
+  content: '↑';
+
+  position: absolute;
+  left: 0; top: .3vmin;
+  right: 0; bottom: 0;
+
+  width: 1.4vmin;
+  height: 1.4vmin;
+  margin: auto;
+  border: .1vmin solid;
+
+  font-size: 1.5vmin;
+  line-height: 0;
+
+  text-shadow:
+    -.1vmin 0 #03a9f4,
+     .1vmin 0 #03a9f4;
+}
+
+.Project-035-action.bookmark::before {
+  content: '';
+
+  position: absolute;
+  left: 0; top: 0;
+  right: 0; bottom: 0;
+
+  width: 1vmin;
+  height: 1.8vmin;
+  margin: auto;
+  border: .1vmin solid;
+  border-bottom: none;
+}
+.Project-035-action.bookmark::after {
+  content: '';
+
+  position: absolute;
+  left: 0; top: 1.6vmin;
+  right: 0; bottom: 0;
+
+  width: .8vmin;
+  height: .8vmin;
+  margin: auto;
+  border-left: .15vmin solid;
+  border-top: .15vmin solid;
+
+  transform: rotate(45deg);
+}

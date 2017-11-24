@@ -32,6 +32,8 @@ const initialState = [
   'Picture upload',
   'Chair crowdfunding',
   'Martini custom served',
+  'Car interface',
+  'Blog post',
 ]
 
 const projectsReducer = (state=initialState, action) => {
