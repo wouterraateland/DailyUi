@@ -4,33 +4,192 @@
   width: calc(28vmin + 2vmin);
   height: calc(60vmin + 2vmin);
 
+  padding: 1vmin;
   border-radius: 4vmin;
 
   background-color: #fff;
 }
 
-.IPhoneX::before {
-  content: '';
+.IPhoneX-nav {
+  padding: 3.25vmin 1vmin 1vmin;
+}
 
+.IPhoneX-inner {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  height: 100%;
+}
+
+.IPhoneX-body {
+  padding: 0 1vmin;
+}
+
+.IPhoneX-notch {
   position: absolute;
-  left: 0; top: 0;
-  right: 0; bottom: 0;
+  left: 1vmin; top: 1vmin;
+  right: 1vmin;
+
+  height: 2.25vmin;
+
+  font-size: 1.25vmin;
+  line-height: .8;
+}
+
+.IPhoneX-notch-left,
+.IPhoneX-notch-right {
+  position: absolute;
+  bottom: 0;
+
+  width: 5vmin;
+  height: 1vmin;
+
+  text-align: center;
+}
+
+.IPhoneX-notch-left { left: 1vmin; }
+.IPhoneX-notch-right { right: 1vmin; }
+
+.IPhoneX-notch-icons {
+  text-align: right; /* TEMP:  */
+  width: 800%;
+  height: 800%;
+
+  font-size: 4vmin;
+  transform: scale(.125);
+  transform-origin: left top;
+}
+
+.IPhoneX-notch-icon {
+  position: relative;
+  display: inline-block;
+}
+
+.IPhoneX-notch-icon::before,
+.IPhoneX-notch-icon::after {
+  content: '';
+  position: absolute;
+}
+
+.IPhoneX-connection-icon {
+  width: 2.2em;
+  height: 1.6em;
+  margin-top: .3em;
+
+
+
+}
+
+.IPhoneX-connection-icon::after {
+  left: 0;
+  bottom: 0;
+
+  width: .4em;
+  height: .7em;
+  border-radius: .2em;
+
+  box-shadow:
+    0.7em 0, 0.7em -.3em,
+    1.4em 0, 1.4em -.3em, 1.4em -.6em,
+    2.1em 0, 2.1em -.3em, 2.1em -.6em, 2.1em -.9em;
+
+  background-color: currentColor;
+}
+
+.IPhoneX-WiFi-icon,
+.IPhoneX-WiFi-icon::before,
+.IPhoneX-WiFi-icon::after {
+  border-right: .4em solid;
+  border-bottom: .4em solid;
+  border-bottom-right-radius: 100%;
+}
+
+.IPhoneX-WiFi-icon {
+  width: .4em;
+  height: .4em;
+  margin: 1.4em 1.4em 0 1.8em;
+
+  transform: rotate(-135deg);
+  transform-origin: center;
+}
+
+.IPhoneX-WiFi-icon::before,
+.IPhoneX-WiFi-icon::after {
+
+}
+
+.IPhoneX-WiFi-icon::before { width: 1em; height: 1em; }
+.IPhoneX-WiFi-icon::after { width: 1.6em; height: 1.6em; }
+
+.IPhoneX-battery-icon {
+  width: 2.7em;
+  height: 1em;
+  margin: .5em .8em .5em .5em;
+  border-radius: .2em;
+
+  background: currentColor;
+}
+
+.IPhoneX-battery-icon::before,
+.IPhoneX-battery-icon::after {
+  opacity: .5;
+}
+
+.IPhoneX-battery-icon::before {
+  left: -.3em; top: -.3em;
+  right: -.3em; bottom: -.3em;
+
+  border: .15em solid;
+  border-radius: .4em;
+}
+
+.IPhoneX-battery-icon::after {
+  top: 0;
+  right: -.6em; bottom: 0;
+
+  width: .2em;
+  height: .7em;
+  margin: auto;
+  border-radius: 0 .4em .4em 0;
+
+  background-color: currentColor;
+}
+
+.IPhoneX-overlay {
+  pointer-events: none;
 
   border: 1vmin solid;
   border-radius: 4vmin;
 }
 
-.IPhoneX::after {
+.IPhoneX-overlay::before {
   content: '';
 
   position: absolute;
-  left: 0; top: .75vmin;
+  left: 0; top: -.25vmin;
   right: 0;
 
   width: 16vmin;
   height: 2.5vmin;
   margin: auto;
   border-radius: 0 0 2vmin 2vmin;
+
+  background-color: currentColor;
+}
+
+.IPhoneX-overlay::after {
+  content: '';
+
+  position: absolute;
+  left: 0;
+  right: 0; bottom: 1vmin;
+  opacity: .1;
+
+  width: 15vmin;
+  height: .5vmin;
+  margin: auto;
+  border-radius: .25vmin;
 
   background-color: currentColor;
 }
