@@ -1,0 +1,36 @@
+.IPhoneX {
+  overflow: hidden;
+
+  width: calc(28vmin + 2vmin);
+  height: calc(60vmin + 2vmin);
+
+  border-radius: 4vmin;
+
+  background-color: #fff;
+}
+
+.IPhoneX::before {
+  content: '';
+
+  position: absolute;
+  left: 0; top: 0;
+  right: 0; bottom: 0;
+
+  border: 1vmin solid;
+  border-radius: 4vmin;
+}
+
+.IPhoneX::after {
+  content: '';
+
+  position: absolute;
+  left: 0; top: .75vmin;
+  right: 0;
+
+  width: 16vmin;
+  height: 2.5vmin;
+  margin: auto;
+  border-radius: 0 0 2vmin 2vmin;
+
+  background-color: currentColor;
+}
