@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 600">
+  <defs>
+    <marker id="f" orient="auto" overflow="visible">
+      <circle cx="0" cy="0" r="1" fill="silver" />
+    </marker>
+    <marker id="d" orient="auto" overflow="visible">
+      <circle cx="0" cy="0" r="1" fill="#f95823" />
+    </marker>
+    <marker id="e" orient="auto" overflow="visible">
+      <circle cx="0" cy="0" r="1" fill="#3b92fb" />
+    </marker>
+    <marker id="b" orient="auto" overflow="visible">
+      <path fill="#b2d5fd" stroke="#b2d5fd" stroke-width="1" stroke-linejoin="round" d="M2.308 0l-3.46 2v-4l3.46 2z"/>
+    </marker>
+    <linearGradient id="a">
+      <stop offset="0" stop-opacity="0"/>
+      <stop offset=".5" stop-opacity=".251"/>
+      <stop offset="1"/>
+    </linearGradient>
+    <radialGradient id="c" cx="400" cy="438.25" r="140" xlink:href="#a" fx="400" fy="438.25" gradientUnits="userSpaceOnUse" gradientTransform="translate(-14.286 -15.652) scale(1.0357)"/>
+  </defs>
+  <g transform="translate(0 -138.25)">
+    <path d="M0 138.25h800v600H0z"/>
+    <path d="M200 238.25h400v400H200z"/>
+    <text x="229.229" y="254.083" fill="#fff" style="line-height:125%" font-size="32" font-family="sans-serif" letter-spacing="0" word-spacing="0">
+      <tspan x="229.229" y="254.083" style="-inkscape-font-specification:'Verdana Bold'" font-weight="bold" font-size="21.333" font-family="Verdana">14°C</tspan>
+    </text>
+    <path fill="none" stroke="#fff" stroke-width="3" stroke-dashoffset="18" d="M203.964 244.286a5 5 0 0 1-.996-5.65 5 5 0 0 1 4.968-2.867 5 5 0 0 1 4.394 3.683"/>
+    <path fill="none" stroke="#000" stroke-width="3" stroke-dashoffset="18" d="M204.5 250.75c-1.81 0-3.395-1.216-3.864-2.965-.468-1.748.296-3.594 1.864-4.5 1.568-.904 3.548-.644 4.414.8-.414-3.425 2.496-6.335 6.086-6.335 3.59 0 6.5 2.91 6.5 6.5s-2.91 6.5-6.5 6.5z"/>
+    <path fill="none" stroke="#fff" stroke-width="3" stroke-dashoffset="18" d="M205.5 252.75c-1.81 0-3.395-1.216-3.864-2.965-.468-1.748.296-3.594 1.864-4.5 1.568-.904 3.548-.644 4.414.8-.414-3.425 2.496-6.335 6.086-6.335 3.59 0 6.5 2.91 6.5 6.5s-2.91 6.5-6.5 6.5z"/>
+    <text x="531.917" y="254.083" fill="#fff" style="line-height:125%" font-size="32" font-family="sans-serif" letter-spacing="0" word-spacing="0">
+      <tspan x="531.917" y="254.083" style="-inkscape-font-specification:'Verdana Bold'" font-weight="bold" font-size="21.333" font-family="Verdana">16:30</tspan>
+    </text>
+    <g fill="none">
+      <path stroke="#fff" stroke-width="8" d="M353.98 573.97l.468-94.115c.14-27.9 32.077-56.148 47.76-66.956l103.946-71.64"/>
+      <path stroke="#fff" stroke-width="6" d="M382.074 503.735l82.876.468c19.903.113 41.515 6.557 54.314 14.515"/>
+      <path stroke="#fff" stroke-width="4" d="M440.134 504.203l7.49 73.044"/>
+      <path stroke="#fff" stroke-width="6" d="M449.498 503.735l8.074-28.174c4.312-15.044 14.05-30.97 31.257-39.25l49.63-23.88m-131.18 22.946c-8.716-2.423-18.927-5.186-30.356-5.15-17.685.053-35.97 2.23-50.1 10.768m88.883-11.98s-25.85-5.882-38.315-6.28c-17.104-.547-46.13 6.53-57.817.685M321 446.223c-23.29 8.375-39.193 35.22-58.79 52.83"/>
+      <path stroke="#fff" stroke-width="4" d="M353.98 535.574c-12.078.133-23.774-.244-38.395 3.278"/>
+      <path stroke="#fff" stroke-width="6" d="M319.8 557.58c1.734-14.81-2.8-23.126-29.088-26.243"/>
+      <path stroke="#fff" stroke-width="4" d="M465.184 392.53s-57.076-4.415-84.047-11.47c-31.992-8.37-92.24-36.522-92.24-36.522"/>
+      <path stroke="#fff" stroke-width="4" d="M471.27 388.083s-60.787-5.67-89.665-13.11c-33.716-8.687-96.204-38.178-96.204-38.178m19.12 83.572l-42.78-22.45"/>
+      <path stroke="#fff" stroke-width="6" d="M282.18 428.59c-7.71 5.89-17.054 5.606-25.59 5.38m30.902 11.705c-10.705-6.284-20.047-.312-29.967.468m52.45-25.365c-10.345-5.677.307-11.486 6.08-15.37 0 0 31.843-22.832 48.694-32.777 11.78-6.95 33.63-17.15 34.862-17.732 2.27-1.07 3.148-2.232 1.506-3.8l-4.036-3.857"/>
+      <path stroke="#fff" stroke-width="4" d="M349.955 364.55l54.71-19.895m-60.518-38.512l86.42 55.08c4.093 2.61 6.776 2.283 10.986.128l56.64-28.983m-135.785 120.8c2.316-6.43.26-21.605-24.575-17.517"/>
+      <path stroke="#fff" stroke-width="6" stroke-dashoffset="18" d="M329.164 435.14c0 8.145-11.006 14.75-24.582 14.75S280 443.284 280 435.14c0-8.146 11.006-14.75 24.582-14.75s24.582 6.604 24.582 14.75z"/>
+      <path stroke="#3b92fb" stroke-width="8" d="M382.542 576.31v-94.114c0-16.24 16.79-41.084 29.03-50.1l104.883-77.257"/>
+      <path stroke="#b2d5fd" stroke-width="8" d="M382.542 96.31V2.196c0-16.24 16.79-41.084 29.03-50.1" marker-end="url(#b)" transform="translate(0 480)"/>
+    </g>
+    <circle cx="400" cy="438.25" r="145" fill="url(#c)"/>
+    <circle cx="400" cy="438.25" r="170" fill="none" stroke="#000" stroke-width="60" stroke-dashoffset="18"/>
+    <path fill="none" stroke="silver" stroke-opacity=".502" stroke-width="5" stroke-dashoffset="18" d="M470.796 609.168a185 185 0 0 1-141.592 0" stroke-linecap="round"/>
+    <path fill="none" stroke="#f95823" stroke-opacity=".502" stroke-width="5" stroke-dashoffset="18" d="M269.185 569.065a185 185 0 0 1-44.367-190.28 185 185 0 0 1 151.035-123.952" stroke-linecap="round"/>
+    <path fill="none" stroke="#f95823" stroke-width="5" stroke-dashoffset="18" d="M287.38 585.02a185 185 0 0 1-71.984-158.87A185 185 0 0 1 307.5 278.035" stroke-linecap="round" marker-end="url(#d)"/>
+    <path fill="none" stroke="#3b92fb" stroke-opacity=".502" stroke-width="5" stroke-dashoffset="18" d="M424.147 254.833a185 185 0 0 1 151.035 123.95 185 185 0 0 1-44.367 190.282" stroke-linecap="round"/>
+    <path fill="none" stroke="#3b92fb" stroke-width="5" stroke-dashoffset="18" d="M560.215 345.75a185 185 0 0 1-47.594 239.27" stroke-linecap="round" marker-start="url(#e)"/>
+    <path fill="none" stroke="silver" stroke-width="5" stroke-dashoffset="18" d="M432.125 620.44a185 185 0 0 1-102.92-11.272" stroke-linecap="round" marker-start="url(#f)"/>
+    <path fill="none" stroke="#fff" stroke-width="5" d="M400 618.25v10" stroke-linecap="round"/>
+    <text x="399.836" y="610.707" fill="#fff" style="line-height:125%;text-align:center" font-size="32" font-family="sans-serif" letter-spacing="0" word-spacing="0" text-anchor="middle">
+      <tspan x="399.836" y="610.707" style="-inkscape-font-specification:'Verdana Bold';text-align:center" font-weight="bold" font-size="16" font-family="Verdana">½</tspan>
+    </text>
+    <text x="469.551" y="600.707" fill="#fff" style="line-height:125%;text-align:center" font-size="32" font-family="sans-serif" letter-spacing="0" word-spacing="0" text-anchor="middle">
+      <tspan x="469.551" y="600.707" style="-inkscape-font-specification:'Verdana Bold';text-align:center" font-weight="bold" font-size="16" font-family="Verdana">F</tspan>
+    </text>
+    <text x="329.777" y="600.707" fill="#fff" style="line-height:125%;text-align:center" font-size="32" font-family="sans-serif" letter-spacing="0" word-spacing="0" text-anchor="middle">
+      <tspan x="329.777" y="600.707" style="-inkscape-font-specification:'Verdana Bold';text-align:center" font-weight="bold" font-size="16" font-family="Verdana">E</tspan>
+    </text>
+  </g>
+</svg>

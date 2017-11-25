@@ -34,6 +34,7 @@ const initialState = [
   'Martini custom served',
   'Car interface',
   'Blog post',
+  'Special offer',
 ]
 
 const projectsReducer = (state=initialState, action) => {

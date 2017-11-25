@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:700');
+
+.Project-036 {
+  color: #000;
+
+  font-family: 'Quicksand', sans-serif;
+}
+
+.Project-036::after {
+  content: '';
+
+  position: absolute;
+  left: 50%; top: 50%;
+
+  width: 200%;
+  height: 200%;
+
+  transform: translate(-50%, -50%) rotate(-45deg);
+
+  background: linear-gradient(#fff 33%, #ed9ca5 33%, #ed9ca5 67%, #9cd3ed 67%) center / 50vmin;
+}
+
+.Project-036-container {
+  z-index: 1;
+
+  width: 60vmin;
+  height: 40vmin;
+  padding: 5vmin;
+}
+
+.Project-036-container::before,
+.Project-036-container::after {
+  content: '';
+
+  position: absolute;
+  left: -5vmin; top: 0;
+  right: -5vmin; bottom: 0;
+  z-index: -1;
+
+  border: 5vmin solid transparent;
+  border-image: 3 repeat;
+
+  background: linear-gradient(currentColor, currentColor) no-repeat center / 60vmin 100%;
+}
+
+.Project-036-container::before {
+  border-image-source: url(media/border-shadow.svg);
+
+  transform: translate(1vmin, 1vmin);
+
+  opacity: .2;
+}
+
+.Project-036-container::after {
+  border-image-source: url(media/border.svg);
+
+  color: #f5efd6;
+}
+
+.Project-036-title {
+  height: 2em;
+
+  text-align: center;
+  font-weight: bold;
+  font-size: 20vmin;
+
+  color: #fff;
+}
+
+.Project-036-mustache {
+  width: 50%;
+}
+
+.Project-036-cut {
+  top: 20%;
+  bottom: auto;
+
+  width: 1vmin;
+  height: 3vmin;
+  border-radius: .5vmin;
+
+  font-size: 4vmin;
+
+  box-shadow: 0 1em, 0 2em, 0 4em, 0 5em, 0 6em, 0 7em;
+
+  background-color: currentColor;
+}
+
+.Project-036-scissors {
+  bottom: 75%;
+}
+
+.Project-036-left-top,
+.Project-036-right-bottom {
+  position: absolute;
+  font-size: 3vmin;
+}
+
+.Project-036-left-top { left: 1vmin; top: 3vmin; }
+.Project-036-right-bottom { right: 1vmin; bottom: 2.2vmin; }
