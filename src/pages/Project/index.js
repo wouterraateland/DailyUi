@@ -44,6 +44,25 @@ const ProjectPage = ({ projectId, number, title, ...rest }) => (
       <meta property="og:site_name" content="Wouter Raateland - DailyUi" />
       <meta property="article:author" content="Wouter Raateland" />
     </Helmet>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html:
+`{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "headline": "DailyUi #${number} — ${title}",
+  "image":[
+    "${process.env.PUBLIC_URL}/thumbs/DailyUi-${number}.jpg"
+  ],
+  "publisher": {
+    "name": "Wouter Raateland"
+  },
+  "author": {
+    "name": "Wouter Raateland"
+  },
+  "description": "Day ${number}/100 of the DailyUi challenge by Wouter Raateland.",
+}`
+    }} />
     <div className="ProjectPage-header">
       <Link className="ProjectPage-back alignright" to="/"></Link>
       <h1 className="ProjectPage-title">#{number} &mdash; {title}</h1>

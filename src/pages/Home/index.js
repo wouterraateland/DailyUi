@@ -36,10 +36,40 @@ const Home = ({ latest }) => (
       <meta property="og:image:width" content="800" />
       <meta property="og:title" content="DailyUi by Wouter Raateland" />
       <meta property="og:description" content="Hi! I'm Wouter Raateland and I do the DailyUi challenge. In 100 days, I will design and create 100 user interfaces." />
-      <meta property="og:url" content="https://dailyui.wouterraateland.nl/" />
+      <meta property="og:url" content={process.env.PUBLIC_URL} />
       <meta property="og:site_name" content="Wouter Raateland - DailyUi" />
       <meta property="article:author" content="Wouter Raateland" />
     </Helmet>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html:
+`{
+  "@context": "http://schema.org",
+  "@type": "ItemList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "url": "${process.env.PUBLIC_URL}/projects/0${latest}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "url": "${process.env.PUBLIC_URL}/projects/0${latest - 1}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "url": "${process.env.PUBLIC_URL}/projects/0${latest - 2}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "url": "${process.env.PUBLIC_URL}/projects/0${latest - 3}"
+    },
+  ]
+}`
+    }} />
     <div className="HomePage-header row">
       <div className="HomePage-header-meta">
         <h1 className="HomePage-title">#DailyUi challenge</h1>
