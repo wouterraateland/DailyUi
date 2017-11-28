@@ -14,9 +14,10 @@ import {
   getProjectNumberByURL,
   getProjectIdByURL,
   getProjectTitleByURL,
+  getProjectPublishedByURL,
 } from 'selectors/projects'
 
-const ProjectPage = ({ projectId, number, title, ...rest }) => (
+const ProjectPage = ({ projectId, number, title, published, ...rest }) => (
   <div className="ProjectPage page">
     <Helmet>
       <title>DailyUi #{number} — {title}</title>
@@ -49,18 +50,30 @@ const ProjectPage = ({ projectId, number, title, ...rest }) => (
       dangerouslySetInnerHTML={{ __html:
 `{
   "@context": "http://schema.org",
-  "@type": "Article",
+  "@type": "NewsArticle",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://google.com/article"
+  },
   "headline": "DailyUi #${number} — ${title}",
   "image":[
     "${process.env.PUBLIC_URL}/thumbs/DailyUi-${number}.jpg"
   ],
+  "datePublished": "${published}",
+  "dateModified": "${published}",
   "publisher": {
-    "name": "Wouter Raateland"
+  	"@type": "Organization",
+    "name": "Wouter Raateland Webdesign",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "${process.env.PUBLIC_URL}/logo.png"
+    }
   },
   "author": {
+  	"@type": "Person",
     "name": "Wouter Raateland"
   },
-  "description": "Day ${number}/100 of the DailyUi challenge by Wouter Raateland.",
+  "description": "Day ${number}/100 of the DailyUi challenge by Wouter Raateland."
 }`
     }} />
     <div className="ProjectPage-header">
@@ -88,6 +101,7 @@ const mapStateToProps = (state, ownProps) => ({
   projectId: getProjectIdByURL(state, ownProps),
   title: getProjectTitleByURL(state, ownProps),
   number: getProjectNumberByURL(state, ownProps),
+  published: getProjectPublishedByURL(state, ownProps),
 })
 
 export default connect(

@@ -66,7 +66,7 @@ const Home = ({ latest }) => (
       "@type": "ListItem",
       "position": 4,
       "url": "${process.env.PUBLIC_URL}/projects/0${latest - 3}"
-    },
+    }
   ]
 }`
     }} />

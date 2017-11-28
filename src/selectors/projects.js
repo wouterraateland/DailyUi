@@ -21,14 +21,24 @@ export const getProjectIdByURL = createSelector(
   n => parseInt(n, 10) - 1
 )
 
+export const getProjectByURL = createSelector(
+  [selectState, getProjectIdByURL],
+  (projects, projectId) => projects[projectId]
+)
+
 export const getProjectNumberByURL = createSelector(
   getProjectIdByURL,
   projectId => pad(3)(projectId + 1)
 )
 
+export const getProjectPublishedByURL = createSelector(
+  getProjectByURL,
+  project => project.published
+)
+
 export const getProjectTitleByURL = createSelector(
-  [selectState, getProjectIdByURL],
-  (projects, projectId) => projects[projectId]
+  getProjectByURL,
+  project => project.title
 )
 
 export const getProjectNumber = createSelector(
@@ -36,9 +46,19 @@ export const getProjectNumber = createSelector(
   projectId => pad(3)(projectId + 1)
 )
 
-export const getProjectTitle = createSelector(
+export const getProject = createSelector(
   [getProjects, selectProjectId],
   (projects, projectId) => projects[projectId]
+)
+
+export const getProjectTitle = createSelector(
+  getProject,
+  project => project && project.title
+)
+
+export const getProjectPublished = createSelector(
+  getProject,
+  project => project && project.published
 )
 
 export const getProjectThumb = createSelector(
