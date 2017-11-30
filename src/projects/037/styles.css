@@ -1,0 +1,244 @@
+.Project-037 {
+  background-color: #b4645a;
+  color: #e1e0d1;
+
+  font-size: 4vmin;
+  text-shadow: .5vmin .5vmin rgba(0, 0, 0, .1);
+}
+
+.Project-037-container {
+  width: 50vmin;
+  height: 40vmin;
+}
+
+.Project-037-window {
+  overflow: hidden;
+
+  z-index: 1;
+
+  border: 2vmin solid #343339;
+  border-radius: 8vmin 8vmin 0 0;
+
+  box-shadow:
+    .5vmin .5vmin rgba(0, 0, 0, .1),
+    inset 0 103vmin 0 -100vmin rgba(0, 0, 0, .1);
+
+  background: url(media/background.svg) no-repeat center / cover;
+  color: #fff;
+}
+
+.Project-037-window::before,
+.Project-037-window::after {
+  content: '';
+
+  pointer-events: none;
+
+  position: absolute;
+  left: 0; top: 0;
+  right: 0; bottom: 0;
+  z-index: 1;
+
+  margin: auto;
+
+  background-color: #343339;
+}
+
+.Project-037-window::before {
+  bottom: 50%;
+  width: 2vmin;
+}
+
+.Project-037-window::after {
+  height: 2vmin;
+
+  box-shadow: 0 2vmin rgba(0, 0, 0, .1);
+}
+
+.Project-037-datetime {
+  right: calc(50% + 1vmin); bottom: calc(50% + 1vmin);
+
+  height: 8vmin;
+
+  text-align: center;
+}
+
+.Project-037-date {
+  font-size: .5em;
+}
+
+.Project-037-time {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.Project-037-weather {
+  left: calc(50% + 1vmin);
+  bottom: calc(50% + 1vmin);
+
+  height: 8vmin;
+
+  text-align: center;
+}
+
+.Project-037-temperature {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.Project-037-wind {
+  font-size: .5em;
+}
+
+.Project-037-wind::before {
+  content: '➚ ';
+}
+
+.Project-037-rain {
+  position: absolute;
+  left: 1vmin;
+  right: 1vmin; bottom: 1vmin;
+}
+
+.Project-037-rain-graph {
+  width: 100%;
+  height: 15vmin;
+  transform: translate(1%, 1%);
+}
+
+.Project-037-timeline {
+  position: absolute;
+  left: 0;
+  right: 0; bottom: -1vmin;
+
+  text-align: center;
+}
+
+.Project-037-timeline-piece {
+  position: relative;
+  display: inline-block;
+  width: 12.5%;
+
+  font-size: .4em;
+  font-weight: bold;
+
+  transform: rotate(-45deg);
+}
+
+.Project-037-timeline-piece::after {
+  content: '';
+
+  position: absolute;
+  left: -.1vmin; top: 55%;
+
+  width: 1vmin;
+  height: 1vmin;
+  margin: -.5vmin;
+  border-radius: 100%;
+
+  box-shadow: .5vmin .5vmin 0 rgba(0, 0, 0, .1);
+
+  background-color: currentColor;
+}
+
+.Project-037-curtains {
+  position: absolute;
+  left: -3.5vmin; top: -3vmin;
+  right: -3.5vmin;
+  z-index: 1;
+
+  height: 1vmin;
+  border-radius: 1vmin;
+
+  box-shadow: .5vmin .5vmin rgba(0, 0, 0, .1);
+
+  background-color: #343339;
+}
+
+.Project-037-curtain-left,
+.Project-037-curtain-right {
+  position: absolute;
+  top: -1vmin;
+
+  overflow: hidden;
+
+  height: 43vmin;
+  border-radius: 0 0 1vmin 1vmin;
+
+  box-shadow: .5vmin .5vmin rgba(0, 0, 0, .1);
+
+  animation: openCurtain 2s ease-out forwards;
+}
+
+.Project-037-curtain-left::after,
+.Project-037-curtain-right::after {
+  content: '';
+
+  position: absolute;
+  left: 0; top: 0;
+  right: 0; bottom: 0;
+
+  border-top: 3vmin solid transparent;
+  border-bottom: 1vmin solid transparent;
+
+  border-image: url(media/curtain.svg) 4 1 stretch;
+
+  background: linear-gradient(currentColor, currentColor) no-repeat center / 100%;
+}
+
+.Project-037-curtain-left {
+  left: 1vmin;
+
+  border-bottom-right-radius: 50% 100%;
+}
+
+.Project-037-curtain-right {
+  right: 1vmin;
+
+  border-bottom-left-radius: 50% 100%;
+}
+
+.Project-037-sill {
+  position: absolute;
+  left: -2vmin; top: calc(100% + 2vmin);
+  right: -2vmin;
+  z-index: 1;
+
+  height: 3vmin;
+
+  box-shadow: .5vmin .5vmin rgba(0, 0, 0, .1);
+
+  background-color: currentColor;
+}
+
+.Project-037-sill::after {
+  content: '';
+
+  position: absolute;
+  left: -2vmin; top: -2vmin;
+  right: -2vmin;
+
+  height: 2vmin;
+  border-radius: .5vmin .5vmin 1.5vmin 1.5vmin;
+
+  box-shadow: .5vmin .5vmin rgba(0, 0, 0, .1);
+
+  background-color: currentColor;
+}
+
+.Project-037-datetime,
+.Project-037-weather,
+.Project-037-rain {
+  opacity: 0;
+  animation: fadeIn 1s 2s forwards;
+}
+
+@keyframes openCurtain {
+  0% { width: 27vmin; border-radius: 0 0 1vmin 1vmin; }
+  30% { width: 27vmin; }
+  100% { width: 5vmin; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
