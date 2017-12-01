@@ -37,6 +37,7 @@ const initialState = [
   { title: 'Special offer', published: '2017-11-26' },
   { title: 'Weather from the window', published: '2017-11-30' },
   { title: 'Calendar', published: '2017-11-30' },
+  { title: 'Testimonial', published: '2017-12-01' },
 ]
 
 const projectsReducer = (state=initialState, action) => {
