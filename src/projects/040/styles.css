@@ -1,0 +1,134 @@
+.Project-040 {
+  background-color: #000;
+}
+
+.Project-040-container {
+  background-color: #000 !important;
+  color: #fff;
+}
+
+.Project-040-nav {
+  position: relative;
+}
+
+.Project-040-back {
+  position: absolute;
+  left: 1vmin; top: 1vmin;
+
+  width: 1.4vmin;
+  height: 1.4vmin;
+}
+
+.Project-040-back::before {
+  content: '';
+
+  position: absolute;
+  left: 0; top: 0;
+  right: 0; bottom: 0;
+
+  border-left: .4vmin solid;
+  border-bottom: .4vmin solid;
+
+  transform: rotate(45deg);
+}
+
+.Project-040-title {
+  text-align: center;
+  font-size: 4vmin;
+  font-family: 'Source Serif Pro', serif;
+}
+
+.Project-040-body {
+
+}
+
+.Project-040-section-title {
+  margin-bottom: 1vmin;
+
+  font-size: .75em;
+}
+
+.Project-040-result {
+  position: relative;
+
+  margin-bottom: -1.5vmin;
+}
+
+.Project-040-result::after {
+  content: '';
+
+  position: absolute;
+  left: 0; top: 0;
+  right: 0; bottom: 0;
+
+  background-image: linear-gradient(transparent, transparent, #000);
+}
+
+.Project-040-result-image {
+
+}
+
+.Project-040-ingredients {
+  position: relative;
+  margin-bottom: 2vmin;
+}
+
+.Project-040-ingredient {
+  margin: 1vmin 0;
+}
+
+.Project-040-ingredient::before {
+  content: '';
+
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 1vmin;
+  border: .25vmin solid;
+  border-radius: 100%;
+}
+
+.Project-040-ingredient:nth-child(2n)::before {
+  background-color: currentColor;
+}
+
+.Project-040-ingredient-amount {
+  display: inline-block;
+  width: 6vmin;
+
+  font-size: .75em;
+  line-height: 2vmin;
+}
+
+.Project-040-ingredient-name {
+  display: inline-block;
+  width: calc(100% - 9vmin);
+}
+
+.Project-040-steps {
+
+}
+
+.Project-040-step {
+  position: relative;
+  padding: 1vmin 1vmin 1vmin 3vmin;
+  margin-bottom: 1vmin;
+  border-radius: 2vmin;
+
+  background-color: #fff;
+  color: #000;
+}
+
+.Project-040-step-number {
+  position: absolute;
+  left: 1vmin;
+  font-size: .75em;
+}
+
+.Project-040-step-description {
+
+}
+
+.Project-040-step-type {
+  display: none;
+}

@@ -52,11 +52,12 @@
 .IPhoneX-notch-right { right: 1vmin; }
 
 .IPhoneX-notch-icons {
-  text-align: right; /* TEMP:  */
   width: 800%;
   height: 800%;
 
   font-size: 4vmin;
+  text-align: right;
+
   transform: scale(.125);
   transform-origin: left top;
 }
@@ -76,9 +77,6 @@
   width: 2.2em;
   height: 1.6em;
   margin-top: .3em;
-
-
-
 }
 
 .IPhoneX-connection-icon::after {
@@ -191,5 +189,5 @@
   margin: auto;
   border-radius: .25vmin;
 
-  background-color: currentColor;
+  background-color: #000;
 }
