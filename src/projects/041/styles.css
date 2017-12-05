@@ -1,0 +1,180 @@
+.Project-041 {
+  font-weight: bold;
+
+  background: linear-gradient(90deg, #d9d9d9, #f2f2f2);
+  color: #ff9800;
+}
+
+.Project-041-container {
+  width: 70vmin;
+  height: 60vmin;
+
+  border-radius: 4vmin;
+
+  background-color: rgba(255, 255, 255, .8);
+}
+
+.Project-041-achievement {
+  position: absolute;
+  left: 0; top: -2vmin;
+  right: 0;
+
+  width: 40vmin;
+  padding: 2vmin 2vmin 2vmin 10vmin;
+  margin: auto;
+  border-radius: 2vmin;
+
+  font-size: 4vmin;
+
+  background: #ff9800 url(media/crown.svg) no-repeat left 2vmin top 50% / 6vmin;
+  color: #fff;
+}
+
+.Project-041-achievement::before {
+  content: 'Achievement unlocked';
+
+  display: block;
+
+  font-size: 2vmin;
+
+  color: rgba(255, 255, 255, .8);
+}
+
+.Project-041-background-text {
+  position: absolute;
+  left: 50%; top: 30%;
+
+  font-size: 22vmin;
+  white-space: nowrap;
+
+  transform: translate(-50%, -50%);
+
+  color: rgba(0, 0, 0, .05);
+}
+
+.Project-041-illustration {
+  position: absolute;
+  left: 50%; top: 50%;
+
+  width: 50vmin;
+  max-width: none;
+
+  transform: translate(-50%, -50%);
+}
+
+.Project-041-timer,
+.Project-041-timer::before,
+.Project-041-timer::after {
+  width: 40vmin;
+  height: 40vmin;
+  border: 5vmin solid transparent;
+  border-radius: 100%;
+}
+
+.Project-041-timer {
+  padding-top: 25vmin;
+  border-color: rgba(0, 0, 0, .05);
+
+  text-align: center;
+}
+
+.Project-041-timer::before,
+.Project-041-timer::after {
+  content: '';
+
+  position: absolute;
+  left: -5vmin; top: -5vmin;
+  right: -5vmin; bottom: -5vmin;
+
+  border-top-color: currentColor;
+}
+
+.Project-041-timer::before { transform: rotate(45deg); }
+.Project-041-timer::after { transform: rotate(110deg); }
+
+.Project-041-stats {
+  position: absolute;
+  left: 4vmin;
+  bottom: 2vmin;
+}
+
+.Project-041-stat {
+  display: inline-block;
+  width: 4vmin;
+  height: 5vmin;
+  margin-right: 2vmin;
+
+  text-align: center;
+  padding-top: 3vmin;
+
+  background: no-repeat top / contain;
+}
+
+.Project-041-stat-heartbeat {
+  background-image: url('./media/heart.svg');
+}
+
+.Project-041-stat-calories {
+  background-image: url('./media/fire.svg');
+}
+
+.Project-041-next {
+  position: absolute;
+  right: -2vmin; bottom: 2vmin;
+
+  padding: 4vmin;
+  border-radius: 2vmin;
+
+  font-size: 4vmin;
+
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, .8), rgba(255, 255, 255, .4)),
+    url(media/pull-up.jpg) no-repeat center / cover;
+}
+
+.Project-041-next::before {
+  content: 'Next up';
+
+  display: block;
+
+  font-size: 2vmin;
+  color: rgba(0, 0, 0, .5);
+}
+
+.Project-041-progress,
+.Project-041-progress::before,
+.Project-041-progress::after {
+  width: 6vmin;
+  height: 6vmin;
+  border: 1vmin solid transparent;
+  border-radius: 100%;
+}
+
+.Project-041-progress {
+  position: absolute;
+  left: 0;
+  right: 0; bottom: 2vmin;
+
+  margin: auto;
+
+  text-align: center;
+  line-height: 4vmin;
+  font-size: .75em;
+
+  border-color: rgba(0, 0, 0, .05);
+}
+
+.Project-041-progress::before,
+.Project-041-progress::after {
+  content: '';
+
+  position: absolute;
+  left: -1vmin; top: -1vmin;
+  right: -1vmin; bottom: -1vmin;
+
+  border-top-color: currentColor;
+  border-right-color: currentColor;
+}
+
+.Project-041-progress::before { transform: rotate(45deg); }
+.Project-041-progress::after { transform: rotate(117deg); }
