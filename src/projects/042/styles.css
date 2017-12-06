@@ -1,0 +1,276 @@
+/* Colors:
+ * Accent: #f9d801
+ * Primary: #1581a3
+ * Background: #f6f1ce, #faf7e6
+ */
+
+.Project-042 {
+  background-image:
+    radial-gradient(circle 25vmin at 20% 30%, #157fa2 99%, transparent),
+    radial-gradient(circle 15vmin at 80% 25%, #157fa2 99%, transparent),
+    radial-gradient(circle 45vmin at 70% 120%, #f9d801 99%, transparent);
+
+  background-color: #f9f9f9;
+  color: #1581a3;
+}
+
+.Project-042-container {
+  overflow: hidden;
+
+  width: 30vmin;
+  height: 55vmin;
+  border-radius: 3vmin;
+
+  box-shadow: 0 2vmin 6vmin -1vmin rgba(0, 0, 0, .4);
+
+  background: #fff;
+}
+
+.Project-042-nav {
+  padding: 3vmin 0;
+
+  text-align: center;
+  font-size: 3vmin;
+}
+
+.Project-042-nav::before {
+  content: '';
+
+  position: absolute;
+  left: 2vmin; top: 3.5vmin;
+
+  width: 3vmin;
+  height: .2vmin;
+  border-radius: .1vmin;
+
+  box-shadow: 0 .9vmin, 0 1.8vmin;
+
+  background: currentColor;
+}
+
+.Project-042-projects {
+  padding: 1vmin;
+}
+
+.Project-042-project {
+  padding: 2vmin;
+  margin-bottom: 1vmin;
+  border-radius: 2vmin;
+
+  background-color: #157fa2;
+  color: #fff;
+}
+
+.Project-042-project-header {
+  padding: .5vmin 0;
+}
+
+.Project-042-project-collaborators {
+  height: 4vmin;
+
+  float: left;
+
+  white-space: nowrap;
+}
+
+.Project-042-project-collaborator {
+  display: inline-block;
+  width: 4vmin;
+  margin-right: 1vmin;
+  border: .2vmin solid;
+  border-radius: 100%;
+}
+
+.Project-042-project-collaborator + .Project-042-project-collaborator {
+  margin-left: -2vmin;
+}
+
+.Project-042-project-title {
+  margin: 1vmin 0;
+}
+
+.Project-042-project-completion {
+  position: relative;
+
+  display: block;
+  width: 19vmin;
+  height: 1vmin;
+  margin-top: 1vmin;
+  border-radius: .5vmin;
+
+  direction: rtl;
+  line-height: 1vmin;
+  font-size: 1.5vmin;
+  text-indent: -4.5vmin;
+
+  background-color: rgba(0, 0, 0, .1);
+}
+
+.Project-042-project-completion::after {
+  content: '';
+
+  position: absolute;
+  left: 0; top: 0;
+  bottom: 0;
+
+  border-radius: .5vmin;
+
+  background-color: #f9d801;
+}
+
+.Project-042-project-completion[data-completed='33']::after { width: 33%; }
+.Project-042-project-completion[data-completed='40']::after { width: 40%; }
+.Project-042-project-completion[data-completed='60']::after { width: 60%; }
+
+.Project-042-project-close {
+  display: none;
+
+  position: absolute;
+  left: 2vmin; top: 3vmin;
+
+  width: 3vmin;
+  height: 3vmin;
+}
+
+.Project-042-project-close::before,
+.Project-042-project-close::after {
+  content: '';
+
+  position: absolute;
+  left: 0; top: 0;
+  right: 0; bottom: 0;
+
+  margin: auto;
+
+  background: currentColor;
+
+  transform: rotate(45deg);
+}
+
+.Project-042-project-close::before { width: .2vmin; }
+.Project-042-project-close::after { height: .2vmin; }
+
+.Project-042-project-todos {
+  display: none;
+}
+
+.Project-042-project-todo {
+  position: relative;
+
+  padding: 2vmin;
+  border-radius: 2vmin;
+}
+
+.Project-042-project-todo:nth-child(2n + 1) {
+  background-color: #f9f9f9;
+}
+
+.Project-042-project-todo::after {
+  content: '';
+
+  position: absolute;
+  top: 0;
+  right: 2vmin; bottom: 0;
+
+  width: 2vmin;
+  height: 2vmin;
+  margin: auto;
+  border: .2vmin solid;
+}
+
+.Project-042-project-todo.completed::after {
+  background-color: currentColor;
+}
+
+.Project-042-project-todo.completed span {
+  position: relative;
+  opacity: .5;
+}
+
+.Project-042-project-todo.completed span::after {
+  content: '';
+
+  position: absolute;
+  left: -.5vmin; top: .5vmin;
+  right: -.5vmin; bottom: 0;
+
+  height: .2vmin;
+  margin: auto;
+
+  background-color: #f9d801;
+}
+
+.Project-042-project.open {
+  position: absolute;
+  left: 0; top: 0;
+  right: 0; bottom: 0;
+  z-index: 1;
+
+  margin: 0;
+
+  background-color: #fff;
+  color: #157fa2;
+}
+
+.Project-042-project.open .Project-042-project-close {
+  display: block;
+}
+
+.Project-042-project.open .Project-042-project-header {
+  padding: 3vmin 0;
+}
+
+.Project-042-project.open .Project-042-project-completion {
+  display: none;
+}
+
+.Project-042-project.open .Project-042-project-collaborators {
+  float: none;
+  text-align: center;
+}
+
+.Project-042-project.open .Project-042-project-collaborators::after {
+  content: '+';
+
+  display: inline-block;
+  width: 4vmin;
+  height: 4vmin;
+  margin-left: -2vmin;
+  border-radius: 100%;
+
+  line-height: 4vmin;
+  font-weight: bold;
+
+  background-color: #1581a3;
+  color: #fff;
+}
+
+.Project-042-project.open .Project-042-project-title {
+  margin-top: 2vmin;
+
+  text-align: center;
+  font-size: 3vmin;
+}
+
+.Project-042-project.open .Project-042-project-todos {
+  display: block;
+}
+
+.Project-042-add-button {
+  position: absolute;
+  left: 2vmin;
+  right: 2vmin; bottom: 2vmin;
+  z-index: 1;
+
+  width: 6vmin;
+  height: 6vmin;
+  margin: auto;
+  border-radius: 100%;
+
+  text-align: center;
+  line-height: 6vmin;
+  font-size: 4vmin;
+
+  background-color: #f9d801;
+  color: #fff;
+}

@@ -11,6 +11,7 @@ import project027Reducer from 'reducers/027'
 import project030Reducer from 'reducers/030'
 import project031Reducer from 'reducers/031'
 import project039Reducer from 'reducers/039'
+import project042Reducer from 'reducers/042'
 
 const rootReducer = combineReducers({
   router: routerReducer,
@@ -24,6 +25,7 @@ const rootReducer = combineReducers({
   '030': project030Reducer,
   '031': project031Reducer,
   '039': project039Reducer,
+  '042': project042Reducer,
 })
 
 export default rootReducer
