@@ -1,0 +1,197 @@
+.Project-043 {
+  background-color: #e4e4e4;
+  color: #000;
+}
+
+.Project-043-container {
+  z-index: 1;
+
+  width: 64vmin;
+  height: 48vmin;
+  border-radius: 2vmin;
+
+  background-color: #000;
+  color: #fff;
+}
+
+.Project-043-background {
+  pointer-events: none;
+
+  position: absolute;
+  z-index: 1;
+}
+
+.Project-043-section {
+  position: absolute;
+
+  border-radius: 2vmin;
+
+  background-color: #e4e4e4;
+  color: #000;
+}
+
+.Project-043-section::after {
+  pointer-events: none;
+
+  content: '';
+  position: absolute;
+  left: 0; top: 0;
+  right: 0; bottom: 0;
+  z-index: 1;
+
+  clip-path: polygon(
+    4vmin 0,
+    calc(100% - 4vmin) 0,
+    calc(100% - 4vmin) 4vmin,
+    100% 4vmin,
+    100% calc(100% - 4vmin),
+    calc(100% - 4vmin) calc(100% - 4vmin),
+    calc(100% - 4vmin) 100%,
+    4vmin 100%,
+    4vmin calc(100% - 4vmin),
+    0 calc(100% - 4vmin),
+    0 4vmin,
+    4vmin 4vmin
+  );
+
+  border-radius: 2vmin;
+
+  background: inherit;
+  box-shadow: inherit;
+}
+
+.Project-043-section-inner {
+  position: absolute;
+  left: 0; top: 0;
+  right: 0; bottom: 0;
+  z-index: 2;
+
+  padding: 2vmin;
+
+  text-align: center;
+}
+
+.Project-043-welcome {
+  margin-top: 2vmin;
+  font-size: .75em;
+}
+
+.Project-043-name {
+  height: 1em;
+}
+
+.Project-043-section-price {
+  position: absolute;
+  left: -.5vmin; top: -.5vmin;
+  margin: auto;
+
+  width: 5vmin;
+  height: 5vmin;
+  border: .2vmin solid;
+  border-radius: 100%;
+
+  font-weight: bold;
+  font-size: 2.5vmin;
+  line-height: 4.6vmin;
+
+  background-color: #fff;
+}
+
+.Project-043-section-title {
+  top: auto;
+
+  height: 4vmin;
+
+  font-size: 2.2vmin;
+  line-height: 4vmin;
+
+  text-shadow:
+    .2vmin .2vmin .01vmin #000,
+    -.2vmin .2vmin .01vmin #000,
+    .2vmin -.2vmin .01vmin #000,
+    -.2vmin -.2vmin .01vmin #000,
+    .2vmin 0 .01vmin #000,
+    -.2vmin 0 .01vmin #000,
+    0 .2vmin .01vmin #000,
+    0 -.2vmin .01vmin #000;
+
+  color: #fff;
+}
+
+.Project-043-section:nth-child(1) {
+  left: 4vmin; top: 4vmin;
+  width: 28vmin; height: 16vmin;
+}
+
+.Project-043-section:nth-child(2) {
+  left: 4vmin; top: 24vmin;
+  width: 12vmin; height: 20vmin;
+
+  border-radius: 2vmin 2vmin 0 0;
+}
+
+.Project-043-section:nth-child(2) .Project-043-section-inner::after {
+  content: 'Special Deal';
+
+  position: absolute;
+  left: 0; top: 100%;
+  right: 0;
+
+  padding: 2vmin;
+  border-radius: 0 0 2vmin 2vmin;
+
+  font-weight: bold;
+  text-transform: uppercase;
+
+  background-color: #777;
+  color: #fff;
+}
+
+.Project-043-section:nth-child(2) .Project-043-section-title,
+.Project-043-section:nth-child(3) .Project-043-section-title {
+  left: auto; top: 0;
+  right: 2vmin;
+
+  white-space: nowrap;
+
+  transform: translateX(50%) rotate(90deg);
+}
+
+.Project-043-section:nth-child(2) img,
+.Project-043-section:nth-child(3) img {
+  height: 100%;
+}
+
+.Project-043-section:nth-child(3) {
+  left: 20vmin; top: 24vmin;
+  width: 12vmin; height: 20vmin;
+}
+
+.Project-043-section:nth-child(4) {
+  left: 36vmin; top: 4vmin;
+  width: 24vmin; height: 24vmin;
+
+  background-image: radial-gradient(circle farthest-corner at 50% 50%,
+    #fff 25%,
+    #eee 26%, #eee 50%,
+    #ddd 51%, #ddd 75%,
+    #ccc 76%
+  );
+}
+
+.Project-043-section:nth-child(4) img {
+  height: 20vmin;
+  transform: rotate(30deg);
+}
+
+.Project-043-section:nth-child(5) {
+  left: 36vmin; top: 32vmin;
+  width: 24vmin; height: 12vmin;
+}
+
+.Project-043-section:nth-child(5) img {
+  width: 50%;
+  max-height: none;
+  margin-top: -2vmin;
+  margin-right: 4.5vmin;
+}
