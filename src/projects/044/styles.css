@@ -1,0 +1,78 @@
+.Project-044 {
+  font-size: 8vmin;
+
+  cursor: none !important;
+}
+
+.Project-044-animation {
+  position: absolute;
+  left: 50%; top: 47%;
+
+  width: 110%;
+  max-width: none;
+  max-height: none;
+
+  transform: translate(-50%, -50%);
+}
+
+.Project-044-center {
+  stroke: currentColor;
+  fill: currentColor;
+  color: #444;
+
+  animation: heartGlow .4s ease-out paused;
+}
+
+.Project-044-line {
+  stroke: #f2f2f2;
+  fill: none;
+
+  transition: stroke .1s ease-out;
+
+  animation: lineGlow .2s ease-out paused;
+}
+
+.Project-044-animation:active .Project-044-center {
+  animation-name: heartGlow2;
+}
+
+.Project-044-animation:active .Project-044-line {
+  animation-name: lineGlow2;
+}
+
+.Project-044-line:nth-child(2) { transition-delay: .30s; animation-delay: .30s; }
+.Project-044-line:nth-child(3) { transition-delay: .45s; animation-delay: .45s; }
+.Project-044-line:nth-child(4) { transition-delay: .60s; animation-delay: .60s; }
+.Project-044-line:nth-child(5) { transition-delay: .75s; animation-delay: .75s; }
+.Project-044-line:nth-child(6) { transition-delay: .90s; animation-delay: .90s; }
+
+:checked + .Project-044-animation .Project-044-center,
+:checked + .Project-044-animation .Project-044-line {
+  animation-play-state: running;
+}
+
+:checked + .Project-044-animation .Project-044-center {
+  color: #f12;
+}
+
+:checked + .Project-044-animation .Project-044-line:nth-child(2) { stroke: #ffC107; }
+:checked + .Project-044-animation .Project-044-line:nth-child(3) { stroke: #cddc39; }
+:checked + .Project-044-animation .Project-044-line:nth-child(4) { stroke: #4caf50; }
+:checked + .Project-044-animation .Project-044-line:nth-child(5) { stroke: #00bcd4; }
+:checked + .Project-044-animation .Project-044-line:nth-child(6) { stroke: #2196f3; }
+
+@keyframes heartGlow {
+  50% { stroke-width: 12; }
+}
+
+@keyframes heartGlow2 {
+  50% { stroke-width: 12; }
+}
+
+@keyframes lineGlow {
+  50% { stroke-width: 6; }
+}
+
+@keyframes lineGlow2 {
+  50% { stroke-width: 6; }
+}
