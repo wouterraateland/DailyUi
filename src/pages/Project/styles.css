@@ -46,7 +46,7 @@
 
 .ProjectPage-share {
   cursor: pointer;
-  
+
   position: relative;
 
   display: block;
@@ -94,20 +94,32 @@
   pointer-events: none;
   cursor: pointer;
   opacity: 0;
+  overflow: hidden;
 
-  margin: -.2vmin;
-  border: .2vmin solid;
+  margin: -.5vw;
+  border: .5vw solid;
   border-radius: 100%;
 
   background-color: currentColor;
 
-  transition-property: opacity, margin;
-  transition-duration: .4s;
-  transition-timing-function: ease-out;
+  transition:
+    opacity .4s ease-out,
+    margin .6s ease-out;
 }
 
 .ProjectPage-share-button:focus {
   outline: none;
+}
+
+:checked ~ .ProjectPage-share-button {
+  pointer-events: auto;
+  opacity: 1;
+
+  margin-top: calc(2.5vmin - .5vw);
+
+  transition: opacity, margin;
+  transition-duration: .4s;
+  transition-timing-function: ease-out;
 }
 
 .ProjectPage-share-button:nth-child(3) { transition-delay: .1s; }
@@ -116,12 +128,6 @@
 .ProjectPage-share-button:nth-child(6) { transition-delay: .4s; }
 .ProjectPage-share-button:nth-child(7) { transition-delay: .5s; }
 
-:checked ~ .ProjectPage-share-button {
-  pointer-events: auto;
-  opacity: 1;
-
-  margin-top: 2.3vmin;
-}
 
 .ProjectPage-title {
   font-size: 5vmin;
@@ -145,5 +151,10 @@
 @media all and (orientation: landscape) {
   .ProjectPage-container {
     padding: 5vmin 0;
+  }
+
+  .ProjectPage-share-button {
+    border-color: #323232;
+    background-color: #323232;
   }
 }

@@ -103,29 +103,29 @@ const ProjectPage = ({ projectId, number, title, published, ...rest }) => (
         <FacebookShareButton className="ProjectPage-share-button"
           url={`https://dailyui.wouterraateland.nl/project/${number}`}
           quote={`${title} — Day ${number}/100 of the DailyUi challenge by Wouter Raateland.`}>
-          <FacebookIcon size="5vmin" round />
+          <FacebookIcon size="5vmin" />
         </FacebookShareButton>
         <TwitterShareButton className="ProjectPage-share-button"
           url={`https://dailyui.wouterraateland.nl/project/${number}`}
           title={`${title} — Day ${number}/100 of the DailyUi challenge by Wouter Raateland.`}>
-          <TwitterIcon size="5vmin" round />
+          <TwitterIcon size="5vmin" />
         </TwitterShareButton>
         <LinkedinShareButton className="ProjectPage-share-button"
           url={`https://dailyui.wouterraateland.nl/project/${number}`}
           title={`DailyUi #${number} — ${title}`}>
-          <LinkedinIcon size="5vmin" round />
+          <LinkedinIcon size="5vmin" />
         </LinkedinShareButton>
         <WhatsappShareButton className="ProjectPage-share-button"
           url={`https://dailyui.wouterraateland.nl/project/${number}`}
           title={`${title} — Day ${number}/100 of the DailyUi challenge by Wouter Raateland.`}
           separator=" ">
-          <WhatsappIcon size="5vmin" round />
+          <WhatsappIcon size="5vmin" />
         </WhatsappShareButton>
         <PinterestShareButton className="ProjectPage-share-button"
           url={`https://dailyui.wouterraateland.nl/project/${number}`}
           media={`${process.env.PUBLIC_URL}/thumbs/DailyUi-${number}.jpg`}
           description={`${title} — Day ${number}/100 of the DailyUi challenge by Wouter Raateland.`}>
-          <PinterestIcon size="5vmin" round />
+          <PinterestIcon size="5vmin" />
         </PinterestShareButton>
       </label>
       <h1 className="ProjectPage-title">#{number} &mdash; {title}</h1>
