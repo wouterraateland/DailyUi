@@ -2,15 +2,13 @@
 }
 
 .ProjectPage-header {
+  position: relative;
+  z-index: 1;
+
   padding: 5vmin;
 
   background-color: #323232;
   color: #fff;
-}
-
-.ProjectPage-title {
-  font-size: 5vmin;
-  margin: 0;
 }
 
 .ProjectPage-back {
@@ -19,8 +17,8 @@
   display: block;
   width: 6.5em;
   height: 5.375em;
-  margin: 2.3em 0;
   margin: calc(-.375em / 2) 0;
+  margin-right: 5vmin;
 
   font-size: 1vmin;
 }
@@ -39,6 +37,95 @@
                          2em 3.25em,  4em 3.25em;
 
   background-color: currentColor;
+}
+
+.ProjectPage-share-container {
+  height: 5vmin;
+  margin-left: 5vmin;
+}
+
+.ProjectPage-share {
+  cursor: pointer;
+  
+  position: relative;
+
+  display: block;
+  width: 1em;
+  height: 1em;
+
+  font-size: 5vmin;
+}
+
+.ProjectPage-share::before,
+.ProjectPage-share::after {
+  content: '';
+
+  pointer-events: none;
+
+  position: absolute;
+  left: .25em; top: .25em;
+  right: .25em; bottom: .25em;
+  margin: auto;
+}
+
+.ProjectPage-share::before {
+  left: .4em;
+  right: .1em;
+  border-style: solid;
+  border-width: 0 0 .1em .1em;
+
+  transform: rotate(45deg) skewX(-15deg) skewY(-15deg);
+}
+
+.ProjectPage-share::after {
+  left: .15em;
+  right: auto;
+
+  width: .3em;
+  height: .3em;
+  border-radius: 100%;
+
+  box-shadow: .4em .25em, .4em -.25em;
+
+  background-color: currentColor;
+}
+
+.ProjectPage-share-button {
+  pointer-events: none;
+  cursor: pointer;
+  opacity: 0;
+
+  margin: -.2vmin;
+  border: .2vmin solid;
+  border-radius: 100%;
+
+  background-color: currentColor;
+
+  transition-property: opacity, margin;
+  transition-duration: .4s;
+  transition-timing-function: ease-out;
+}
+
+.ProjectPage-share-button:focus {
+  outline: none;
+}
+
+.ProjectPage-share-button:nth-child(3) { transition-delay: .1s; }
+.ProjectPage-share-button:nth-child(4) { transition-delay: .2s; }
+.ProjectPage-share-button:nth-child(5) { transition-delay: .3s; }
+.ProjectPage-share-button:nth-child(6) { transition-delay: .4s; }
+.ProjectPage-share-button:nth-child(7) { transition-delay: .5s; }
+
+:checked ~ .ProjectPage-share-button {
+  pointer-events: auto;
+  opacity: 1;
+
+  margin-top: 2.3vmin;
+}
+
+.ProjectPage-title {
+  font-size: 5vmin;
+  margin: 0 0 0 11.5vmin;
 }
 
 .ProjectPage-container {

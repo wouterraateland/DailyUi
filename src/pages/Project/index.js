@@ -9,6 +9,11 @@ import Project from 'components/Project'
 import ProjectThumb from 'components/ProjectThumb'
 import Footer from 'components/Footer'
 
+import {
+  ShareButtons,
+  generateShareIcon
+} from 'react-share'
+
 // Data
 import {
   getProjectNumberByURL,
@@ -16,6 +21,20 @@ import {
   getProjectTitleByURL,
   getProjectPublishedByURL,
 } from 'selectors/projects'
+
+const {
+  FacebookShareButton,
+  TwitterShareButton,
+  LinkedinShareButton,
+  WhatsappShareButton,
+  PinterestShareButton,
+} = ShareButtons
+
+const FacebookIcon = generateShareIcon('facebook')
+const TwitterIcon = generateShareIcon('twitter')
+const LinkedinIcon = generateShareIcon('linkedin')
+const WhatsappIcon = generateShareIcon('whatsapp')
+const PinterestIcon = generateShareIcon('pinterest')
 
 const ProjectPage = ({ projectId, number, title, published, ...rest }) => (
   <div className="ProjectPage page">
@@ -77,7 +96,38 @@ const ProjectPage = ({ projectId, number, title, published, ...rest }) => (
 }`
     }} />
     <div className="ProjectPage-header">
-      <Link className="ProjectPage-back alignright" to="/"></Link>
+      <Link className="ProjectPage-back alignleft" to="/"></Link>
+      <label className="ProjectPage-share-container alignright">
+        <input className="hidden" type="checkbox" />
+        <div className="ProjectPage-share" />
+        <FacebookShareButton className="ProjectPage-share-button"
+          url={`https://dailyui.wouterraateland.nl/project/${number}`}
+          quote={`${title} — Day ${number}/100 of the DailyUi challenge by Wouter Raateland.`}>
+          <FacebookIcon size="5vmin" round />
+        </FacebookShareButton>
+        <TwitterShareButton className="ProjectPage-share-button"
+          url={`https://dailyui.wouterraateland.nl/project/${number}`}
+          title={`${title} — Day ${number}/100 of the DailyUi challenge by Wouter Raateland.`}>
+          <TwitterIcon size="5vmin" round />
+        </TwitterShareButton>
+        <LinkedinShareButton className="ProjectPage-share-button"
+          url={`https://dailyui.wouterraateland.nl/project/${number}`}
+          title={`DailyUi #${number} — ${title}`}>
+          <LinkedinIcon size="5vmin" round />
+        </LinkedinShareButton>
+        <WhatsappShareButton className="ProjectPage-share-button"
+          url={`https://dailyui.wouterraateland.nl/project/${number}`}
+          title={`${title} — Day ${number}/100 of the DailyUi challenge by Wouter Raateland.`}
+          separator=" ">
+          <WhatsappIcon size="5vmin" round />
+        </WhatsappShareButton>
+        <PinterestShareButton className="ProjectPage-share-button"
+          url={`https://dailyui.wouterraateland.nl/project/${number}`}
+          media={`${process.env.PUBLIC_URL}/thumbs/DailyUi-${number}.jpg`}
+          description={`${title} — Day ${number}/100 of the DailyUi challenge by Wouter Raateland.`}>
+          <PinterestIcon size="5vmin" round />
+        </PinterestShareButton>
+      </label>
       <h1 className="ProjectPage-title">#{number} &mdash; {title}</h1>
     </div>
     <div className="ProjectPage-container">
