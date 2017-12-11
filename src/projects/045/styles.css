@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+
+.Project-045 {
+  font-family: 'Poiret One', cursive;
+
+  background:
+    linear-gradient(       transparent 47%, currentColor 47%, currentColor 53%, transparent 53%) left 50% top .6vmin / 2vmin 2vmin,
+    linear-gradient(90deg, transparent 47%, currentColor 47%, currentColor 53%, transparent 53%) center / 2vmin 2vmin,
+    linear-gradient(#e91e63, #f490c2);
+
+  color: rgba(255, 255, 255, .2);
+}
+
+.Project-045-container {
+  width: 80.5vmin;
+  height: 60.5vmin;
+  border: .5vmin solid;
+
+  color: #fff;
+  box-shadow:
+    0 2vmin 6vmin -2vmin rgba(0, 0, 0, .5),
+    0 0 0 10vmin rgba(255, 255, 255, .2);
+}
+
+.Project-045-illustration {
+  width: 80vmin;
+}
+
+.Project-045-info {
+  position: absolute;
+  left: 48vmin; top: 6vmin;
+}
+
+.Project-045-title {
+  height: 10vmin;
+
+  font-size: 8vmin;
+  line-height: 1.18;
+  letter-spacing: -.01em;
+  text-indent: -.12em;
+}
+
+.Project-045-subtitle {
+  position: relative;
+  height: 10vmin;
+
+  font-size: 4vmin;
+  line-height: 1.18;
+  letter-spacing: -.01em;
+  text-indent: -.15em;
+}
+
+.Project-045-subtitle::before {
+  content: '" ';
+
+  position: absolute;
+  right: 100%;
+}
+
+.Project-045-subtitle::after {
+  content: '"';
+
+  position: absolute;
+  left: 100%;
+}
+
+.Project-045-stat {
+  height: 2em;
+
+  line-height: 1.13;
+  letter-spacing: -.01em;
+  text-indent: -.1em;
+}
+
+.Project-045-stat-title {
+  display: inline-block;
+  width: 8vmin;
+}
+
+.Project-045-stat-title::after {
+  content: ':';
+}

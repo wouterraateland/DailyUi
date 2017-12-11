@@ -42,7 +42,8 @@ const initialState = [
   { title: 'Workout tracker', published: '2017-12-05' },
   { title: 'Todo List', published: '2017-12-06' },
   { title: 'Menu Card', published: '2017-12-07' },
-  { title: 'Favorites', published: '2017-12-07' },
+  { title: 'Favorites', published: '2017-12-08' },
+  { title: 'Info Card', published: '2017-12-08' },
 ]
 
 const projectsReducer = (state=initialState, action) => {

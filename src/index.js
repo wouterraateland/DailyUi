@@ -5,7 +5,7 @@ import { Provider } from 'react-redux'
 import createHistory from 'history/createBrowserHistory'
 import { ConnectedRouter } from 'react-router-redux'
 import { Route } from 'react-router'
-import unregister from './registerServiceWorker'
+import { unregister } from './registerServiceWorker'
 import configureStore from './store'
 import withTracker from './withTracker'
 
