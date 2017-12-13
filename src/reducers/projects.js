@@ -43,7 +43,8 @@ const initialState = [
   { title: 'Todo List', published: '2017-12-06' },
   { title: 'Menu Card', published: '2017-12-07' },
   { title: 'Favorites', published: '2017-12-08' },
-  { title: 'Info Card', published: '2017-12-08' },
+  { title: 'Info Card', published: '2017-12-11' },
+  { title: 'Invoice', published: '2017-12-12' },
 ]
 
 const projectsReducer = (state=initialState, action) => {

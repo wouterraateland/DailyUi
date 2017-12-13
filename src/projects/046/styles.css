@@ -1,0 +1,137 @@
+.Project-046 {
+  background: linear-gradient(0deg, #ffbf66 45%, #434343 45%);
+  color: #434343;
+}
+
+.Project-046-container {
+  position: absolute;
+  left: 50%; top: 50%;
+
+  width: 63vmin;
+  height: 89.1vmin;
+
+  font-size: 1.5vmin;
+
+  background-color: #fff;
+
+  transform: translate(-50%, -35%);
+}
+
+.Project-046-header {
+  height: 12em;
+  padding: 3em 6em;
+
+  background-color: #f9f9f9;
+}
+
+.Project-046-logo {
+  float: left;
+  width: 9vmin;
+  margin-right: 3vmin;
+
+  font-family: 'Source Serif Pro', serif;
+  font-size: 4.5vmin;
+
+  text-transform: uppercase;
+  text-align: center;
+  text-indent: -.75vmin;
+  line-height: 9vmin;
+  letter-spacing: -.1em;
+
+  background-color: #ffbf66;
+  color: #fff;
+}
+
+.Project-046-invoice-title {
+  padding-top: 1.1em;
+
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  color: #ffbf66;
+}
+
+.Project-046-invoice-date {
+
+}
+
+.Project-046-client-title {
+  margin-bottom: .5em;
+
+  font-weight: bold;
+  font-size: 1.25em;
+  line-height: .8;
+  text-transform: uppercase;
+
+  opacity: .5;
+}
+
+.Project-046-client-info {
+  line-height: 1.5;
+}
+
+.Project-046-body {
+  padding: 4em 6em;
+}
+
+.Project-046-invoice-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.Project-046-invoice-table .l { text-align: left; }
+.Project-046-invoice-table .c { text-align: center; }
+.Project-046-invoice-table .r { text-align: right; }
+
+.Project-046-invoice-table .label {
+  font-weight: bold;
+  text-transform: uppercase;
+  opacity: .5;
+}
+
+.Project-046-invoice-table th {
+  padding: 0 0 1.5vmin;
+}
+
+.Project-046-invoice-table td {
+  padding: 1.4vmin 0 1.7vmin;
+}
+
+.Project-046-invoice-table th:nth-child(n + 2) {
+  width: 5em;
+}
+
+.Project-046-invoice-header {
+  border-bottom: .2vmin solid #ffbf66;
+}
+
+.Project-046-invoice-footer {
+  font-size: 1.25em;
+  line-height: .8;
+}
+
+.Project-046-invoice-total {
+  font-size: 1.25em;
+  line-height: .64;
+
+  color: #ffbf66;
+}
+
+.Project-046-invoice-total td {
+  padding: 2.9vmin 0 0;
+}
+
+.Project-046-footer {
+  height: 10vmin;
+  background-color: #f9f9f9;
+}
+
+.Project-046-footer-text {
+  padding: .75em 0;
+
+  font-weight: bold;
+  font-size: 2em;
+
+  opacity: .5;
+}
