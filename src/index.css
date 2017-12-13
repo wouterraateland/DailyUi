@@ -23,12 +23,24 @@ select {
 	border-radius: 0;
 }
 
+::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, .5);
+}
+
 .shadow {
 	box-shadow: 0 2vmin 6vmin -2vmin rgba(0, 0, 0, .5);
 }
 
-::-webkit-input-placeholder {
-  color: rgba(0, 0, 0, .5);
+.dev::after {
+	content: '';
+
+	pointer-events: none;
+
+	position: absolute;
+	left: 0; top: 0;
+	right: 0; bottom: 0;
+
+	background: linear-gradient(rgba(255, 0, 0, .05) 5%, transparent 5%, transparent 95%, rgba(255, 0, 0, .05) 95%) top / 1em 1em;
 }
 
 .hidden { display: none; }
@@ -90,10 +102,10 @@ select {
 	box-sizing: border-box;
 	min-height: 1px;
 	padding: 0 .5em;
+}
 
-	&.nopadding {
-		padding: 0;
-	}
+[class*="col-"].nopadding {
+	padding: 0;
 }
 
 .col-1  { width:   8.33333%; }
