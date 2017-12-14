@@ -46,7 +46,7 @@ const initialState = [
   { title: 'Info Card', published: '2017-12-11' },
   { title: 'Invoice', published: '2017-12-13' },
   { title: 'Activity Feed', published: '2017-12-14' },
-  // { title: 'Coming Soon', published: '2017-12-14' },
+  { title: 'Coming Soon', published: '2017-12-14' },
   // { title: 'Notifications', published: '2017-12-15' },
   // { title: 'Job Listing', published: '2017-12-15' },
 ]

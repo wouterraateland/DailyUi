@@ -1,0 +1,81 @@
+.Project-048 {
+  background: linear-gradient(#5e4336, #6d5f64);
+  color: #fff;
+}
+
+.Project-048-container {
+  z-index: 1;
+  overflow: hidden;
+
+  width: 80vmin;
+  height: 50vmin;
+  border-radius: 1.5vmin;
+
+  background: linear-gradient(#765454, #202020 80%);
+}
+
+.Project-048-illustration {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+}
+
+.Project-048-title {
+  position: absolute;
+  left: 4vmin;
+  top: 4vmin;
+
+  text-transform: uppercase;
+
+  letter-spacing: .3em;
+  font-size: 2vmin;
+  font-family: 'Source Serif Pro', serif;
+}
+
+.Project-048-teaser {
+  height: 1em;
+
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .3em;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.Project-048-form {
+  position: absolute;
+  left: 0;
+  right: 0; bottom: 0;
+
+  padding: 4vmin;
+
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+}
+
+.Project-048-form-title {
+  margin-bottom: 1em;
+}
+
+.Project-048-form-input {
+  display: inline-block;
+  padding: 1em 1.5em;
+  border-radius: 1.5em;
+
+  font-size: .75em;
+
+  background-color: #fff;
+  color: #202020;
+}
+
+.Project-048-form-submit {
+  display: inline-block;
+  padding: 1em 1.5em;
+  margin-left: 1em;
+  border-radius: 1.5em;
+
+  font-size: .75em;
+
+  background-color: #ab6e4f;
+}
