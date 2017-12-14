@@ -44,7 +44,11 @@ const initialState = [
   { title: 'Menu Card', published: '2017-12-07' },
   { title: 'Favorites', published: '2017-12-08' },
   { title: 'Info Card', published: '2017-12-11' },
-  { title: 'Invoice', published: '2017-12-12' },
+  { title: 'Invoice', published: '2017-12-13' },
+  { title: 'Activity Feed', published: '2017-12-14' },
+  // { title: 'Coming Soon', published: '2017-12-14' },
+  // { title: 'Notifications', published: '2017-12-15' },
+  // { title: 'Job Listing', published: '2017-12-15' },
 ]
 
 const projectsReducer = (state=initialState, action) => {
