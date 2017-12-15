@@ -48,7 +48,7 @@ const initialState = [
   { title: 'Activity Feed', published: '2017-12-14' },
   { title: 'Coming Soon', published: '2017-12-14' },
   { title: 'Notifications', published: '2017-12-15' },
-  // { title: 'Job Listing', published: '2017-12-15' },
+  { title: 'Job Listing', published: '2017-12-15' },
 ]
 
 const projectsReducer = (state=initialState, action) => {

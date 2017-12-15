@@ -1,0 +1,166 @@
+.Project-050 {
+  background-color: #f2f2f2;
+  color: #545454;
+}
+
+.Project-050-container {
+}
+
+.Project-050-title {
+  margin: 5vmin 0 0;
+
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2em;
+  letter-spacing: .5em;
+
+  transform: skewX(-19.5deg);
+}
+
+.Project-050-header {
+  position: relative;
+  overflow: hidden;
+
+  margin: 5vmin 6vmin 0;
+  padding: 3vmin;
+  border-radius: .5vmin;
+
+  box-shadow: 0 .3vmin 1vmin rgba(0, 0, 0, .1);
+
+  font-weight: bold;
+
+  background-color: #fff;
+}
+
+.Project-050-search select {
+  padding-right: 1em;
+  padding-bottom: .2vmin;
+  margin-bottom: -.4vmin;
+  border-bottom: .2vmin solid;
+
+  background: url(media/carret.svg) no-repeat top 50% right .25em / .5em;
+}
+
+.Project-050-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+
+  border-style: solid;
+  border-color: transparent #545454 #545454 transparent;
+  border-width: 0 10vmin 8vmin 2vmin;
+
+  color: #fff;
+}
+
+.Project-050-button::after {
+  content: 'SEARCH';
+
+  position: absolute;
+  left: -1vmin; top: 0;
+  right: -10vmin; bottom: -8vmin;
+
+  margin: auto;
+
+  line-height: 8vmin;
+  text-align: center;
+}
+
+.Project-050-body {
+  padding: 5vmin;
+}
+
+.Project-050-results {
+  margin-top: -2.5vmin;
+  margin-bottom: 2.5vmin;
+
+  text-align: center;
+
+  opacity: .5;
+}
+
+.Project-050-jobs {
+
+}
+
+.Project-050-job {
+  position: relative;
+  overflow: hidden;
+
+  padding: 3vmin;
+  margin-bottom: 2vmin;
+  border-radius: .5vmin;
+
+  box-shadow: 0 .3vmin 1vmin rgba(0, 0, 0, .1);
+
+  background-color: #fff;
+}
+
+.Project-050-job.star::after {
+  content: 'Best choice';
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 8em;
+  padding: 1.5em 2em .5em;
+
+  text-align: center;
+  text-transform: uppercase;
+  font-size: .75em;
+  font-weight: bold;
+
+  transform-origin: center top;
+  transform: translate(50%, 0) rotate(45deg);
+
+  background-color: #545454;
+  color: #fff;
+}
+
+.Project-050-job-company-logo {
+  float: left;
+  width: 5vmin;
+  height: 5vmin;
+  margin-right: 2vmin;
+}
+
+.Project-050-job-company-name {
+  position: absolute;
+  left: 2vmin;
+  bottom: 1vmin;
+
+  width: 7vmin;
+
+  font-size: .75em;
+
+  text-align: center;
+}
+
+.Project-050-job-title {
+  margin-top: .25em;
+  font-weight: bold;
+}
+
+.Project-050-job-location {
+  margin-bottom: .5em;
+}
+
+.Project-050-job-location::before {
+  content: '';
+
+  display: inline-block;
+  width: .6em;
+  height: .6em;
+  margin-right: .5em;
+  border: .2em solid;
+  border-radius: .5em .5em 0 .5em;
+
+  transform: rotate(45deg);
+}
+
+.Project-050-job-pay {
+  display: none;
+}
