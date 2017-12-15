@@ -26,6 +26,10 @@
   padding: 0 1vmin;
 }
 
+.IPhoneX-body:nth-child(1) {
+  padding-top: 3.25vmin;
+}
+
 .IPhoneX-notch {
   position: absolute;
   left: 1vmin; top: 1vmin;
@@ -176,7 +180,7 @@
   background-color: currentColor;
 }
 
-.IPhoneX-overlay::after {
+.IPhoneX-overlay:not(.no-homeindicator)::after {
   content: '';
 
   position: absolute;

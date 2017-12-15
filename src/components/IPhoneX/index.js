@@ -45,14 +45,16 @@ const IPhoneX = ({
   navContent=null,
   bodyContent=null,
   leftNotch=<DefaultLeftNotch />,
-  rightNotch=<DefaultRightNotch />
+  rightNotch=<DefaultRightNotch />,
+  hideHomeIndicator
 }) => (
   <div
     className={classNames(
       'IPhoneX',
       'abs-center',
       'shadow',
-      className)}
+      className
+    )}
   >
     <div className="IPhoneX-inner">
       {navContent
@@ -64,7 +66,13 @@ const IPhoneX = ({
       <div className="IPhoneX-notch-left">{leftNotch}</div>
       <div className="IPhoneX-notch-right">{rightNotch}</div>
     </div>
-    <div className="IPhoneX-overlay abs-center" />
+    <div
+      className={classNames(
+        'IPhoneX-overlay',
+        'abs-center',
+        { 'no-homeindicator': hideHomeIndicator },
+      )}
+      />
   </div>
 )
 
