@@ -1,0 +1,252 @@
+.Project-049 {
+  background-image:
+    linear-gradient(rgba(250, 250, 250, 0), rgba(250, 250, 250, .8)),
+    radial-gradient(circle 15vmin at 70% 60%, #fff642 99%, transparent 100%),
+    radial-gradient(circle 12vmin at 30% 10%, #f8a 99%, transparent 100%),
+    radial-gradient(circle 18vmin at 10% 80%, #3df 99%, transparent 100%);
+}
+
+.Project-049-container {
+  width: 30vmin;
+  height: 60vmin;
+  border-radius: 2vmin;
+  padding: 1vmin;
+
+  overflow: hidden;
+
+  background-color: #fff;
+}
+
+.Project-049-apps {
+}
+
+.Project-049-app {
+  position: relative;
+
+  display: inline-block;
+  width: 4.5vmin;
+  margin: 1vmin;
+}
+
+.Project-049-app:not([data-notifications="0"])::after {
+  content: attr(data-notifications);
+
+  position: absolute;
+  top: -.5em;
+  right: -.5em;
+
+  width: 1.5em;
+  height: 1.5em;
+  padding: .25em;
+  border-radius: 100%;
+
+  font-size: .75em;
+  text-align: center;
+
+  background-color: #f2f2f2;
+  color: #fff;
+}
+
+.Project-049-app-icon {
+  width: 4.5vmin;
+  height: 4.5vmin;
+  border-radius: 1vmin;
+
+  background-color: #e4e4e4;
+}
+
+.Project-049-app-name {
+  width: 3vmin;
+  height: .5vmin;
+  margin: .75vmin auto 0;
+  border-radius: .25vmin;
+
+  background-color: #e4e4e4;
+}
+
+.Project-049-apps-bar {
+  position: absolute;
+  left: 1vmin;
+  right: 1vmin; bottom: 1vmin;
+
+  border-radius: 2vmin;
+
+  background-color: #f2f2f2;
+}
+
+.Project-049-my-app {
+  position: relative;
+
+  perspective: 40vmin;
+}
+
+.Project-049-my-app[data-notifications$="0"] .Project-049-app-icon,
+.Project-049-my-app[data-notifications$="2"] .Project-049-app-icon,
+.Project-049-my-app[data-notifications$="4"] .Project-049-app-icon,
+.Project-049-my-app[data-notifications$="6"] .Project-049-app-icon,
+.Project-049-my-app[data-notifications$="8"] .Project-049-app-icon { animation: vibrate1 1s linear; }
+
+.Project-049-my-app[data-notifications$="1"] .Project-049-app-icon,
+.Project-049-my-app[data-notifications$="3"] .Project-049-app-icon,
+.Project-049-my-app[data-notifications$="5"] .Project-049-app-icon,
+.Project-049-my-app[data-notifications$="7"] .Project-049-app-icon,
+.Project-049-my-app[data-notifications$="9"] .Project-049-app-icon { animation: vibrate2 1s linear; }
+
+.Project-049-my-app::after {
+  background-color: #f12 !important;
+  color: #fff;
+}
+
+.Project-049-my-app-icon {
+  position: relative;
+
+  background-color: #058cf7;
+  color: #fff;
+}
+
+.Project-049-my-app-icon::before,
+.Project-049-my-app-icon::after {
+  content: '';
+
+  position: absolute;
+}
+
+.Project-049-my-app-icon::before {
+  left: 0; top: 0;
+  right: 0; bottom: 0;
+
+  width: 3vmin;
+  height: 2.5vmin;
+  margin: auto;
+  border-radius: 100%;
+
+  background-color: currentColor;
+}
+
+.Project-049-my-app-icon::after {
+  left: .75vmin;
+  bottom: .75vmin;
+
+  width: 2vmin;
+  height: 2vmin;
+
+  border-right: 1vmin solid;
+  border-bottom-right-radius: 2vmin;
+}
+
+.Project-049-notifications {
+  pointer-events: none;
+
+  position: absolute;
+  left: -7.5vmin;
+  right: -14vmin; bottom: 6vmin;
+
+  max-height: 47.75vmin;
+  padding: .5vmin;
+  border-radius: 2vmin;
+
+  transform-origin: 9.75vmin 100%;
+  transform: scale(1.5);
+  opacity: 0;
+  filter: blur(1vmin);
+
+  background-color: rgba(228, 228, 228, .8);
+
+  transition-property: transform, opacity, filter;
+  transition-duration: .4s;
+  transition-timing-function: ease-out;
+
+  will-change: opacity, transform, filter;
+}
+
+.Project-049-notifications::after {
+  content: '';
+
+  position: absolute;
+  left: 7.5vmin; top: 100%;
+  right: 14vmin;
+
+  width: 2vmin;
+  margin: auto;
+
+  border: 1vmin solid transparent;
+  border-top-color: rgba(228, 228, 228, .8);
+}
+
+.Project-049-my-app:hover .Project-049-notifications {
+  opacity: 1;
+  filter: blur(0);
+  transform: scale(1);
+}
+
+.Project-049-notification {
+  position: relative;
+
+  padding: .5vmin;
+
+  font-size: .75em;
+}
+
+.Project-049-avatar {
+  float: left;
+  width: 4.5vmin;
+  border-radius: 100%;
+}
+
+.Project-049-name {
+  margin-left: 6.5vmin;
+}
+
+.Project-049-content {
+  margin-left: 6.5vmin;
+  margin-top: .5vmin;
+
+  font-weight: bold;
+}
+
+.Project-049-time {
+  position: absolute;
+  top: .5vmin;
+  right: .5vmin;
+
+  font-size: .75em;
+  line-height: 1.5vmin;
+
+  opacity: .5;
+}
+
+@keyframes vibrate1 {
+  2% { transform: rotate(10deg); }
+  4% { transform: rotate(-10deg); }
+  6% { transform: rotate(10deg); }
+  8% { transform: rotate(-10deg); }
+  10% { transform: rotate(10deg); }
+  12% { transform: rotate(-10deg); }
+  14% { transform: rotate(10deg); }
+  16% { transform: rotate(-10deg); }
+  18% { transform: rotate(10deg); }
+  20% { transform: rotate(-10deg); }
+  22% { transform: rotate(10deg); }
+  24% { transform: rotate(-10deg); }
+  26% { transform: rotate(10deg); }
+  28% { transform: rotate(-10deg); }
+  30% { transform: rotate(0deg); }
+}
+
+@keyframes vibrate2 {
+  2% { transform: rotate(10deg); }
+  4% { transform: rotate(-10deg); }
+  6% { transform: rotate(10deg); }
+  8% { transform: rotate(-10deg); }
+  10% { transform: rotate(10deg); }
+  12% { transform: rotate(-10deg); }
+  14% { transform: rotate(10deg); }
+  16% { transform: rotate(-10deg); }
+  18% { transform: rotate(10deg); }
+  20% { transform: rotate(-10deg); }
+  22% { transform: rotate(10deg); }
+  24% { transform: rotate(-10deg); }
+  26% { transform: rotate(10deg); }
+  28% { transform: rotate(-10deg); }
+  30% { transform: rotate(0deg); }
+}
